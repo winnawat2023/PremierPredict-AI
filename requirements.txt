@@ -2,6 +2,7 @@ pandas
 scikit-learn
 requests
 streamlit
+altair<5
 python-dotenv
 matplotlib
 seaborn
