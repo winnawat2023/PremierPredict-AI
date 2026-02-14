@@ -1,41 +1,20 @@
-# PremierPredict-AI
-**Subject**: SEA612 Artificial Intelligence Fundamentals (KMUTT - SIT)  
-**Instructor**: Punnarust Silparattanawong  
-**Owner**: Chaiyaporn Homthian (Bass)
+---
+title: PremierPredict AI
+emoji: ⚽
+colorFrom: green
+colorTo: blue
+sdk: streamlit
+sdk_version: 1.31.0
+app_file: app/dashboard.py
+pinned: false
+---
 
-## Project Goal
-**Research Problem**: Match Outcome Prediction (Classification)  
-**Goal**: Prove AI (Random Forest) accuracy > Baseline (Home Win Strategy).  
-**Baseline**: Always predict Home Win.  
-**AI Model**: Random Forest Classifier (handling complex statistical features).
+# PremierPredict-AI ⚽
 
-## Technical Design
-**Input Features (X)**:
-1. `Home_Advantage`: Binary or calculated advantage.
-2. `Form_L5`: Average points in last 5 matches.
-3. `Position_Diff`: League table position difference.
+Prediction and Analysis dashboard for Premier League matches using Machine Learning.
 
-**Target (Y)**:
-- 0: Home Win
-- 1: Draw
-- 2: Away Win
+## How to use
+This app is hosted on Hugging Face Spaces.
 
-## Milestones
-- **22/02/2026**: Project Proposal (Research Problem & Design)
-- **27/03/2026**: Final Report (IEEE Template 4 pages)
-- **29/03/2026**: Project Presentation
-
-## Data & Tech Stack
-- **Source**: Football-Data.org API (English Premier League 2021-2025)
-- **Stack**: Python, Scikit-learn, Pandas, Streamlit, Git
-
-## Folder Structure
-- `data/`: Raw and processed data CSVs
-- `src/`: 
-    - `data_loader.py`: Fetch data from API
-    - `features.py`: Feature engineering logic
-    - `models.py`: Training and comparison logic
-- `app/`: Streamlit dashboard
-- `main.py`: Entry point
-
-
+## Original Repository
+https://github.com/winnawat2023/PremierPredict-AI

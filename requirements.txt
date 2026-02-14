@@ -1,1 +1,10 @@
-streamlit==1.31.0
+pandas
+scikit-learn
+requests
+streamlit
+altair<5
+python-dotenv
+matplotlib
+seaborn
+joblib
+watchdog
