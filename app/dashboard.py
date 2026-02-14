@@ -29,6 +29,9 @@ except Exception as e:
     st.error(f"CRITICAL ERROR during imports: {e}")
     st.stop()
 
+# Debug: Checkpoint
+st.success("DEBUG: Imports passed. Starting resource check...")
+
 # Cache Compatibility
 if hasattr(st, 'cache_resource'):
     cache_decorator = st.cache_resource

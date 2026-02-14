@@ -1,10 +1,10 @@
 pandas
-scikit-learn==1.6.1
+scikit-learn
 requests
 streamlit
 altair<5
 python-dotenv
 matplotlib
 seaborn
-joblib==1.5.3
+joblib
 watchdog
