@@ -10,7 +10,7 @@ import os
 st.set_page_config(page_title="PremierPredict-AI", layout="wide")
 
 # Load Resources
-@st.cache_resource
+@st.experimental_singleton
 def load_resources():
     model = joblib.load("models/rf_model.pkl")
     try:
@@ -53,38 +53,38 @@ def main():
         'Position_Diff': [pos_diff]
     })
     
-    if st.sidebar.button("Predict"):
-        prediction = model.predict(input_data)[0]
-        probs = model.predict_proba(input_data)[0]
-        
-        # Outcome Map
-        outcomes = {0: "Home Win", 1: "Draw", 2: "Away Win"}
-        result = outcomes[prediction]
-        
-        st.subheader("Prediction Result")
-        st.info(f"The AI predicts: **{result}**")
-        
-        # Probability Bar
-        st.markdown("#### Probability Distribution")
-        prob_df = pd.DataFrame({
-            "Outcome": ["Home Win", "Draw", "Away Win"],
-            "Probability": probs
-        })
-        
-        # Display as 3-color bar chart or columns
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Home Win", f"{probs[0]*100:.1f}%")
-        col2.metric("Draw", f"{probs[1]*100:.1f}%")
-        col3.metric("Away Win", f"{probs[2]*100:.1f}%")
-        
-        # Simple Bar Chart
-        fig, ax = plt.subplots(figsize=(6, 2))
-        sns.barplot(x="Probability", y="Outcome", data=prob_df, ax=ax, palette=["green", "gray", "red"])
-        ax.set_xlim(0, 1)
-        st.pyplot(fig)
+    # Prediction Logic (Reactive)
+    prediction = model.predict(input_data)[0]
+    probs = model.predict_proba(input_data)[0]
+    
+    # Outcome Map
+    outcomes = {0: "Home Win", 1: "Draw", 2: "Away Win"}
+    result = outcomes[prediction]
+    
+    st.subheader("Prediction Result")
+    st.info(f"The AI predicts: **{result}**")
+    
+    # Probability Bar
+    st.markdown("#### Probability Distribution")
+    prob_df = pd.DataFrame({
+        "Outcome": ["Home Win", "Draw", "Away Win"],
+        "Probability": probs
+    })
+    
+    # Display as 3-color bar chart or columns
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Home Win", f"{probs[0]*100:.1f}%")
+    col2.metric("Draw", f"{probs[1]*100:.1f}%")
+    col3.metric("Away Win", f"{probs[2]*100:.1f}%")
+    
+    # Simple Bar Chart
+    fig, ax = plt.subplots(figsize=(6, 2))
+    sns.barplot(x="Probability", y="Outcome", hue="Outcome", data=prob_df, ax=ax, palette=["green", "gray", "red"], legend=False)
+    ax.set_xlim(0, 1)
+    st.pyplot(fig)
 
     # Dashboard Comparison
-    st.divider()
+    st.markdown("---")
     st.subheader("📊 Model Performance: AI vs Baseline")
     
     comp_col1, comp_col2 = st.columns(2)
@@ -103,7 +103,7 @@ def main():
     # Feature Importance
     st.subheader("🔍 Feature Importance (Explainable AI)")
     fig2, ax2 = plt.subplots(figsize=(8, 4))
-    sns.barplot(x="Importance", y="Feature", data=feature_imp, ax=ax2, palette="viridis")
+    sns.barplot(x="Importance", y="Feature", hue="Feature", data=feature_imp, ax=ax2, palette="viridis", legend=False)
     st.pyplot(fig2)
 
 if __name__ == "__main__":
