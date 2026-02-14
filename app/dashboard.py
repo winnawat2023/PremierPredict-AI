@@ -18,15 +18,27 @@ st.set_page_config(page_title="PremierPredict-AI", layout="wide")
 # Load Resources
 @st.experimental_singleton
 def load_resources():
-    model = joblib.load("models/rf_model.pkl")
     try:
-        metrics = json.load(open("models/metrics.json"))
+        model = joblib.load("models/rf_model.pkl")
+    except Exception as e:
+        st.error(f"Error loading model: {e}")
+        return None, None, None
+
+    try:
+        with open("models/metrics.json", "r") as f:
+            metrics = json.load(f)
     except FileNotFoundError:
+        metrics = {"baseline_accuracy": 0, "ai_accuracy": 0}
+    except Exception as e:
+        st.error(f"Error loading metrics: {e}")
         metrics = {"baseline_accuracy": 0, "ai_accuracy": 0}
         
     try:
         feature_imp = pd.read_csv("models/feature_importance.csv")
     except FileNotFoundError:
+        feature_imp = pd.DataFrame(columns=["Feature", "Importance"])
+    except Exception as e:
+        st.error(f"Error loading feature importance: {e}")
         feature_imp = pd.DataFrame(columns=["Feature", "Importance"])
         
     return model, metrics, feature_imp
@@ -41,6 +53,10 @@ def main():
         return
 
     model, metrics, feature_imp = load_resources()
+    
+    if model is None:
+        st.error("Failed to load model. Please check the logs.")
+        return
     
     # Sidebar
     st.sidebar.header("ทำนายผลการแข่งขัน")
