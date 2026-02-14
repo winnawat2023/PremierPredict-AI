@@ -30,12 +30,38 @@ def train_and_evaluate(df):
 
     print(f"Training set: {X_train.shape}, Test set: {X_test.shape}")
 
-    # 1. Baseline Model (Always Predict Home Win = 0)
-    baseline_model = DummyClassifier(strategy="constant", constant=0)
-    baseline_model.fit(X_train, y_train)
-    y_pred_base = baseline_model.predict(X_test)
-    accuracy_base = accuracy_score(y_test, y_pred_base)
-    print(f"\nBaseline Model Accuracy (Home Win Strategy): {accuracy_base:.4f}")
+    # 1. Baseline Model 1 (Home Win Strategy)
+    # Always Predict Home Win (0)
+    baseline1_model = DummyClassifier(strategy="constant", constant=0)
+    baseline1_model.fit(X_train, y_train)
+    y_pred_base1 = baseline1_model.predict(X_test)
+    accuracy_base1 = accuracy_score(y_test, y_pred_base1)
+    print(f"\nBaseline 1 (Home Win Strategy) Accuracy: {accuracy_base1:.4f}")
+
+    # 2. Baseline Model 2 (Higher Rank Strategy)
+    # Predict based on Position_Diff (Home Rank - Away Rank)
+    # if < 0 (Home better), predict 0 (Home Win)
+    # if > 0 (Away better), predict 2 (Away Win)
+    # if == 0, predict 1 (Draw) - or simply Home Win
+    y_pred_base2 = []
+    for diff in X_test['Position_Diff']:
+        if diff < 0:
+            y_pred_base2.append(0) # Home Win
+        elif diff > 0:
+            y_pred_base2.append(2) # Away Win
+        else:
+            y_pred_base2.append(0) # Assume Home Win if rank equal
+    
+    accuracy_base2 = accuracy_score(y_test, y_pred_base2)
+    print(f"Baseline 2 (Higher Rank Strategy) Accuracy: {accuracy_base2:.4f}")
+
+    # 3. Baseline Model 3 (Probabilistic)
+    # Random prediction based on training set distribution
+    baseline3_model = DummyClassifier(strategy="stratified", random_state=42)
+    baseline3_model.fit(X_train, y_train)
+    y_pred_base3 = baseline3_model.predict(X_test)
+    accuracy_base3 = accuracy_score(y_test, y_pred_base3)
+    print(f"Baseline 3 (Probabilistic) Accuracy: {accuracy_base3:.4f}")
 
     # 2. AI Model (Random Forest)
     rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
@@ -46,7 +72,7 @@ def train_and_evaluate(df):
 
     # Comparison
     print("\nResolution:")
-    if accuracy_rf > accuracy_base:
+    if accuracy_rf > accuracy_base1:
         print("SUCCESS: AI Model outperforms Baseline.")
     else:
         print("WARNING: AI Model does not outperform Baseline.")
@@ -68,7 +94,9 @@ def train_and_evaluate(df):
 
     # Save metrics for Dashboard
     metrics = {
-        "baseline_accuracy": accuracy_base,
+        "baseline1_accuracy": accuracy_base1,
+        "baseline2_accuracy": accuracy_base2,
+        "baseline3_accuracy": accuracy_base3,
         "ai_accuracy": accuracy_rf
     }
     with open("models/metrics.json", "w") as f:
