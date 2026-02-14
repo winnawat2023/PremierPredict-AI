@@ -7,3 +7,4 @@ python-dotenv
 matplotlib
 seaborn
 joblib==1.5.3
+watchdog
