@@ -15,8 +15,14 @@ from src.utils import get_latest_team_stats
 # Set page config
 st.set_page_config(page_title="PremierPredict-AI", layout="wide")
 
+# Cache Compatibility
+if hasattr(st, 'cache_resource'):
+    cache_decorator = st.cache_resource
+else:
+    cache_decorator = st.experimental_singleton
+
 # Load Resources
-@st.experimental_singleton
+@cache_decorator
 def load_resources():
     try:
         model = joblib.load("models/rf_model.pkl")

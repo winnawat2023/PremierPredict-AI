@@ -1,7 +1,7 @@
 pandas
 scikit-learn==1.6.1
 requests
-streamlit==1.12.0
+streamlit
 altair<5
 python-dotenv
 matplotlib
