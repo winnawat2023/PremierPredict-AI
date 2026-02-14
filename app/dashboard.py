@@ -5,9 +5,7 @@ import sys
 # Set page config (MUST be the first Streamlit command)
 st.set_page_config(page_title="PremierPredict-AI", layout="wide")
 
-# Debug: Print environment info
-st.write(f"Current Working Directory: {os.getcwd()}")
-st.write(f"System Path: {sys.path}")
+
 
 try:
     # Fix for headless environment
