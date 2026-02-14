@@ -62,7 +62,7 @@ def parse_matches(data):
 
 def main():
     # Seasons 2021, 2022, 2023, 2024
-    seasons = [2021, 2022, 2023, 2024]
+    seasons = [2021, 2022, 2023, 2024, 2025]
     all_matches = []
     
     for season in seasons:
