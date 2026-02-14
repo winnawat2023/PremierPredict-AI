@@ -2,6 +2,9 @@ import streamlit as st
 import os
 import sys
 
+# Set page config (MUST be the first Streamlit command)
+st.set_page_config(page_title="PremierPredict-AI", layout="wide")
+
 # Debug: Print environment info
 st.write(f"Current Working Directory: {os.getcwd()}")
 st.write(f"System Path: {sys.path}")
@@ -9,12 +12,12 @@ st.write(f"System Path: {sys.path}")
 # Fix for headless environment
 import matplotlib
 matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 import pandas as pd
 import joblib
 import json
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # Add project root to sys.path to allow importing from src
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -23,9 +26,6 @@ try:
     from src.utils import get_latest_team_stats
 except Exception as e:
     st.error(f"Error importing src.utils: {e}")
-
-# Set page config
-st.set_page_config(page_title="PremierPredict-AI", layout="wide")
 
 # Cache Compatibility
 if hasattr(st, 'cache_resource'):
