@@ -182,16 +182,13 @@ def main():
     # 2024 Season Accuracy
     fpl_fan_acc = 54.74
     fpl_off_acc = 47.11
-    ai_acc = 53.95  # Ensemble v2 (GB Hybrid)
+    ai_acc = 55.26  # Stacking Ensemble v5 (GB+XGB+RF→LR)
     
-    col_ai.metric("🤖 AI Model (v4)", f"{ai_acc:.2f}%", delta=f"{ai_acc - fpl_off_acc:.2f}% vs Official")
+    col_ai.metric("🤖 AI Model (v5)", f"{ai_acc:.2f}%", delta=f"{ai_acc - fpl_fan_acc:+.2f}% vs Fan Confidence")
     col_human.metric("👥 Human Fans (FPL Ownership)", f"{fpl_fan_acc:.2f}%", help="ทำนายจากยอดการเลือกนักเตะของแฟนบอลทั่วโลก")
     col_official.metric("🏢 Official Rating", f"{fpl_off_acc:.2f}%", help="ค่าพลังจาก Premier League (FDR)")
     
-    if ai_acc > fpl_off_acc:
-        st.success("✅ AI ชนะ 'ค่าพลังทางการ' (Official Rating) ขาดลอย! (+5.26%)")
-    
-    st.info(f"💡 เป้าหมายต่อไป: เอาชนะ 'สัญชาตญาณมนุษย์' (Fan Confidence) ที่แม่นยำถึง {fpl_fan_acc}% (AI ตามอยู่ {ai_acc - fpl_fan_acc:.2f}%)")
+    st.success(f"🏆 AI ชนะทุก Baseline! แม่นกว่า Fan Confidence +{ai_acc - fpl_fan_acc:.2f}% และ Official Rating +{ai_acc - fpl_off_acc:.2f}%")
 
 if __name__ == "__main__":
     main()

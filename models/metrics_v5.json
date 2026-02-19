@@ -1,0 +1,31 @@
+{
+  "model": "Stacking Ensemble v5 (GB+XGB+RF\u2192LR)",
+  "accuracy": 55.26,
+  "features": [
+    "Home_Form_L5",
+    "Away_Form_L5",
+    "Home_Avg_GF_L5",
+    "Home_Avg_GA_L5",
+    "Away_Avg_GF_L5",
+    "Away_Avg_GA_L5",
+    "Home_MV",
+    "Away_MV",
+    "MV_Diff",
+    "Home_Elo",
+    "Away_Elo",
+    "Elo_Diff",
+    "H2H_Home_Wins",
+    "H2H_Away_Wins",
+    "fpl_home",
+    "fpl_away",
+    "fpl_diff",
+    "elo_prob_home",
+    "elo_prob_draw",
+    "elo_prob_away"
+  ],
+  "train_size": 1768,
+  "test_size": 380,
+  "vs_fpl_fan": 0.52,
+  "vs_crowd_odds": 1.31,
+  "vs_official": 8.15
+}
