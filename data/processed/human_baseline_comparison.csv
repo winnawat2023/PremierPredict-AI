@@ -1,0 +1,7 @@
+Match,Actual Score,Sutton Prediction,Correct Result,Exact Score
+Arsenal FC vs Everton FC,0.0-0.0,2-0,False,False
+Liverpool FC vs Tottenham Hotspur FC,5.0-1.0,3-2,True,False
+Manchester City FC vs Southampton FC,1.0-0.0,3-0,True,False
+Arsenal FC vs Tottenham Hotspur FC,2.0-1.0,2-1,True,True
+Chelsea FC vs Manchester City FC,0.0-2.0,1-2,True,False
+Fulham FC vs Arsenal FC,1.0-1.0,0-2,False,False

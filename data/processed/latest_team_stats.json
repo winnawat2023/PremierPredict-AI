@@ -1,0 +1,3791 @@
+{
+    "elo": {
+        "Fulham FC": 1527.013273552336,
+        "Arsenal FC": 1732.6132601317631,
+        "Crystal Palace FC": 1532.3118037199406,
+        "Southampton FC": 1297.7368224929598,
+        "Liverpool FC": 1661.2619718763472,
+        "Leeds United FC": 1475.3176508678025,
+        "West Ham United FC": 1465.9611324331206,
+        "Newcastle United FC": 1571.968379390531,
+        "West Bromwich Albion FC": 1399.4281769918746,
+        "Leicester City FC": 1384.2892370625411,
+        "Tottenham Hotspur FC": 1469.5181899815466,
+        "Everton FC": 1549.7891432110719,
+        "Sheffield United FC": 1311.535450328743,
+        "Wolverhampton Wanderers FC": 1396.7987074753653,
+        "Brighton & Hove Albion FC": 1545.9171385761554,
+        "Chelsea FC": 1626.7044665871022,
+        "Manchester United FC": 1584.0445952297218,
+        "Burnley FC": 1379.002838679495,
+        "Aston Villa FC": 1656.7500133601689,
+        "Manchester City FC": 1714.3602331118643,
+        "Brentford FC": 1574.1841215189575,
+        "Norwich City FC": 1375.3670953449932,
+        "Watford FC": 1370.2791527440475,
+        "Nottingham Forest FC": 1505.6578902263739,
+        "AFC Bournemouth": 1565.7721502345776,
+        "Luton Town FC": 1403.0251773555965,
+        "Ipswich Town FC": 1392.0765105668859,
+        "Sunderland AFC": 1531.3154169481168
+    },
+    "history": {
+        "Fulham FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 2.0,
+                "ga": 3.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 3.0
+            }
+        ],
+        "Arsenal FC": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 0.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 2.0,
+                "ga": 3.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 4.0,
+                "ga": 0.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            }
+        ],
+        "Crystal Palace FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 1.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 2.0,
+                "ga": 3.0
+            }
+        ],
+        "Southampton FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 0.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            }
+        ],
+        "Liverpool FC": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 2.0,
+                "ga": 3.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 4.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 1.0,
+                "ga": 0.0
+            }
+        ],
+        "Leeds United FC": [
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 1.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 4.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 1.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 2.0,
+                "ga": 2.0
+            }
+        ],
+        "West Ham United FC": [
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 2.0,
+                "ga": 3.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            }
+        ],
+        "Newcastle United FC": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 0.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 4.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 2.0,
+                "ga": 3.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 1.0
+            }
+        ],
+        "West Bromwich Albion FC": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            }
+        ],
+        "Leicester City FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 3.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 2.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            }
+        ],
+        "Tottenham Hotspur FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 2.0,
+                "ga": 2.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 2.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            }
+        ],
+        "Everton FC": [
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 1.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            }
+        ],
+        "Sheffield United FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 2.0,
+                "ga": 4.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 5.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 3.0
+            }
+        ],
+        "Wolverhampton Wanderers FC": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 0.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 0.0,
+                "ga": 0.0
+            }
+        ],
+        "Brighton & Hove Albion FC": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            }
+        ],
+        "Chelsea FC": [
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 1.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 2.0,
+                "ga": 2.0
+            }
+        ],
+        "Manchester United FC": [
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            }
+        ],
+        "Burnley FC": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 2.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 3.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 2.0
+            }
+        ],
+        "Aston Villa FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 1.0,
+                "ga": 0.0
+            }
+        ],
+        "Manchester City FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 2.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 0.0
+            }
+        ],
+        "Brentford FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 1.0,
+                "ga": 0.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 2.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            }
+        ],
+        "Norwich City FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 4.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 3.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 5.0
+            }
+        ],
+        "Watford FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 0.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 5.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            }
+        ],
+        "Nottingham Forest FC": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 0.0,
+                "ga": 0.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 0.0,
+                "ga": 0.0
+            }
+        ],
+        "AFC Bournemouth": [
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 2.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 0.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 1.0
+            }
+        ],
+        "Luton Town FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 5.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 2.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 1.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 2.0,
+                "ga": 4.0
+            }
+        ],
+        "Ipswich Town FC": [
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 3.0
+            },
+            {
+                "result": "D",
+                "points": 1,
+                "gf": 2.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 2.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            }
+        ],
+        "Sunderland AFC": [
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 2.0,
+                "ga": 1.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 1.0,
+                "ga": 3.0
+            },
+            {
+                "result": "W",
+                "points": 3,
+                "gf": 3.0,
+                "ga": 0.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 3.0
+            },
+            {
+                "result": "L",
+                "points": 0,
+                "gf": 0.0,
+                "ga": 1.0
+            }
+        ]
+    },
+    "h2h": {
+        "Arsenal FC_vs_Fulham FC": [
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Fulham FC",
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Crystal Palace FC_vs_Southampton FC": [
+            "Crystal Palace FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "DRAW"
+        ],
+        "Leeds United FC_vs_Liverpool FC": [
+            "Liverpool FC",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Leeds United FC",
+            "Liverpool FC",
+            "DRAW",
+            "DRAW"
+        ],
+        "Newcastle United FC_vs_West Ham United FC": [
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "West Ham United FC",
+            "DRAW",
+            "DRAW",
+            "Newcastle United FC",
+            "DRAW",
+            "Newcastle United FC",
+            "West Ham United FC",
+            "Newcastle United FC",
+            "West Ham United FC"
+        ],
+        "Leicester City FC_vs_West Bromwich Albion FC": [
+            "Leicester City FC",
+            "Leicester City FC"
+        ],
+        "Everton FC_vs_Tottenham Hotspur FC": [
+            "Everton FC",
+            "DRAW",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Everton FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Sheffield United FC_vs_Wolverhampton Wanderers FC": [
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Sheffield United FC",
+            "Wolverhampton Wanderers FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Chelsea FC": [
+            "Chelsea FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC"
+        ],
+        "Everton FC_vs_West Bromwich Albion FC": [
+            "Everton FC",
+            "Everton FC"
+        ],
+        "Fulham FC_vs_Leeds United FC": [
+            "Leeds United FC",
+            "Leeds United FC",
+            "Fulham FC",
+            "Fulham FC",
+            "Fulham FC",
+            "Leeds United FC"
+        ],
+        "Crystal Palace FC_vs_Manchester United FC": [
+            "Crystal Palace FC",
+            "DRAW",
+            "Manchester United FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Manchester United FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "Manchester United FC"
+        ],
+        "Arsenal FC_vs_West Ham United FC": [
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "West Ham United FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "West Ham United FC",
+            "Arsenal FC"
+        ],
+        "Southampton FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Southampton FC",
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Newcastle United FC": [
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Newcastle United FC",
+            "DRAW",
+            "Newcastle United FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Brighton & Hove Albion FC"
+        ],
+        "Chelsea FC_vs_Liverpool FC": [
+            "Liverpool FC",
+            "Chelsea FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Burnley FC_vs_Leicester City FC": [
+            "Leicester City FC",
+            "DRAW",
+            "DRAW",
+            "Leicester City FC"
+        ],
+        "Aston Villa FC_vs_Sheffield United FC": [
+            "Aston Villa FC",
+            "Sheffield United FC",
+            "DRAW",
+            "Aston Villa FC"
+        ],
+        "Manchester City FC_vs_Wolverhampton Wanderers FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Wolverhampton Wanderers FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Manchester United FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Manchester United FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Manchester United FC"
+        ],
+        "Crystal Palace FC_vs_Everton FC": [
+            "Everton FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "Everton FC",
+            "Everton FC",
+            "DRAW",
+            "Everton FC",
+            "DRAW",
+            "Everton FC",
+            "Everton FC",
+            "Everton FC"
+        ],
+        "Chelsea FC_vs_West Bromwich Albion FC": [
+            "DRAW",
+            "West Bromwich Albion FC"
+        ],
+        "Burnley FC_vs_Southampton FC": [
+            "Southampton FC",
+            "Southampton FC",
+            "DRAW",
+            "Burnley FC"
+        ],
+        "Leicester City FC_vs_Manchester City FC": [
+            "Leicester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "West Ham United FC_vs_Wolverhampton Wanderers FC": [
+            "West Ham United FC",
+            "West Ham United FC",
+            "Wolverhampton Wanderers FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "Wolverhampton Wanderers FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC"
+        ],
+        "Leeds United FC_vs_Sheffield United FC": [
+            "Leeds United FC",
+            "Leeds United FC"
+        ],
+        "Newcastle United FC_vs_Tottenham Hotspur FC": [
+            "DRAW",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Tottenham Hotspur FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "DRAW",
+            "Newcastle United FC"
+        ],
+        "Aston Villa FC_vs_Fulham FC": [
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Fulham FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Arsenal FC_vs_Liverpool FC": [
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Arsenal FC",
+            "DRAW",
+            "DRAW",
+            "Arsenal FC",
+            "DRAW",
+            "DRAW",
+            "Liverpool FC",
+            "DRAW"
+        ],
+        "Chelsea FC_vs_Crystal Palace FC": [
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Chelsea FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Everton FC": [
+            "Everton FC",
+            "DRAW",
+            "Everton FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Everton FC",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "Everton FC",
+            "Everton FC",
+            "DRAW"
+        ],
+        "Leeds United FC_vs_Manchester City FC": [
+            "DRAW",
+            "Leeds United FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Burnley FC_vs_Newcastle United FC": [
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC"
+        ],
+        "Southampton FC_vs_West Bromwich Albion FC": [
+            "Southampton FC",
+            "West Bromwich Albion FC"
+        ],
+        "Arsenal FC_vs_Sheffield United FC": [
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Leicester City FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "DRAW",
+            "Leicester City FC",
+            "Leicester City FC",
+            "Leicester City FC",
+            "West Ham United FC"
+        ],
+        "Aston Villa FC_vs_Liverpool FC": [
+            "Aston Villa FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW",
+            "Liverpool FC",
+            "DRAW",
+            "Liverpool FC",
+            "DRAW",
+            "Liverpool FC"
+        ],
+        "Manchester United FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Manchester United FC"
+        ],
+        "Fulham FC_vs_Wolverhampton Wanderers FC": [
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "DRAW",
+            "Fulham FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Fulham FC",
+            "Fulham FC"
+        ],
+        "Everton FC_vs_Liverpool FC": [
+            "DRAW",
+            "Everton FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Everton FC",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Chelsea FC_vs_Southampton FC": [
+            "DRAW",
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Southampton FC",
+            "Southampton FC",
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Arsenal FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Arsenal FC",
+            "DRAW",
+            "DRAW",
+            "Arsenal FC",
+            "DRAW"
+        ],
+        "Manchester United FC_vs_Newcastle United FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "DRAW",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Manchester United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Manchester United FC"
+        ],
+        "Fulham FC_vs_Sheffield United FC": [
+            "DRAW",
+            "Fulham FC",
+            "Fulham FC",
+            "DRAW"
+        ],
+        "Brighton & Hove Albion FC_vs_Crystal Palace FC": [
+            "DRAW",
+            "Crystal Palace FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Crystal Palace FC"
+        ],
+        "Tottenham Hotspur FC_vs_West Ham United FC": [
+            "DRAW",
+            "West Ham United FC",
+            "West Ham United FC",
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "West Ham United FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "West Ham United FC"
+        ],
+        "Aston Villa FC_vs_Leicester City FC": [
+            "Aston Villa FC",
+            "Leicester City FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Leicester City FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Burnley FC_vs_West Bromwich Albion FC": [
+            "DRAW",
+            "DRAW"
+        ],
+        "Leeds United FC_vs_Wolverhampton Wanderers FC": [
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "Leeds United FC",
+            "Leeds United FC",
+            "Leeds United FC",
+            "Leeds United FC"
+        ],
+        "Aston Villa FC_vs_Leeds United FC": [
+            "Leeds United FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Crystal Palace FC_vs_Fulham FC": [
+            "Crystal Palace FC",
+            "DRAW",
+            "Fulham FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Fulham FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "DRAW"
+        ],
+        "Manchester City FC_vs_West Ham United FC": [
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Liverpool FC_vs_Sheffield United FC": [
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Chelsea FC_vs_Manchester United FC": [
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Chelsea FC",
+            "DRAW",
+            "Chelsea FC",
+            "Manchester United FC"
+        ],
+        "Everton FC_vs_Southampton FC": [
+            "Southampton FC",
+            "Everton FC",
+            "Everton FC",
+            "Southampton FC",
+            "Everton FC",
+            "Southampton FC",
+            "Southampton FC",
+            "Everton FC"
+        ],
+        "Newcastle United FC_vs_Wolverhampton Wanderers FC": [
+            "DRAW",
+            "DRAW",
+            "Wolverhampton Wanderers FC",
+            "Newcastle United FC",
+            "DRAW",
+            "Newcastle United FC",
+            "DRAW",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "DRAW"
+        ],
+        "Arsenal FC_vs_Leicester City FC": [
+            "Leicester City FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Brighton & Hove Albion FC_vs_West Bromwich Albion FC": [
+            "DRAW",
+            "West Bromwich Albion FC"
+        ],
+        "Burnley FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Burnley FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "DRAW"
+        ],
+        "Crystal Palace FC_vs_Wolverhampton Wanderers FC": [
+            "Wolverhampton Wanderers FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Wolverhampton Wanderers FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "Crystal Palace FC"
+        ],
+        "Manchester City FC_vs_Sheffield United FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Burnley FC_vs_Chelsea FC": [
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW",
+            "Chelsea FC"
+        ],
+        "Liverpool FC_vs_West Ham United FC": [
+            "Liverpool FC",
+            "Liverpool FC",
+            "West Ham United FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Aston Villa FC_vs_Southampton FC": [
+            "Southampton FC",
+            "Aston Villa FC",
+            "Southampton FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Everton FC_vs_Newcastle United FC": [
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Everton FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Everton FC",
+            "DRAW",
+            "DRAW",
+            "Everton FC",
+            "Newcastle United FC"
+        ],
+        "Arsenal FC_vs_Manchester United FC": [
+            "Arsenal FC",
+            "DRAW",
+            "Manchester United FC",
+            "Arsenal FC",
+            "Manchester United FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "Manchester United FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Brighton & Hove Albion FC",
+            "Tottenham Hotspur FC",
+            "Brighton & Hove Albion FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Brighton & Hove Albion FC",
+            "Tottenham Hotspur FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "DRAW"
+        ],
+        "Fulham FC_vs_West Bromwich Albion FC": [
+            "Fulham FC",
+            "DRAW"
+        ],
+        "Leeds United FC_vs_Leicester City FC": [
+            "Leicester City FC",
+            "Leeds United FC",
+            "DRAW",
+            "Leicester City FC",
+            "Leicester City FC",
+            "DRAW"
+        ],
+        "Brighton & Hove Albion FC_vs_Burnley FC": [
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "Burnley FC",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC"
+        ],
+        "Newcastle United FC_vs_Southampton FC": [
+            "Southampton FC",
+            "Newcastle United FC",
+            "DRAW",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC"
+        ],
+        "Everton FC_vs_Manchester United FC": [
+            "Manchester United FC",
+            "DRAW",
+            "DRAW",
+            "Everton FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "Everton FC"
+        ],
+        "Crystal Palace FC_vs_Leeds United FC": [
+            "Crystal Palace FC",
+            "Leeds United FC",
+            "Leeds United FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Leeds United FC"
+        ],
+        "Chelsea FC_vs_Sheffield United FC": [
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW"
+        ],
+        "Fulham FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "DRAW",
+            "West Ham United FC",
+            "West Ham United FC",
+            "Fulham FC",
+            "Fulham FC",
+            "DRAW",
+            "West Ham United FC",
+            "Fulham FC"
+        ],
+        "Tottenham Hotspur FC_vs_West Bromwich Albion FC": [
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Leicester City FC_vs_Wolverhampton Wanderers FC": [
+            "Leicester City FC",
+            "DRAW",
+            "Leicester City FC",
+            "Wolverhampton Wanderers FC",
+            "Leicester City FC",
+            "Leicester City FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC"
+        ],
+        "Liverpool FC_vs_Manchester City FC": [
+            "DRAW",
+            "Manchester City FC",
+            "DRAW",
+            "DRAW",
+            "Liverpool FC",
+            "Manchester City FC",
+            "DRAW",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Arsenal FC_vs_Aston Villa FC": [
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Arsenal FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Arsenal FC"
+        ],
+        "Chelsea FC_vs_Newcastle United FC": [
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Newcastle United FC",
+            "DRAW",
+            "Newcastle United FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Newcastle United FC",
+            "DRAW"
+        ],
+        "Aston Villa FC_vs_Brighton & Hove Albion FC": [
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Manchester City FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Manchester City FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Manchester City FC",
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "Manchester City FC",
+            "Tottenham Hotspur FC",
+            "Manchester City FC",
+            "Tottenham Hotspur FC",
+            "DRAW"
+        ],
+        "Manchester United FC_vs_West Bromwich Albion FC": [
+            "Manchester United FC",
+            "DRAW"
+        ],
+        "Arsenal FC_vs_Leeds United FC": [
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Leicester City FC_vs_Liverpool FC": [
+            "Liverpool FC",
+            "Leicester City FC",
+            "Leicester City FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Everton FC_vs_Fulham FC": [
+            "Everton FC",
+            "Fulham FC",
+            "DRAW",
+            "Fulham FC",
+            "Fulham FC",
+            "DRAW",
+            "DRAW",
+            "Everton FC",
+            "Everton FC",
+            "Everton FC"
+        ],
+        "Sheffield United FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "DRAW"
+        ],
+        "Burnley FC_vs_Crystal Palace FC": [
+            "Burnley FC",
+            "Burnley FC",
+            "DRAW",
+            "DRAW",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Burnley FC"
+        ],
+        "Southampton FC_vs_Wolverhampton Wanderers FC": [
+            "DRAW",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC"
+        ],
+        "Crystal Palace FC_vs_Newcastle United FC": [
+            "Newcastle United FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Newcastle United FC",
+            "DRAW",
+            "DRAW",
+            "Newcastle United FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Newcastle United FC",
+            "Newcastle United FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Liverpool FC": [
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Liverpool FC",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Brighton & Hove Albion FC",
+            "Liverpool FC"
+        ],
+        "Burnley FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Everton FC_vs_Leeds United FC": [
+            "Leeds United FC",
+            "Everton FC",
+            "DRAW",
+            "Everton FC",
+            "DRAW",
+            "Everton FC",
+            "Leeds United FC",
+            "DRAW"
+        ],
+        "Sheffield United FC_vs_West Bromwich Albion FC": [
+            "West Bromwich Albion FC",
+            "Sheffield United FC"
+        ],
+        "Manchester United FC_vs_Southampton FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "DRAW",
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC",
+            "Manchester United FC"
+        ],
+        "Chelsea FC_vs_Tottenham Hotspur FC": [
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Arsenal FC_vs_Wolverhampton Wanderers FC": [
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Fulham FC_vs_Leicester City FC": [
+            "Fulham FC",
+            "Leicester City FC",
+            "Fulham FC",
+            "Fulham FC",
+            "Fulham FC",
+            "Fulham FC"
+        ],
+        "Aston Villa FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "DRAW",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC"
+        ],
+        "Burnley FC_vs_Everton FC": [
+            "DRAW",
+            "Burnley FC",
+            "Everton FC",
+            "Burnley FC",
+            "Everton FC",
+            "Everton FC",
+            "DRAW"
+        ],
+        "Fulham FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Manchester United FC_vs_West Ham United FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "Manchester United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "DRAW",
+            "DRAW"
+        ],
+        "Chelsea FC_vs_Leeds United FC": [
+            "Chelsea FC",
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Leeds United FC",
+            "Chelsea FC",
+            "Leeds United FC",
+            "DRAW"
+        ],
+        "Arsenal FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Tottenham Hotspur FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Leicester City FC_vs_Sheffield United FC": [
+            "Leicester City FC",
+            "Leicester City FC"
+        ],
+        "Liverpool FC_vs_Wolverhampton Wanderers FC": [
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Wolverhampton Wanderers FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Crystal Palace FC_vs_West Bromwich Albion FC": [
+            "Crystal Palace FC",
+            "Crystal Palace FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Southampton FC": [
+            "Southampton FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Brighton & Hove Albion FC"
+        ],
+        "Leeds United FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "Leeds United FC",
+            "DRAW",
+            "West Ham United FC",
+            "Leeds United FC"
+        ],
+        "Aston Villa FC_vs_Wolverhampton Wanderers FC": [
+            "Aston Villa FC",
+            "DRAW",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Wolverhampton Wanderers FC",
+            "Aston Villa FC"
+        ],
+        "Newcastle United FC_vs_West Bromwich Albion FC": [
+            "Newcastle United FC",
+            "DRAW"
+        ],
+        "Manchester City FC_vs_Manchester United FC": [
+            "DRAW",
+            "Manchester United FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester United FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester United FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester United FC"
+        ],
+        "Chelsea FC_vs_Everton FC": [
+            "Everton FC",
+            "Chelsea FC",
+            "DRAW",
+            "Everton FC",
+            "Chelsea FC",
+            "DRAW",
+            "Everton FC",
+            "Chelsea FC",
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Sheffield United FC_vs_Southampton FC": [
+            "Southampton FC",
+            "Southampton FC"
+        ],
+        "Crystal Palace FC_vs_Tottenham Hotspur FC": [
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Crystal Palace FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Fulham FC_vs_Liverpool FC": [
+            "DRAW",
+            "Fulham FC",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW",
+            "Fulham FC",
+            "DRAW"
+        ],
+        "Brighton & Hove Albion FC_vs_Leicester City FC": [
+            "Leicester City FC",
+            "Leicester City FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "DRAW",
+            "DRAW"
+        ],
+        "Arsenal FC_vs_Burnley FC": [
+            "Burnley FC",
+            "DRAW",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Chelsea FC_vs_Wolverhampton Wanderers FC": [
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Chelsea FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Manchester City FC_vs_West Bromwich Albion FC": [
+            "DRAW",
+            "Manchester City FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Fulham FC": [
+            "DRAW",
+            "DRAW",
+            "Fulham FC",
+            "Fulham FC",
+            "DRAW",
+            "Fulham FC",
+            "Fulham FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Fulham FC"
+        ],
+        "Liverpool FC_vs_Tottenham Hotspur FC": [
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Tottenham Hotspur FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Leeds United FC_vs_Newcastle United FC": [
+            "Leeds United FC",
+            "Leeds United FC",
+            "DRAW",
+            "Newcastle United FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Newcastle United FC"
+        ],
+        "Everton FC_vs_Leicester City FC": [
+            "Everton FC",
+            "DRAW",
+            "DRAW",
+            "Everton FC",
+            "Leicester City FC",
+            "DRAW",
+            "DRAW",
+            "Everton FC"
+        ],
+        "Crystal Palace FC_vs_West Ham United FC": [
+            "DRAW",
+            "West Ham United FC",
+            "DRAW",
+            "West Ham United FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "West Ham United FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC"
+        ],
+        "Arsenal FC_vs_Southampton FC": [
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Southampton FC",
+            "DRAW",
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Aston Villa FC_vs_Burnley FC": [
+            "DRAW",
+            "Burnley FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Manchester United FC_vs_Sheffield United FC": [
+            "Manchester United FC",
+            "Sheffield United FC",
+            "Manchester United FC",
+            "Manchester United FC"
+        ],
+        "Crystal Palace FC_vs_Liverpool FC": [
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW",
+            "DRAW",
+            "Liverpool FC",
+            "Crystal Palace FC",
+            "Liverpool FC",
+            "DRAW",
+            "Crystal Palace FC"
+        ],
+        "Manchester City FC_vs_Southampton FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW"
+        ],
+        "Arsenal FC_vs_Everton FC": [
+            "Everton FC",
+            "Everton FC",
+            "Everton FC",
+            "Arsenal FC",
+            "Everton FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "DRAW",
+            "Arsenal FC"
+        ],
+        "Fulham FC_vs_Newcastle United FC": [
+            "DRAW",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Fulham FC",
+            "Fulham FC",
+            "Newcastle United FC"
+        ],
+        "Leicester City FC_vs_Tottenham Hotspur FC": [
+            "Leicester City FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Leicester City FC",
+            "DRAW",
+            "Leicester City FC"
+        ],
+        "Leeds United FC_vs_Manchester United FC": [
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC",
+            "DRAW"
+        ],
+        "Brighton & Hove Albion FC_vs_Sheffield United FC": [
+            "DRAW",
+            "Sheffield United FC",
+            "DRAW",
+            "Brighton & Hove Albion FC"
+        ],
+        "Aston Villa FC_vs_West Bromwich Albion FC": [
+            "Aston Villa FC",
+            "DRAW"
+        ],
+        "Burnley FC_vs_Wolverhampton Wanderers FC": [
+            "Burnley FC",
+            "Burnley FC",
+            "DRAW",
+            "Burnley FC",
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "Burnley FC"
+        ],
+        "Chelsea FC_vs_West Ham United FC": [
+            "Chelsea FC",
+            "Chelsea FC",
+            "West Ham United FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW",
+            "West Ham United FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Leicester City FC_vs_Manchester United FC": [
+            "DRAW",
+            "Leicester City FC",
+            "Leicester City FC",
+            "DRAW",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC"
+        ],
+        "Fulham FC_vs_Southampton FC": [
+            "DRAW",
+            "Southampton FC",
+            "Fulham FC",
+            "Fulham FC",
+            "DRAW",
+            "Fulham FC"
+        ],
+        "Aston Villa FC_vs_Crystal Palace FC": [
+            "Aston Villa FC",
+            "Crystal Palace FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "DRAW"
+        ],
+        "Everton FC_vs_Sheffield United FC": [
+            "Everton FC",
+            "Sheffield United FC",
+            "DRAW",
+            "Everton FC"
+        ],
+        "Arsenal FC_vs_Chelsea FC": [
+            "Arsenal FC",
+            "Arsenal FC",
+            "Chelsea FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "DRAW"
+        ],
+        "Manchester City FC_vs_Newcastle United FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Newcastle United FC"
+        ],
+        "Burnley FC_vs_Leeds United FC": [
+            "Leeds United FC",
+            "Leeds United FC",
+            "DRAW",
+            "Leeds United FC",
+            "Burnley FC"
+        ],
+        "Brighton & Hove Albion FC_vs_West Ham United FC": [
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "West Ham United FC",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "DRAW"
+        ],
+        "Liverpool FC_vs_West Bromwich Albion FC": [
+            "DRAW",
+            "Liverpool FC"
+        ],
+        "Tottenham Hotspur FC_vs_Wolverhampton Wanderers FC": [
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Wolverhampton Wanderers FC",
+            "Tottenham Hotspur FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "Wolverhampton Wanderers FC",
+            "DRAW"
+        ],
+        "Crystal Palace FC_vs_Leicester City FC": [
+            "DRAW",
+            "Leicester City FC",
+            "DRAW",
+            "Leicester City FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "DRAW",
+            "Crystal Palace FC"
+        ],
+        "Aston Villa FC_vs_Chelsea FC": [
+            "DRAW",
+            "Aston Villa FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Chelsea FC",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Leeds United FC_vs_West Bromwich Albion FC": [
+            "Leeds United FC",
+            "Leeds United FC"
+        ],
+        "Southampton FC_vs_West Ham United FC": [
+            "DRAW",
+            "West Ham United FC",
+            "DRAW",
+            "Southampton FC",
+            "DRAW",
+            "West Ham United FC",
+            "West Ham United FC",
+            "DRAW"
+        ],
+        "Burnley FC_vs_Sheffield United FC": [
+            "Burnley FC",
+            "Sheffield United FC",
+            "Burnley FC",
+            "Burnley FC"
+        ],
+        "Arsenal FC_vs_Brighton & Hove Albion FC": [
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "Arsenal FC",
+            "Brighton & Hove Albion FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "DRAW",
+            "Arsenal FC"
+        ],
+        "Manchester United FC_vs_Wolverhampton Wanderers FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Wolverhampton Wanderers FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Manchester United FC",
+            "DRAW"
+        ],
+        "Liverpool FC_vs_Newcastle United FC": [
+            "DRAW",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Everton FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "Everton FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "Everton FC",
+            "West Ham United FC",
+            "Everton FC",
+            "West Ham United FC",
+            "DRAW",
+            "DRAW",
+            "DRAW"
+        ],
+        "Aston Villa FC_vs_Manchester United FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC",
+            "Aston Villa FC"
+        ],
+        "Leeds United FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Leeds United FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Crystal Palace FC_vs_Sheffield United FC": [
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "Crystal Palace FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Wolverhampton Wanderers FC": [
+            "DRAW",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW"
+        ],
+        "Arsenal FC_vs_West Bromwich Albion FC": [
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Leicester City FC_vs_Newcastle United FC": [
+            "Leicester City FC",
+            "Newcastle United FC",
+            "Leicester City FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "DRAW",
+            "Newcastle United FC",
+            "Newcastle United FC"
+        ],
+        "Chelsea FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Chelsea FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW"
+        ],
+        "Liverpool FC_vs_Southampton FC": [
+            "Southampton FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Newcastle United FC_vs_Sheffield United FC": [
+            "Sheffield United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC"
+        ],
+        "Everton FC_vs_Wolverhampton Wanderers FC": [
+            "Everton FC",
+            "Everton FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Everton FC",
+            "DRAW",
+            "Everton FC",
+            "DRAW"
+        ],
+        "Brighton & Hove Albion FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Brighton & Hove Albion FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW"
+        ],
+        "Arsenal FC_vs_Crystal Palace FC": [
+            "DRAW",
+            "Arsenal FC",
+            "DRAW",
+            "Crystal Palace FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC"
+        ],
+        "West Bromwich Albion FC_vs_Wolverhampton Wanderers FC": [
+            "West Bromwich Albion FC",
+            "DRAW"
+        ],
+        "Burnley FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC",
+            "DRAW",
+            "DRAW",
+            "West Ham United FC",
+            "DRAW",
+            "West Ham United FC",
+            "West Ham United FC"
+        ],
+        "Leicester City FC_vs_Southampton FC": [
+            "Leicester City FC",
+            "DRAW",
+            "DRAW",
+            "Leicester City FC",
+            "Southampton FC",
+            "Southampton FC",
+            "Leicester City FC",
+            "Leicester City FC"
+        ],
+        "Chelsea FC_vs_Fulham FC": [
+            "Chelsea FC",
+            "Chelsea FC",
+            "Fulham FC",
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Fulham FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Fulham FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Leeds United FC": [
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Brighton & Hove Albion FC"
+        ],
+        "Crystal Palace FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Crystal Palace FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Liverpool FC_vs_Manchester United FC": [
+            "DRAW",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Manchester United FC",
+            "Liverpool FC",
+            "DRAW",
+            "DRAW",
+            "Liverpool FC",
+            "DRAW",
+            "Manchester United FC"
+        ],
+        "Sheffield United FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Arsenal FC_vs_Newcastle United FC": [
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Newcastle United FC",
+            "DRAW",
+            "Arsenal FC",
+            "Newcastle United FC",
+            "Arsenal FC",
+            "Newcastle United FC",
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Chelsea FC_vs_Leicester City FC": [
+            "Leicester City FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "West Bromwich Albion FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC"
+        ],
+        "Fulham FC_vs_Manchester United FC": [
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Fulham FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC"
+        ],
+        "Burnley FC_vs_Liverpool FC": [
+            "Burnley FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "DRAW"
+        ],
+        "Fulham FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Fulham FC",
+            "DRAW",
+            "Fulham FC",
+            "Fulham FC"
+        ],
+        "Aston Villa FC_vs_Newcastle United FC": [
+            "DRAW",
+            "Aston Villa FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Aston Villa FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC"
+        ],
+        "Burnley FC_vs_Manchester United FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC",
+            "DRAW"
+        ],
+        "Aston Villa FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Aston Villa FC",
+            "Manchester City FC",
+            "Aston Villa FC",
+            "Manchester City FC",
+            "Aston Villa FC"
+        ],
+        "Aston Villa FC_vs_Everton FC": [
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Everton FC"
+        ],
+        "Burnley FC_vs_Fulham FC": [
+            "Burnley FC",
+            "Burnley FC",
+            "DRAW",
+            "Fulham FC"
+        ],
+        "Leeds United FC_vs_Southampton FC": [
+            "Leeds United FC",
+            "Southampton FC",
+            "DRAW",
+            "DRAW",
+            "Leeds United FC"
+        ],
+        "Aston Villa FC_vs_Tottenham Hotspur FC": [
+            "Aston Villa FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Everton FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Arsenal FC_vs_Brentford FC": [
+            "Brentford FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "DRAW"
+        ],
+        "Liverpool FC_vs_Norwich City FC": [
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Aston Villa FC_vs_Watford FC": [
+            "Watford FC",
+            "Watford FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Watford FC": [
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC"
+        ],
+        "Brentford FC_vs_Crystal Palace FC": [
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Crystal Palace FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Crystal Palace FC"
+        ],
+        "Manchester City FC_vs_Norwich City FC": [
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Leicester City FC_vs_Norwich City FC": [
+            "Leicester City FC",
+            "Leicester City FC"
+        ],
+        "Aston Villa FC_vs_Brentford FC": [
+            "DRAW",
+            "Brentford FC",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Tottenham Hotspur FC_vs_Watford FC": [
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Watford FC_vs_Wolverhampton Wanderers FC": [
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC"
+        ],
+        "Brentford FC_vs_Brighton & Hove Albion FC": [
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Brentford FC",
+            "DRAW",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "DRAW",
+            "Brentford FC",
+            "Brighton & Hove Albion FC"
+        ],
+        "Arsenal FC_vs_Norwich City FC": [
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Brentford FC_vs_Wolverhampton Wanderers FC": [
+            "Brentford FC",
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "Wolverhampton Wanderers FC",
+            "Wolverhampton Wanderers FC",
+            "Brentford FC",
+            "Brentford FC",
+            "DRAW",
+            "Brentford FC"
+        ],
+        "Norwich City FC_vs_Watford FC": [
+            "Watford FC",
+            "Norwich City FC"
+        ],
+        "Everton FC_vs_Norwich City FC": [
+            "Everton FC",
+            "Norwich City FC"
+        ],
+        "Newcastle United FC_vs_Watford FC": [
+            "DRAW",
+            "DRAW"
+        ],
+        "Brentford FC_vs_Liverpool FC": [
+            "DRAW",
+            "Liverpool FC",
+            "Brentford FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Brentford FC"
+        ],
+        "Burnley FC_vs_Norwich City FC": [
+            "DRAW",
+            "Norwich City FC"
+        ],
+        "Leeds United FC_vs_Watford FC": [
+            "Leeds United FC",
+            "Leeds United FC"
+        ],
+        "Brentford FC_vs_West Ham United FC": [
+            "Brentford FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Brentford FC",
+            "West Ham United FC",
+            "DRAW",
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Norwich City FC": [
+            "DRAW",
+            "DRAW"
+        ],
+        "Brentford FC_vs_Chelsea FC": [
+            "Chelsea FC",
+            "Brentford FC",
+            "DRAW",
+            "Brentford FC",
+            "Brentford FC",
+            "DRAW",
+            "Chelsea FC",
+            "DRAW",
+            "DRAW",
+            "Chelsea FC"
+        ],
+        "Liverpool FC_vs_Watford FC": [
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Chelsea FC_vs_Norwich City FC": [
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Everton FC_vs_Watford FC": [
+            "Watford FC",
+            "DRAW"
+        ],
+        "Brentford FC_vs_Leicester City FC": [
+            "Leicester City FC",
+            "Leicester City FC",
+            "DRAW",
+            "DRAW",
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Brentford FC_vs_Burnley FC": [
+            "Burnley FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Burnley FC",
+            "Brentford FC"
+        ],
+        "Southampton FC_vs_Watford FC": [
+            "Southampton FC",
+            "Watford FC"
+        ],
+        "Leeds United FC_vs_Norwich City FC": [
+            "Leeds United FC",
+            "Leeds United FC"
+        ],
+        "Brentford FC_vs_Norwich City FC": [
+            "Norwich City FC",
+            "Brentford FC"
+        ],
+        "Arsenal FC_vs_Watford FC": [
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Brentford FC_vs_Newcastle United FC": [
+            "DRAW",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Brentford FC",
+            "Newcastle United FC",
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Norwich City FC_vs_Southampton FC": [
+            "Norwich City FC",
+            "Southampton FC"
+        ],
+        "Manchester United FC_vs_Watford FC": [
+            "Watford FC",
+            "DRAW"
+        ],
+        "Norwich City FC_vs_Wolverhampton Wanderers FC": [
+            "DRAW",
+            "DRAW"
+        ],
+        "Brentford FC_vs_Everton FC": [
+            "Brentford FC",
+            "Brentford FC",
+            "DRAW",
+            "Everton FC",
+            "Everton FC",
+            "Everton FC",
+            "DRAW",
+            "DRAW",
+            "Brentford FC"
+        ],
+        "Leicester City FC_vs_Watford FC": [
+            "Leicester City FC",
+            "Leicester City FC"
+        ],
+        "Newcastle United FC_vs_Norwich City FC": [
+            "DRAW",
+            "Newcastle United FC"
+        ],
+        "Chelsea FC_vs_Watford FC": [
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Brentford FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "DRAW",
+            "DRAW",
+            "Brentford FC",
+            "DRAW",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "DRAW"
+        ],
+        "Manchester City FC_vs_Watford FC": [
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Brentford FC_vs_Leeds United FC": [
+            "DRAW",
+            "Leeds United FC",
+            "Brentford FC",
+            "DRAW",
+            "DRAW"
+        ],
+        "Norwich City FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Brentford FC_vs_Watford FC": [
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Manchester United FC_vs_Norwich City FC": [
+            "Manchester United FC",
+            "Manchester United FC"
+        ],
+        "Aston Villa FC_vs_Norwich City FC": [
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Crystal Palace FC_vs_Norwich City FC": [
+            "Crystal Palace FC",
+            "DRAW"
+        ],
+        "Watford FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC"
+        ],
+        "Brentford FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC"
+        ],
+        "Brentford FC_vs_Southampton FC": [
+            "Southampton FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Norwich City FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC"
+        ],
+        "Brentford FC_vs_Manchester United FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "Brentford FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "DRAW",
+            "Manchester United FC",
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Burnley FC_vs_Watford FC": [
+            "DRAW",
+            "Burnley FC"
+        ],
+        "Crystal Palace FC_vs_Watford FC": [
+            "Crystal Palace FC",
+            "Crystal Palace FC"
+        ],
+        "Newcastle United FC_vs_Nottingham Forest FC": [
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Nottingham Forest FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC",
+            "Newcastle United FC"
+        ],
+        "AFC Bournemouth_vs_Aston Villa FC": [
+            "AFC Bournemouth",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "DRAW",
+            "Aston Villa FC",
+            "Aston Villa FC",
+            "DRAW"
+        ],
+        "AFC Bournemouth_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "AFC Bournemouth",
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Nottingham Forest FC_vs_West Ham United FC": [
+            "Nottingham Forest FC",
+            "West Ham United FC",
+            "West Ham United FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "West Ham United FC",
+            "Nottingham Forest FC"
+        ],
+        "Everton FC_vs_Nottingham Forest FC": [
+            "DRAW",
+            "DRAW",
+            "Everton FC",
+            "Everton FC",
+            "Nottingham Forest FC",
+            "Everton FC",
+            "Everton FC",
+            "Everton FC"
+        ],
+        "Brentford FC_vs_Fulham FC": [
+            "Fulham FC",
+            "Brentford FC",
+            "Brentford FC",
+            "DRAW",
+            "Fulham FC",
+            "Fulham FC",
+            "Fulham FC"
+        ],
+        "AFC Bournemouth_vs_Arsenal FC": [
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "Arsenal FC"
+        ],
+        "AFC Bournemouth_vs_Liverpool FC": [
+            "Liverpool FC",
+            "AFC Bournemouth",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "AFC Bournemouth"
+        ],
+        "Nottingham Forest FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC"
+        ],
+        "Manchester City FC_vs_Nottingham Forest FC": [
+            "Manchester City FC",
+            "DRAW",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Manchester City FC",
+            "Nottingham Forest FC",
+            "Manchester City FC"
+        ],
+        "AFC Bournemouth_vs_Wolverhampton Wanderers FC": [
+            "DRAW",
+            "AFC Bournemouth",
+            "Wolverhampton Wanderers FC",
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "Wolverhampton Wanderers FC",
+            "AFC Bournemouth",
+            "AFC Bournemouth"
+        ],
+        "AFC Bournemouth_vs_Nottingham Forest FC": [
+            "AFC Bournemouth",
+            "DRAW",
+            "AFC Bournemouth",
+            "DRAW",
+            "DRAW",
+            "AFC Bournemouth",
+            "AFC Bournemouth"
+        ],
+        "Fulham FC_vs_Nottingham Forest FC": [
+            "Fulham FC",
+            "Fulham FC",
+            "Fulham FC",
+            "Nottingham Forest FC",
+            "Fulham FC",
+            "Fulham FC",
+            "Fulham FC"
+        ],
+        "AFC Bournemouth_vs_Newcastle United FC": [
+            "DRAW",
+            "DRAW",
+            "AFC Bournemouth",
+            "DRAW",
+            "DRAW",
+            "AFC Bournemouth",
+            "DRAW"
+        ],
+        "AFC Bournemouth_vs_Brentford FC": [
+            "DRAW",
+            "Brentford FC",
+            "DRAW",
+            "Brentford FC",
+            "Brentford FC",
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Leicester City FC_vs_Nottingham Forest FC": [
+            "Leicester City FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "DRAW"
+        ],
+        "AFC Bournemouth_vs_Leicester City FC": [
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "Leicester City FC",
+            "AFC Bournemouth"
+        ],
+        "Aston Villa FC_vs_Nottingham Forest FC": [
+            "DRAW",
+            "Aston Villa FC",
+            "Nottingham Forest FC",
+            "Aston Villa FC",
+            "Nottingham Forest FC",
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "AFC Bournemouth_vs_Fulham FC": [
+            "DRAW",
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "Fulham FC",
+            "DRAW",
+            "AFC Bournemouth",
+            "AFC Bournemouth"
+        ],
+        "Nottingham Forest FC_vs_Wolverhampton Wanderers FC": [
+            "Wolverhampton Wanderers FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "DRAW"
+        ],
+        "Brighton & Hove Albion FC_vs_Nottingham Forest FC": [
+            "DRAW",
+            "Nottingham Forest FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "DRAW",
+            "Nottingham Forest FC",
+            "Brighton & Hove Albion FC"
+        ],
+        "AFC Bournemouth_vs_Southampton FC": [
+            "Southampton FC",
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "AFC Bournemouth"
+        ],
+        "Liverpool FC_vs_Nottingham Forest FC": [
+            "Nottingham Forest FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Liverpool FC",
+            "Nottingham Forest FC",
+            "DRAW",
+            "Nottingham Forest FC"
+        ],
+        "AFC Bournemouth_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "DRAW"
+        ],
+        "AFC Bournemouth_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "AFC Bournemouth",
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC",
+            "AFC Bournemouth",
+            "DRAW",
+            "AFC Bournemouth",
+            "AFC Bournemouth"
+        ],
+        "Arsenal FC_vs_Nottingham Forest FC": [
+            "Arsenal FC",
+            "Nottingham Forest FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "Arsenal FC",
+            "DRAW",
+            "Arsenal FC",
+            "DRAW"
+        ],
+        "AFC Bournemouth_vs_Leeds United FC": [
+            "Leeds United FC",
+            "AFC Bournemouth",
+            "DRAW"
+        ],
+        "Brentford FC_vs_Nottingham Forest FC": [
+            "DRAW",
+            "Brentford FC",
+            "DRAW",
+            "Brentford FC",
+            "Nottingham Forest FC",
+            "Brentford FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC"
+        ],
+        "Crystal Palace FC_vs_Nottingham Forest FC": [
+            "Nottingham Forest FC",
+            "DRAW",
+            "DRAW",
+            "DRAW",
+            "Nottingham Forest FC",
+            "DRAW",
+            "DRAW",
+            "DRAW"
+        ],
+        "AFC Bournemouth_vs_Everton FC": [
+            "AFC Bournemouth",
+            "Everton FC",
+            "Everton FC",
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "Everton FC",
+            "AFC Bournemouth"
+        ],
+        "AFC Bournemouth_vs_Chelsea FC": [
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC",
+            "DRAW",
+            "DRAW",
+            "DRAW"
+        ],
+        "Manchester United FC_vs_Nottingham Forest FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "Manchester United FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "DRAW"
+        ],
+        "AFC Bournemouth_vs_Crystal Palace FC": [
+            "Crystal Palace FC",
+            "Crystal Palace FC",
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "DRAW",
+            "DRAW",
+            "DRAW"
+        ],
+        "Chelsea FC_vs_Nottingham Forest FC": [
+            "DRAW",
+            "DRAW",
+            "Nottingham Forest FC",
+            "Chelsea FC",
+            "DRAW",
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "AFC Bournemouth_vs_Manchester United FC": [
+            "Manchester United FC",
+            "Manchester United FC",
+            "AFC Bournemouth",
+            "DRAW",
+            "AFC Bournemouth",
+            "DRAW",
+            "DRAW"
+        ],
+        "Nottingham Forest FC_vs_Southampton FC": [
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC",
+            "Nottingham Forest FC"
+        ],
+        "AFC Bournemouth_vs_Brighton & Hove Albion FC": [
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "AFC Bournemouth",
+            "Brighton & Hove Albion FC",
+            "Brighton & Hove Albion FC",
+            "AFC Bournemouth",
+            "DRAW"
+        ],
+        "Leeds United FC_vs_Nottingham Forest FC": [
+            "Nottingham Forest FC",
+            "Leeds United FC",
+            "Nottingham Forest FC",
+            "Leeds United FC"
+        ],
+        "Brighton & Hove Albion FC_vs_Luton Town FC": [
+            "Brighton & Hove Albion FC",
+            "Luton Town FC"
+        ],
+        "Nottingham Forest FC_vs_Sheffield United FC": [
+            "Nottingham Forest FC",
+            "Nottingham Forest FC"
+        ],
+        "Chelsea FC_vs_Luton Town FC": [
+            "Chelsea FC",
+            "Chelsea FC"
+        ],
+        "Luton Town FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC"
+        ],
+        "Fulham FC_vs_Luton Town FC": [
+            "Fulham FC",
+            "Fulham FC"
+        ],
+        "Burnley FC_vs_Nottingham Forest FC": [
+            "DRAW",
+            "Nottingham Forest FC",
+            "DRAW"
+        ],
+        "Luton Town FC_vs_Wolverhampton Wanderers FC": [
+            "DRAW",
+            "Wolverhampton Wanderers FC"
+        ],
+        "Everton FC_vs_Luton Town FC": [
+            "Luton Town FC",
+            "DRAW"
+        ],
+        "Burnley FC_vs_Luton Town FC": [
+            "Burnley FC",
+            "DRAW"
+        ],
+        "Luton Town FC_vs_Tottenham Hotspur FC": [
+            "Tottenham Hotspur FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Luton Town FC_vs_Nottingham Forest FC": [
+            "DRAW",
+            "DRAW"
+        ],
+        "AFC Bournemouth_vs_Burnley FC": [
+            "AFC Bournemouth",
+            "AFC Bournemouth",
+            "DRAW"
+        ],
+        "Aston Villa FC_vs_Luton Town FC": [
+            "Aston Villa FC",
+            "Aston Villa FC"
+        ],
+        "Liverpool FC_vs_Luton Town FC": [
+            "DRAW",
+            "Liverpool FC"
+        ],
+        "Luton Town FC_vs_Manchester United FC": [
+            "Manchester United FC",
+            "Manchester United FC"
+        ],
+        "AFC Bournemouth_vs_Sheffield United FC": [
+            "AFC Bournemouth",
+            "DRAW"
+        ],
+        "Crystal Palace FC_vs_Luton Town FC": [
+            "Luton Town FC",
+            "DRAW"
+        ],
+        "Brentford FC_vs_Luton Town FC": [
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Arsenal FC_vs_Luton Town FC": [
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Brentford FC_vs_Sheffield United FC": [
+            "Sheffield United FC",
+            "Brentford FC"
+        ],
+        "Luton Town FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Luton Town FC_vs_Newcastle United FC": [
+            "Luton Town FC",
+            "DRAW"
+        ],
+        "Luton Town FC_vs_Sheffield United FC": [
+            "Luton Town FC",
+            "Sheffield United FC"
+        ],
+        "AFC Bournemouth_vs_Luton Town FC": [
+            "AFC Bournemouth",
+            "Luton Town FC"
+        ],
+        "Ipswich Town FC_vs_Liverpool FC": [
+            "Liverpool FC",
+            "Liverpool FC"
+        ],
+        "Ipswich Town FC_vs_Manchester City FC": [
+            "Manchester City FC",
+            "Manchester City FC"
+        ],
+        "Fulham FC_vs_Ipswich Town FC": [
+            "DRAW",
+            "DRAW"
+        ],
+        "Brighton & Hove Albion FC_vs_Ipswich Town FC": [
+            "DRAW",
+            "Brighton & Hove Albion FC"
+        ],
+        "Ipswich Town FC_vs_Southampton FC": [
+            "DRAW",
+            "Southampton FC"
+        ],
+        "Aston Villa FC_vs_Ipswich Town FC": [
+            "DRAW",
+            "DRAW"
+        ],
+        "Ipswich Town FC_vs_West Ham United FC": [
+            "West Ham United FC",
+            "West Ham United FC"
+        ],
+        "Everton FC_vs_Ipswich Town FC": [
+            "Everton FC",
+            "DRAW"
+        ],
+        "Brentford FC_vs_Ipswich Town FC": [
+            "Brentford FC",
+            "Brentford FC"
+        ],
+        "Ipswich Town FC_vs_Leicester City FC": [
+            "DRAW",
+            "Leicester City FC"
+        ],
+        "Ipswich Town FC_vs_Tottenham Hotspur FC": [
+            "Ipswich Town FC",
+            "Tottenham Hotspur FC"
+        ],
+        "Ipswich Town FC_vs_Manchester United FC": [
+            "DRAW",
+            "Manchester United FC"
+        ],
+        "Ipswich Town FC_vs_Nottingham Forest FC": [
+            "Nottingham Forest FC",
+            "Nottingham Forest FC"
+        ],
+        "Crystal Palace FC_vs_Ipswich Town FC": [
+            "Crystal Palace FC",
+            "Crystal Palace FC"
+        ],
+        "AFC Bournemouth_vs_Ipswich Town FC": [
+            "AFC Bournemouth",
+            "Ipswich Town FC"
+        ],
+        "Ipswich Town FC_vs_Wolverhampton Wanderers FC": [
+            "Ipswich Town FC",
+            "Wolverhampton Wanderers FC"
+        ],
+        "Ipswich Town FC_vs_Newcastle United FC": [
+            "Newcastle United FC",
+            "Newcastle United FC"
+        ],
+        "Arsenal FC_vs_Ipswich Town FC": [
+            "Arsenal FC",
+            "Arsenal FC"
+        ],
+        "Chelsea FC_vs_Ipswich Town FC": [
+            "Ipswich Town FC",
+            "DRAW"
+        ],
+        "Sunderland AFC_vs_West Ham United FC": [
+            "Sunderland AFC",
+            "West Ham United FC"
+        ],
+        "Burnley FC_vs_Sunderland AFC": [
+            "Burnley FC",
+            "Sunderland AFC"
+        ],
+        "Brentford FC_vs_Sunderland AFC": [
+            "Sunderland AFC",
+            "Brentford FC"
+        ],
+        "Crystal Palace FC_vs_Sunderland AFC": [
+            "DRAW",
+            "Sunderland AFC"
+        ],
+        "Aston Villa FC_vs_Sunderland AFC": [
+            "DRAW"
+        ],
+        "Nottingham Forest FC_vs_Sunderland AFC": [
+            "Sunderland AFC"
+        ],
+        "Manchester United FC_vs_Sunderland AFC": [
+            "Manchester United FC"
+        ],
+        "Sunderland AFC_vs_Wolverhampton Wanderers FC": [
+            "Sunderland AFC"
+        ],
+        "Chelsea FC_vs_Sunderland AFC": [
+            "Sunderland AFC"
+        ],
+        "Everton FC_vs_Sunderland AFC": [
+            "DRAW"
+        ],
+        "Arsenal FC_vs_Sunderland AFC": [
+            "DRAW",
+            "Arsenal FC"
+        ],
+        "Fulham FC_vs_Sunderland AFC": [
+            "Fulham FC"
+        ],
+        "AFC Bournemouth_vs_Sunderland AFC": [
+            "Sunderland AFC"
+        ],
+        "Liverpool FC_vs_Sunderland AFC": [
+            "DRAW",
+            "Liverpool FC"
+        ],
+        "Manchester City FC_vs_Sunderland AFC": [
+            "Manchester City FC",
+            "DRAW"
+        ],
+        "Newcastle United FC_vs_Sunderland AFC": [
+            "Sunderland AFC"
+        ],
+        "Brighton & Hove Albion FC_vs_Sunderland AFC": [
+            "DRAW"
+        ],
+        "Leeds United FC_vs_Sunderland AFC": [
+            "DRAW"
+        ],
+        "Sunderland AFC_vs_Tottenham Hotspur FC": [
+            "DRAW"
+        ]
+    },
+    "market_value": {
+        "Manchester City FC": 1360.0,
+        "Chelsea FC": 1190.0,
+        "Arsenal FC": 1160.0,
+        "Liverpool FC": 950.95,
+        "Manchester United FC": 825.0,
+        "Tottenham Hotspur FC": 777.3,
+        "Aston Villa FC": 680.55,
+        "Newcastle United FC": 677.53,
+        "Brighton & Hove Albion FC": 667.58,
+        "Crystal Palace FC": 526.85,
+        "AFC Bournemouth": 518.6,
+        "Nottingham Forest FC": 481.3,
+        "Wolverhampton Wanderers FC": 433.05,
+        "Brentford FC": 427.85,
+        "West Ham United FC": 400.7,
+        "Everton FC": 363.23,
+        "Fulham FC": 362.35,
+        "Southampton FC": 310.05,
+        "Ipswich Town FC": 270.1,
+        "Leicester City FC": 253.35
+    },
+    "last_updated": "2026-02-19 14:53:50.167098"
+}

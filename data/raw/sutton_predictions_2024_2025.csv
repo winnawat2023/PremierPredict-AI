@@ -1,0 +1,8 @@
+home_team,away_team,sutton_home_score,sutton_away_score,source_url,scraped_at
+Arsenal FC,Everton FC,2,0,http://mock-url.com,2024-12-14
+Liverpool FC,Tottenham Hotspur FC,3,2,http://mock-url.com,2024-12-22
+Manchester City FC,Southampton FC,3,0,http://mock-url.com,2024-10-26
+Arsenal FC,Tottenham Hotspur FC,2,1,http://mock-url.com,2025-01-15
+Chelsea FC,Manchester City FC,1,2,http://mock-url.com,2025-01-25
+Leeds United FC,Harrogate Town FC,2,0,http://mock-url.com,2025-01-04
+Fulham FC,Arsenal FC,0,2,http://mock-url.com,2024-12-08

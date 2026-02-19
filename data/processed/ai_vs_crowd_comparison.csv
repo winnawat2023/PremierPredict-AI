@@ -1,0 +1,381 @@
+Match,Actual,AI_Pred,Crowd_Pred,AI_Correct,Crowd_Correct
+Manchester United FC vs Fulham FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Ipswich Town FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Arsenal FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Brighton & Hove Albion FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Newcastle United FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs AFC Bournemouth,DRAW,HOME_TEAM,HOME_TEAM,False,False
+West Ham United FC vs Aston Villa FC,AWAY_TEAM,AWAY_TEAM,HOME_TEAM,True,False
+Brentford FC vs Crystal Palace FC,HOME_TEAM,AWAY_TEAM,HOME_TEAM,False,True
+Chelsea FC vs Manchester City FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Leicester City FC vs Tottenham Hotspur FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Brighton & Hove Albion FC vs Manchester United FC,HOME_TEAM,AWAY_TEAM,HOME_TEAM,False,True
+Fulham FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Southampton FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,HOME_TEAM,True,False
+Crystal Palace FC vs West Ham United FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Tottenham Hotspur FC vs Everton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester City FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Aston Villa FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+AFC Bournemouth vs Newcastle United FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Wolverhampton Wanderers FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Liverpool FC vs Brentford FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Arsenal FC vs Brighton & Hove Albion FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Brentford FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs AFC Bournemouth,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Ipswich Town FC vs Fulham FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Leicester City FC vs Aston Villa FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Nottingham Forest FC vs Wolverhampton Wanderers FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+West Ham United FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Chelsea FC vs Crystal Palace FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Newcastle United FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester United FC vs Liverpool FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Southampton FC vs Manchester United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Brighton & Hove Albion FC vs Ipswich Town FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Crystal Palace FC vs Leicester City FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Fulham FC vs West Ham United FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Liverpool FC vs Nottingham Forest FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Brentford FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Aston Villa FC vs Everton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+AFC Bournemouth vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Tottenham Hotspur FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Wolverhampton Wanderers FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+West Ham United FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Aston Villa FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Fulham FC vs Newcastle United FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Leicester City FC vs Everton FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Liverpool FC vs AFC Bournemouth,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Southampton FC vs Ipswich Town FC,DRAW,AWAY_TEAM,HOME_TEAM,False,False
+Tottenham Hotspur FC vs Brentford FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Manchester United FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Brighton & Hove Albion FC vs Nottingham Forest FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Arsenal FC,DRAW,DRAW,HOME_TEAM,True,False
+Newcastle United FC vs Manchester City FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Arsenal FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brentford FC vs West Ham United FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Chelsea FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Crystal Palace FC,HOME_TEAM,DRAW,AWAY_TEAM,False,False
+Nottingham Forest FC vs Fulham FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Wolverhampton Wanderers FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Ipswich Town FC vs Aston Villa FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Manchester United FC vs Tottenham Hotspur FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+AFC Bournemouth vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Arsenal FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brentford FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Leicester City FC vs AFC Bournemouth,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Manchester City FC vs Fulham FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+West Ham United FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Newcastle United FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Aston Villa FC vs Manchester United FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Chelsea FC vs Nottingham Forest FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Brighton & Hove Albion FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,AWAY_TEAM,True,False
+Tottenham Hotspur FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Fulham FC vs Aston Villa FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Ipswich Town FC vs Everton FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Manchester United FC vs Brentford FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Newcastle United FC vs Brighton & Hove Albion FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Southampton FC vs Leicester City FC,AWAY_TEAM,AWAY_TEAM,HOME_TEAM,True,False
+AFC Bournemouth vs Arsenal FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Wolverhampton Wanderers FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Liverpool FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs Crystal Palace FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Leicester City FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Aston Villa FC vs AFC Bournemouth,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Brentford FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brighton & Hove Albion FC vs Wolverhampton Wanderers FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Fulham FC,DRAW,HOME_TEAM,AWAY_TEAM,False,False
+Chelsea FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Tottenham Hotspur FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+West Ham United FC vs Manchester United FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Arsenal FC vs Liverpool FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Newcastle United FC vs Arsenal FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+AFC Bournemouth vs Manchester City FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Ipswich Town FC vs Leicester City FC,DRAW,DRAW,HOME_TEAM,True,False
+Liverpool FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Southampton FC vs Everton FC,HOME_TEAM,AWAY_TEAM,HOME_TEAM,False,True
+Wolverhampton Wanderers FC vs Crystal Palace FC,DRAW,AWAY_TEAM,HOME_TEAM,False,False
+Tottenham Hotspur FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester United FC vs Chelsea FC,DRAW,AWAY_TEAM,HOME_TEAM,False,False
+Fulham FC vs Brentford FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Fulham FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Brentford FC vs AFC Bournemouth,HOME_TEAM,AWAY_TEAM,HOME_TEAM,False,True
+Wolverhampton Wanderers FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+West Ham United FC vs Everton FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Brighton & Hove Albion FC vs Manchester City FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Liverpool FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester United FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,HOME_TEAM,True,False
+Tottenham Hotspur FC vs Ipswich Town FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Chelsea FC vs Arsenal FC,DRAW,HOME_TEAM,AWAY_TEAM,False,False
+Leicester City FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+AFC Bournemouth vs Brighton & Hove Albion FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Arsenal FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Aston Villa FC vs Crystal Palace FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Everton FC vs Brentford FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Fulham FC vs Wolverhampton Wanderers FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Tottenham Hotspur FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Southampton FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Ipswich Town FC vs Manchester United FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Newcastle United FC vs West Ham United FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Brighton & Hove Albion FC vs Southampton FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Brentford FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Newcastle United FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Nottingham Forest FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Wolverhampton Wanderers FC vs AFC Bournemouth,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+West Ham United FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Chelsea FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester United FC vs Everton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Tottenham Hotspur FC vs Fulham FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Liverpool FC vs Manchester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Ipswich Town FC vs Crystal Palace FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Leicester City FC vs West Ham United FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Everton FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester City FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Newcastle United FC vs Liverpool FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Southampton FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Arsenal FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Aston Villa FC vs Brentford FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Fulham FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+AFC Bournemouth vs Tottenham Hotspur FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Aston Villa FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brentford FC vs Newcastle United FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Crystal Palace FC vs Manchester City FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Manchester United FC vs Nottingham Forest FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Fulham FC vs Arsenal FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Ipswich Town FC vs AFC Bournemouth,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Leicester City FC vs Brighton & Hove Albion FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Tottenham Hotspur FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+West Ham United FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Arsenal FC vs Everton FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Liverpool FC vs Fulham FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Newcastle United FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Wolverhampton Wanderers FC vs Ipswich Town FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Nottingham Forest FC vs Aston Villa FC,HOME_TEAM,AWAY_TEAM,HOME_TEAM,False,True
+Brighton & Hove Albion FC vs Crystal Palace FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Manchester United FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Chelsea FC vs Brentford FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Southampton FC vs Tottenham Hotspur FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+AFC Bournemouth vs West Ham United FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Aston Villa FC vs Manchester City FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Brentford FC vs Nottingham Forest FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Ipswich Town FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+West Ham United FC vs Brighton & Hove Albion FC,DRAW,HOME_TEAM,AWAY_TEAM,False,False
+Crystal Palace FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Everton FC vs Chelsea FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Fulham FC vs Southampton FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Leicester City FC vs Wolverhampton Wanderers FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Manchester United FC vs AFC Bournemouth,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Tottenham Hotspur FC vs Liverpool FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Manchester City FC vs Everton FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+AFC Bournemouth vs Crystal Palace FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Southampton FC vs West Ham United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Chelsea FC vs Fulham FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Nottingham Forest FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Newcastle United FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Wolverhampton Wanderers FC vs Manchester United FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Liverpool FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brighton & Hove Albion FC vs Brentford FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Arsenal FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Leicester City FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Everton FC vs Nottingham Forest FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Crystal Palace FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Tottenham Hotspur FC vs Wolverhampton Wanderers FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Fulham FC vs AFC Bournemouth,DRAW,HOME_TEAM,HOME_TEAM,False,False
+West Ham United FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Aston Villa FC vs Brighton & Hove Albion FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Ipswich Town FC vs Chelsea FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Manchester United FC vs Newcastle United FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Brentford FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Tottenham Hotspur FC vs Newcastle United FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Southampton FC vs Brentford FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+AFC Bournemouth vs Everton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester City FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Aston Villa FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Chelsea FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Brighton & Hove Albion FC vs Arsenal FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Fulham FC vs Ipswich Town FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Liverpool FC vs Manchester United FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Wolverhampton Wanderers FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+West Ham United FC vs Fulham FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Brentford FC vs Manchester City FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Chelsea FC vs AFC Bournemouth,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Nottingham Forest FC vs Liverpool FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Everton FC vs Aston Villa FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Leicester City FC vs Crystal Palace FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Newcastle United FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Arsenal FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Ipswich Town FC vs Brighton & Hove Albion FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Manchester United FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Newcastle United FC vs AFC Bournemouth,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+West Ham United FC vs Crystal Palace FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Leicester City FC vs Fulham FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Brentford FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Arsenal FC vs Aston Villa FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Manchester United FC vs Brighton & Hove Albion FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Nottingham Forest FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Tottenham Hotspur FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Ipswich Town FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Chelsea FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Liverpool FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Wolverhampton Wanderers FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Brighton & Hove Albion FC vs Everton FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Southampton FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+AFC Bournemouth vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester City FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Brentford FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Tottenham Hotspur FC vs Leicester City FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Aston Villa FC vs West Ham United FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Fulham FC vs Manchester United FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Nottingham Forest FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Newcastle United FC vs Fulham FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Everton FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+AFC Bournemouth vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Ipswich Town FC vs Southampton FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Wolverhampton Wanderers FC vs Aston Villa FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Manchester United FC vs Crystal Palace FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Brentford FC vs Tottenham Hotspur FC,AWAY_TEAM,AWAY_TEAM,HOME_TEAM,True,False
+Arsenal FC vs Manchester City FC,HOME_TEAM,DRAW,HOME_TEAM,False,True
+Chelsea FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Liverpool FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Brighton & Hove Albion FC vs Chelsea FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Leicester City FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Southampton FC vs AFC Bournemouth,AWAY_TEAM,DRAW,AWAY_TEAM,False,True
+West Ham United FC vs Brentford FC,AWAY_TEAM,AWAY_TEAM,HOME_TEAM,True,False
+Aston Villa FC vs Ipswich Town FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Fulham FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Everton FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Liverpool FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Tottenham Hotspur FC vs Manchester United FC,HOME_TEAM,AWAY_TEAM,HOME_TEAM,False,True
+Aston Villa FC vs Liverpool FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Leicester City FC vs Brentford FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Everton FC vs Manchester United FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Arsenal FC vs West Ham United FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Fulham FC vs Crystal Palace FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Southampton FC vs Brighton & Hove Albion FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+AFC Bournemouth vs Wolverhampton Wanderers FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Ipswich Town FC vs Tottenham Hotspur FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Aston Villa FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,AWAY_TEAM,True,False
+Newcastle United FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester City FC vs Liverpool FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Wolverhampton Wanderers FC vs Fulham FC,AWAY_TEAM,AWAY_TEAM,HOME_TEAM,True,False
+Brighton & Hove Albion FC vs AFC Bournemouth,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Chelsea FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs Arsenal FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Brentford FC vs Everton FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Tottenham Hotspur FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Manchester United FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Liverpool FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+West Ham United FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs Manchester City FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Brighton & Hove Albion FC vs Fulham FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Liverpool FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brentford FC vs Aston Villa FC,AWAY_TEAM,AWAY_TEAM,HOME_TEAM,True,False
+Wolverhampton Wanderers FC vs Everton FC,DRAW,AWAY_TEAM,HOME_TEAM,False,False
+Tottenham Hotspur FC vs AFC Bournemouth,DRAW,HOME_TEAM,AWAY_TEAM,False,False
+Chelsea FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester United FC vs Arsenal FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+West Ham United FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Everton FC vs West Ham United FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Ipswich Town FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Manchester City FC vs Brighton & Hove Albion FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Southampton FC vs Wolverhampton Wanderers FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+AFC Bournemouth vs Brentford FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Arsenal FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Fulham FC vs Tottenham Hotspur FC,HOME_TEAM,AWAY_TEAM,HOME_TEAM,False,True
+Leicester City FC vs Manchester United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Arsenal FC vs Fulham FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Wolverhampton Wanderers FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+AFC Bournemouth vs Ipswich Town FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Brighton & Hove Albion FC vs Aston Villa FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Newcastle United FC vs Brentford FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Southampton FC vs Crystal Palace FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Liverpool FC vs Everton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Chelsea FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Arsenal FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Crystal Palace FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Ipswich Town FC vs Wolverhampton Wanderers FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+West Ham United FC vs AFC Bournemouth,DRAW,HOME_TEAM,AWAY_TEAM,False,False
+Aston Villa FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brentford FC vs Chelsea FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Fulham FC vs Liverpool FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Tottenham Hotspur FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester United FC vs Manchester City FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Leicester City FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Manchester City FC vs Crystal Palace FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brighton & Hove Albion FC vs Leicester City FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Nottingham Forest FC vs Everton FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Southampton FC vs Aston Villa FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Arsenal FC vs Brentford FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Chelsea FC vs Ipswich Town FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Liverpool FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Wolverhampton Wanderers FC vs Tottenham Hotspur FC,HOME_TEAM,AWAY_TEAM,HOME_TEAM,False,True
+Newcastle United FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+AFC Bournemouth vs Fulham FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Newcastle United FC vs Crystal Palace FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brentford FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs AFC Bournemouth,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Everton FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+West Ham United FC vs Southampton FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Aston Villa FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Fulham FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Ipswich Town FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Manchester United FC vs Wolverhampton Wanderers FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Leicester City FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Tottenham Hotspur FC vs Nottingham Forest FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Arsenal FC vs Crystal Palace FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Chelsea FC vs Everton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brighton & Hove Albion FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Newcastle United FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Southampton FC vs Fulham FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Wolverhampton Wanderers FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+AFC Bournemouth vs Manchester United FC,DRAW,AWAY_TEAM,HOME_TEAM,False,False
+Liverpool FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs Brentford FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Manchester City FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Aston Villa FC vs Fulham FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Ipswich Town FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Leicester City FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Arsenal FC vs AFC Bournemouth,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Brighton & Hove Albion FC vs Newcastle United FC,DRAW,HOME_TEAM,AWAY_TEAM,False,False
+West Ham United FC vs Tottenham Hotspur FC,DRAW,AWAY_TEAM,HOME_TEAM,False,False
+Brentford FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Chelsea FC vs Liverpool FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Crystal Palace FC vs Nottingham Forest FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Southampton FC vs Manchester City FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Wolverhampton Wanderers FC vs Brighton & Hove Albion FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Fulham FC vs Everton FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Ipswich Town FC vs Brentford FC,AWAY_TEAM,DRAW,AWAY_TEAM,False,True
+AFC Bournemouth vs Aston Villa FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Newcastle United FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester United FC vs West Ham United FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Nottingham Forest FC vs Leicester City FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Tottenham Hotspur FC vs Crystal Palace FC,AWAY_TEAM,HOME_TEAM,AWAY_TEAM,False,True
+Liverpool FC vs Arsenal FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Aston Villa FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Chelsea FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Everton FC vs Southampton FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+West Ham United FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Brentford FC vs Fulham FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False
+Leicester City FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Arsenal FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Brighton & Hove Albion FC vs Liverpool FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Crystal Palace FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Manchester City FC vs AFC Bournemouth,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Liverpool FC vs Crystal Palace FC,DRAW,HOME_TEAM,HOME_TEAM,False,False
+Manchester United FC vs Aston Villa FC,HOME_TEAM,AWAY_TEAM,AWAY_TEAM,False,False
+Fulham FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Ipswich Town FC vs West Ham United FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+AFC Bournemouth vs Leicester City FC,HOME_TEAM,HOME_TEAM,HOME_TEAM,True,True
+Nottingham Forest FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Southampton FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Tottenham Hotspur FC vs Brighton & Hove Albion FC,AWAY_TEAM,AWAY_TEAM,AWAY_TEAM,True,True
+Wolverhampton Wanderers FC vs Brentford FC,DRAW,AWAY_TEAM,AWAY_TEAM,False,False
+Newcastle United FC vs Everton FC,AWAY_TEAM,HOME_TEAM,HOME_TEAM,False,False

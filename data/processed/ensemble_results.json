@@ -1,0 +1,28 @@
+{
+  "ensemble_accuracy": 53.95,
+  "crowd_accuracy": 53.95,
+  "model_type": "GradientBoosting (Hybrid)",
+  "n_features": 20,
+  "features": [
+    "Home_Form_L5",
+    "Away_Form_L5",
+    "Home_Avg_GF_L5",
+    "Home_Avg_GA_L5",
+    "Away_Avg_GF_L5",
+    "Away_Avg_GA_L5",
+    "Home_MV",
+    "Away_MV",
+    "MV_Diff",
+    "Home_Elo",
+    "Away_Elo",
+    "Elo_Diff",
+    "H2H_Home_Wins",
+    "H2H_Away_Wins",
+    "fpl_home",
+    "fpl_away",
+    "fpl_diff",
+    "elo_prob_home",
+    "elo_prob_draw",
+    "elo_prob_away"
+  ]
+}

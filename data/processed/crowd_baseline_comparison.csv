@@ -1,0 +1,381 @@
+Match,Crowd Prediction,Actual Result,Correct,Home Odds,Draw Odds,Away Odds
+Manchester United FC vs Fulham FC,HOME_TEAM,HOME_TEAM,True,1.6,4.2,5.25
+Ipswich Town FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,8.5,5.5,1.33
+Arsenal FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,1.18,7.5,13.0
+Everton FC vs Brighton & Hove Albion FC,HOME_TEAM,AWAY_TEAM,False,2.63,3.3,2.63
+Newcastle United FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.36,5.25,8.0
+Nottingham Forest FC vs AFC Bournemouth,HOME_TEAM,DRAW,False,2.45,3.5,2.8
+West Ham United FC vs Aston Villa FC,HOME_TEAM,AWAY_TEAM,False,2.45,3.6,2.75
+Brentford FC vs Crystal Palace FC,HOME_TEAM,HOME_TEAM,True,2.4,3.4,2.9
+Chelsea FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,True,4.1,3.9,1.8
+Leicester City FC vs Tottenham Hotspur FC,AWAY_TEAM,DRAW,False,5.0,4.33,1.62
+Brighton & Hove Albion FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,True,2.5,3.7,2.63
+Crystal Palace FC vs West Ham United FC,HOME_TEAM,AWAY_TEAM,False,2.15,3.6,3.2
+Fulham FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.8,3.75,4.2
+Manchester City FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.08,12.0,21.0
+Southampton FC vs Nottingham Forest FC,HOME_TEAM,AWAY_TEAM,False,2.55,3.3,2.8
+Tottenham Hotspur FC vs Everton FC,HOME_TEAM,HOME_TEAM,True,1.44,4.75,6.5
+Aston Villa FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,4.33,3.8,1.75
+AFC Bournemouth vs Newcastle United FC,AWAY_TEAM,DRAW,False,2.9,3.8,2.2
+Wolverhampton Wanderers FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,True,4.33,4.0,1.75
+Liverpool FC vs Brentford FC,HOME_TEAM,HOME_TEAM,True,1.27,5.75,11.0
+Arsenal FC vs Brighton & Hove Albion FC,HOME_TEAM,DRAW,False,1.33,5.5,8.5
+Brentford FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.75,3.9,4.33
+Everton FC vs AFC Bournemouth,AWAY_TEAM,AWAY_TEAM,True,2.75,3.4,2.55
+Ipswich Town FC vs Fulham FC,AWAY_TEAM,DRAW,False,3.0,3.5,2.3
+Leicester City FC vs Aston Villa FC,AWAY_TEAM,AWAY_TEAM,True,4.5,4.0,1.7
+Nottingham Forest FC vs Wolverhampton Wanderers FC,HOME_TEAM,DRAW,False,2.0,3.7,3.7
+West Ham United FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,True,7.0,5.5,1.38
+Chelsea FC vs Crystal Palace FC,HOME_TEAM,DRAW,False,1.6,4.33,5.0
+Newcastle United FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,True,2.5,4.0,2.5
+Manchester United FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,3.7,4.2,1.85
+Southampton FC vs Manchester United FC,AWAY_TEAM,AWAY_TEAM,True,4.5,4.0,1.7
+Brighton & Hove Albion FC vs Ipswich Town FC,HOME_TEAM,DRAW,False,1.38,5.0,7.5
+Crystal Palace FC vs Leicester City FC,HOME_TEAM,DRAW,False,1.62,4.0,5.5
+Fulham FC vs West Ham United FC,HOME_TEAM,DRAW,False,2.38,3.25,3.0
+Liverpool FC vs Nottingham Forest FC,HOME_TEAM,AWAY_TEAM,False,1.22,6.5,12.0
+Manchester City FC vs Brentford FC,HOME_TEAM,HOME_TEAM,True,1.18,8.0,12.0
+Aston Villa FC vs Everton FC,HOME_TEAM,HOME_TEAM,True,1.5,4.2,6.5
+AFC Bournemouth vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,True,3.4,3.8,2.0
+Tottenham Hotspur FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,3.0,3.5,2.3
+Wolverhampton Wanderers FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,True,3.4,3.5,2.1
+West Ham United FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,True,3.6,3.9,1.95
+Aston Villa FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,1.57,4.2,5.25
+Fulham FC vs Newcastle United FC,AWAY_TEAM,HOME_TEAM,False,3.0,3.4,2.4
+Leicester City FC vs Everton FC,HOME_TEAM,DRAW,False,2.45,3.4,2.88
+Liverpool FC vs AFC Bournemouth,HOME_TEAM,HOME_TEAM,True,1.3,6.25,9.0
+Southampton FC vs Ipswich Town FC,HOME_TEAM,DRAW,False,2.25,3.5,3.2
+Tottenham Hotspur FC vs Brentford FC,HOME_TEAM,HOME_TEAM,True,1.55,4.5,5.5
+Crystal Palace FC vs Manchester United FC,AWAY_TEAM,DRAW,False,2.88,3.75,2.3
+Brighton & Hove Albion FC vs Nottingham Forest FC,HOME_TEAM,DRAW,False,1.75,3.75,4.75
+Manchester City FC vs Arsenal FC,HOME_TEAM,DRAW,False,1.8,3.6,4.5
+Newcastle United FC vs Manchester City FC,AWAY_TEAM,DRAW,False,5.25,4.33,1.6
+Arsenal FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.17,8.0,15.0
+Brentford FC vs West Ham United FC,HOME_TEAM,DRAW,False,2.2,3.5,3.2
+Chelsea FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,True,1.73,4.2,4.2
+Everton FC vs Crystal Palace FC,AWAY_TEAM,HOME_TEAM,False,2.7,3.3,2.63
+Nottingham Forest FC vs Fulham FC,HOME_TEAM,AWAY_TEAM,False,2.38,3.3,3.0
+Wolverhampton Wanderers FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,8.0,5.75,1.33
+Ipswich Town FC vs Aston Villa FC,AWAY_TEAM,DRAW,False,4.0,3.75,1.85
+Manchester United FC vs Tottenham Hotspur FC,HOME_TEAM,AWAY_TEAM,False,2.35,3.75,2.75
+AFC Bournemouth vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.65,4.1,5.0
+Crystal Palace FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,6.0,4.5,1.5
+Arsenal FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.14,9.0,17.0
+Brentford FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,2.05,3.6,3.4
+Leicester City FC vs AFC Bournemouth,AWAY_TEAM,HOME_TEAM,False,3.1,3.75,2.15
+Manchester City FC vs Fulham FC,HOME_TEAM,HOME_TEAM,True,1.25,7.0,9.5
+West Ham United FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.8,3.8,4.33
+Everton FC vs Newcastle United FC,AWAY_TEAM,DRAW,False,3.2,3.6,2.2
+Aston Villa FC vs Manchester United FC,HOME_TEAM,DRAW,False,2.2,3.75,3.0
+Chelsea FC vs Nottingham Forest FC,HOME_TEAM,DRAW,False,1.48,4.5,6.5
+Brighton & Hove Albion FC vs Tottenham Hotspur FC,AWAY_TEAM,HOME_TEAM,False,2.9,4.0,2.2
+Tottenham Hotspur FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,True,1.5,5.0,5.25
+Fulham FC vs Aston Villa FC,HOME_TEAM,AWAY_TEAM,False,2.45,3.5,2.8
+Ipswich Town FC vs Everton FC,HOME_TEAM,AWAY_TEAM,False,2.38,3.3,3.0
+Manchester United FC vs Brentford FC,HOME_TEAM,HOME_TEAM,True,1.7,4.2,4.5
+Newcastle United FC vs Brighton & Hove Albion FC,HOME_TEAM,AWAY_TEAM,False,1.95,3.7,3.6
+Southampton FC vs Leicester City FC,HOME_TEAM,AWAY_TEAM,False,2.3,3.5,3.0
+AFC Bournemouth vs Arsenal FC,AWAY_TEAM,HOME_TEAM,False,5.0,3.9,1.65
+Wolverhampton Wanderers FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,True,8.0,6.0,1.33
+Liverpool FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,True,1.62,4.1,5.0
+Nottingham Forest FC vs Crystal Palace FC,HOME_TEAM,HOME_TEAM,True,2.3,3.5,3.0
+Leicester City FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,True,3.0,3.3,2.4
+Aston Villa FC vs AFC Bournemouth,HOME_TEAM,DRAW,False,1.85,3.9,3.8
+Brentford FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.65,4.33,4.75
+Brighton & Hove Albion FC vs Wolverhampton Wanderers FC,HOME_TEAM,DRAW,False,1.62,4.5,4.5
+Manchester City FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.11,10.0,17.0
+Everton FC vs Fulham FC,AWAY_TEAM,DRAW,False,2.75,3.25,2.63
+Chelsea FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,True,1.73,4.33,4.2
+Crystal Palace FC vs Tottenham Hotspur FC,AWAY_TEAM,HOME_TEAM,False,3.9,4.0,1.83
+West Ham United FC vs Manchester United FC,AWAY_TEAM,HOME_TEAM,False,2.88,3.75,2.3
+Arsenal FC vs Liverpool FC,HOME_TEAM,DRAW,False,2.5,3.25,2.9
+Newcastle United FC vs Arsenal FC,AWAY_TEAM,HOME_TEAM,False,3.75,3.75,1.95
+AFC Bournemouth vs Manchester City FC,AWAY_TEAM,HOME_TEAM,False,5.5,4.2,1.57
+Ipswich Town FC vs Leicester City FC,HOME_TEAM,DRAW,False,2.25,3.5,3.1
+Liverpool FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,True,1.4,5.0,7.5
+Nottingham Forest FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,True,2.15,3.5,3.4
+Southampton FC vs Everton FC,HOME_TEAM,HOME_TEAM,True,2.63,3.4,2.63
+Wolverhampton Wanderers FC vs Crystal Palace FC,HOME_TEAM,DRAW,False,2.5,3.4,2.88
+Tottenham Hotspur FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,True,1.91,4.0,3.6
+Manchester United FC vs Chelsea FC,HOME_TEAM,DRAW,False,2.6,3.5,2.6
+Fulham FC vs Brentford FC,HOME_TEAM,HOME_TEAM,True,2.0,3.7,3.5
+Brentford FC vs AFC Bournemouth,HOME_TEAM,HOME_TEAM,True,2.5,3.5,2.7
+Crystal Palace FC vs Fulham FC,AWAY_TEAM,AWAY_TEAM,True,2.7,3.5,2.55
+West Ham United FC vs Everton FC,HOME_TEAM,DRAW,False,2.15,3.4,3.4
+Wolverhampton Wanderers FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.91,3.75,3.75
+Brighton & Hove Albion FC vs Manchester City FC,AWAY_TEAM,HOME_TEAM,False,4.1,4.2,1.73
+Liverpool FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,True,1.42,5.25,6.5
+Manchester United FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.38,5.5,6.5
+Nottingham Forest FC vs Newcastle United FC,HOME_TEAM,AWAY_TEAM,False,2.7,3.3,2.7
+Tottenham Hotspur FC vs Ipswich Town FC,HOME_TEAM,AWAY_TEAM,False,1.25,6.5,9.0
+Chelsea FC vs Arsenal FC,AWAY_TEAM,DRAW,False,2.7,3.4,2.55
+Leicester City FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,True,6.5,4.75,1.44
+Arsenal FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,True,1.38,4.75,9.0
+Aston Villa FC vs Crystal Palace FC,HOME_TEAM,DRAW,False,1.62,4.0,5.5
+AFC Bournemouth vs Brighton & Hove Albion FC,HOME_TEAM,AWAY_TEAM,False,2.4,3.6,2.8
+Everton FC vs Brentford FC,HOME_TEAM,DRAW,False,2.45,3.4,2.88
+Fulham FC vs Wolverhampton Wanderers FC,HOME_TEAM,AWAY_TEAM,False,1.62,4.0,5.25
+Manchester City FC vs Tottenham Hotspur FC,HOME_TEAM,AWAY_TEAM,False,1.48,4.75,6.0
+Southampton FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,11.0,5.75,1.27
+Ipswich Town FC vs Manchester United FC,AWAY_TEAM,DRAW,False,5.25,4.0,1.62
+Newcastle United FC vs West Ham United FC,HOME_TEAM,AWAY_TEAM,False,1.5,4.5,6.0
+Brighton & Hove Albion FC vs Southampton FC,HOME_TEAM,DRAW,False,1.38,5.0,7.5
+Brentford FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.65,4.2,4.75
+Crystal Palace FC vs Newcastle United FC,AWAY_TEAM,DRAW,False,2.9,3.6,2.3
+Nottingham Forest FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.7,3.8,4.75
+Wolverhampton Wanderers FC vs AFC Bournemouth,AWAY_TEAM,AWAY_TEAM,True,2.8,3.6,2.4
+West Ham United FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,7.0,4.5,1.45
+Chelsea FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,True,1.7,4.1,4.5
+Manchester United FC vs Everton FC,HOME_TEAM,HOME_TEAM,True,1.53,4.2,6.0
+Tottenham Hotspur FC vs Fulham FC,HOME_TEAM,DRAW,False,1.7,4.5,4.1
+Liverpool FC vs Manchester City FC,HOME_TEAM,HOME_TEAM,True,2.1,3.6,3.3
+Ipswich Town FC vs Crystal Palace FC,AWAY_TEAM,AWAY_TEAM,True,3.0,3.4,2.35
+Leicester City FC vs West Ham United FC,AWAY_TEAM,HOME_TEAM,False,2.9,3.4,2.38
+Everton FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,2.1,3.4,3.5
+Manchester City FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,True,1.36,4.75,9.0
+Newcastle United FC vs Liverpool FC,AWAY_TEAM,DRAW,False,4.2,4.0,1.75
+Southampton FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,True,8.5,5.25,1.33
+Arsenal FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,True,1.44,4.5,7.0
+Aston Villa FC vs Brentford FC,HOME_TEAM,HOME_TEAM,True,1.8,3.75,4.33
+Fulham FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,True,2.35,3.6,2.88
+AFC Bournemouth vs Tottenham Hotspur FC,AWAY_TEAM,HOME_TEAM,False,2.63,3.75,2.45
+Aston Villa FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.36,5.5,7.0
+Brentford FC vs Newcastle United FC,AWAY_TEAM,HOME_TEAM,False,2.88,3.75,2.3
+Crystal Palace FC vs Manchester City FC,AWAY_TEAM,DRAW,False,5.5,4.2,1.57
+Manchester United FC vs Nottingham Forest FC,HOME_TEAM,AWAY_TEAM,False,1.65,3.9,5.25
+Fulham FC vs Arsenal FC,AWAY_TEAM,DRAW,False,5.0,4.33,1.6
+Ipswich Town FC vs AFC Bournemouth,AWAY_TEAM,AWAY_TEAM,True,3.5,3.75,2.0
+Leicester City FC vs Brighton & Hove Albion FC,AWAY_TEAM,DRAW,False,4.5,3.8,1.73
+Tottenham Hotspur FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,True,3.4,3.9,2.0
+West Ham United FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,1.9,3.9,3.75
+Arsenal FC vs Everton FC,HOME_TEAM,DRAW,False,1.22,6.5,12.0
+Liverpool FC vs Fulham FC,HOME_TEAM,DRAW,False,1.33,5.5,8.0
+Newcastle United FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.3,6.0,8.5
+Wolverhampton Wanderers FC vs Ipswich Town FC,HOME_TEAM,AWAY_TEAM,False,1.9,3.8,3.8
+Nottingham Forest FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,True,2.63,3.3,2.7
+Brighton & Hove Albion FC vs Crystal Palace FC,HOME_TEAM,AWAY_TEAM,False,1.85,3.8,3.9
+Manchester City FC vs Manchester United FC,HOME_TEAM,AWAY_TEAM,False,1.57,4.5,5.0
+Chelsea FC vs Brentford FC,HOME_TEAM,HOME_TEAM,True,1.33,6.0,7.5
+Southampton FC vs Tottenham Hotspur FC,AWAY_TEAM,AWAY_TEAM,True,4.33,4.5,1.67
+AFC Bournemouth vs West Ham United FC,HOME_TEAM,DRAW,False,1.7,4.0,4.75
+Aston Villa FC vs Manchester City FC,AWAY_TEAM,HOME_TEAM,False,3.25,3.7,2.1
+Brentford FC vs Nottingham Forest FC,HOME_TEAM,AWAY_TEAM,False,2.3,3.6,2.9
+Ipswich Town FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,True,4.75,3.75,1.73
+West Ham United FC vs Brighton & Hove Albion FC,AWAY_TEAM,DRAW,False,2.88,3.7,2.35
+Crystal Palace FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,6.25,4.2,1.55
+Everton FC vs Chelsea FC,AWAY_TEAM,DRAW,False,5.0,4.2,1.62
+Fulham FC vs Southampton FC,HOME_TEAM,DRAW,False,1.42,4.75,7.0
+Leicester City FC vs Wolverhampton Wanderers FC,HOME_TEAM,AWAY_TEAM,False,2.55,3.4,2.7
+Manchester United FC vs AFC Bournemouth,HOME_TEAM,AWAY_TEAM,False,1.8,3.8,4.2
+Tottenham Hotspur FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,4.5,4.0,1.73
+Manchester City FC vs Everton FC,HOME_TEAM,DRAW,False,1.33,5.5,7.5
+AFC Bournemouth vs Crystal Palace FC,HOME_TEAM,DRAW,False,1.9,3.8,3.8
+Chelsea FC vs Fulham FC,HOME_TEAM,AWAY_TEAM,False,1.48,4.75,6.0
+Newcastle United FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,True,1.91,3.8,3.75
+Nottingham Forest FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,True,2.3,3.75,2.88
+Southampton FC vs West Ham United FC,AWAY_TEAM,AWAY_TEAM,True,3.25,3.5,2.2
+Wolverhampton Wanderers FC vs Manchester United FC,AWAY_TEAM,HOME_TEAM,False,3.9,3.7,1.91
+Liverpool FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.08,12.0,23.0
+Brighton & Hove Albion FC vs Brentford FC,HOME_TEAM,DRAW,False,1.62,4.33,4.75
+Arsenal FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.14,9.0,15.0
+Leicester City FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,True,7.5,5.5,1.36
+Crystal Palace FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.57,3.9,5.5
+Everton FC vs Nottingham Forest FC,HOME_TEAM,AWAY_TEAM,False,2.6,3.2,2.8
+Fulham FC vs AFC Bournemouth,HOME_TEAM,DRAW,False,2.3,3.6,2.88
+Tottenham Hotspur FC vs Wolverhampton Wanderers FC,HOME_TEAM,DRAW,False,1.6,5.0,4.2
+West Ham United FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,7.0,5.0,1.4
+Aston Villa FC vs Brighton & Hove Albion FC,HOME_TEAM,DRAW,False,1.9,3.8,3.6
+Ipswich Town FC vs Chelsea FC,AWAY_TEAM,HOME_TEAM,False,6.5,4.75,1.42
+Manchester United FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,True,2.75,3.5,2.55
+Brentford FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,6.5,4.75,1.44
+Tottenham Hotspur FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,True,2.88,3.8,2.25
+Aston Villa FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.33,5.5,8.5
+AFC Bournemouth vs Everton FC,HOME_TEAM,HOME_TEAM,True,1.73,3.75,4.75
+Crystal Palace FC vs Chelsea FC,AWAY_TEAM,DRAW,False,3.8,3.75,1.91
+Manchester City FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,True,1.3,6.25,7.5
+Southampton FC vs Brentford FC,AWAY_TEAM,AWAY_TEAM,True,3.0,3.4,2.4
+Brighton & Hove Albion FC vs Arsenal FC,AWAY_TEAM,DRAW,False,4.33,3.75,1.8
+Fulham FC vs Ipswich Town FC,HOME_TEAM,DRAW,False,1.55,4.2,5.75
+Liverpool FC vs Manchester United FC,HOME_TEAM,DRAW,False,1.29,6.25,8.0
+Wolverhampton Wanderers FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,True,3.3,3.2,2.3
+Brentford FC vs Manchester City FC,AWAY_TEAM,DRAW,False,4.75,4.2,1.62
+Chelsea FC vs AFC Bournemouth,HOME_TEAM,DRAW,False,1.48,4.75,6.0
+West Ham United FC vs Fulham FC,AWAY_TEAM,HOME_TEAM,False,3.0,3.4,2.38
+Nottingham Forest FC vs Liverpool FC,AWAY_TEAM,DRAW,False,5.25,4.1,1.62
+Everton FC vs Aston Villa FC,AWAY_TEAM,AWAY_TEAM,True,3.25,3.2,2.3
+Leicester City FC vs Crystal Palace FC,AWAY_TEAM,AWAY_TEAM,True,3.9,3.6,1.91
+Newcastle United FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,1.36,5.5,8.0
+Arsenal FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,True,1.4,5.25,7.0
+Ipswich Town FC vs Brighton & Hove Albion FC,AWAY_TEAM,AWAY_TEAM,True,3.9,3.7,1.91
+Manchester United FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.29,6.0,9.5
+Newcastle United FC vs AFC Bournemouth,HOME_TEAM,AWAY_TEAM,False,1.62,4.2,5.0
+Brentford FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,6.5,5.0,1.42
+Leicester City FC vs Fulham FC,AWAY_TEAM,AWAY_TEAM,True,4.33,3.7,1.8
+West Ham United FC vs Crystal Palace FC,HOME_TEAM,AWAY_TEAM,False,2.6,3.5,2.63
+Arsenal FC vs Aston Villa FC,HOME_TEAM,DRAW,False,1.5,4.1,7.0
+Everton FC vs Tottenham Hotspur FC,AWAY_TEAM,HOME_TEAM,False,2.8,3.5,2.45
+Manchester United FC vs Brighton & Hove Albion FC,HOME_TEAM,AWAY_TEAM,False,2.1,3.6,3.3
+Nottingham Forest FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.38,4.75,8.0
+Ipswich Town FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,True,7.5,5.25,1.36
+Chelsea FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,1.36,5.75,6.5
+AFC Bournemouth vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,True,2.05,3.7,3.4
+Brighton & Hove Albion FC vs Everton FC,HOME_TEAM,AWAY_TEAM,False,1.67,3.75,5.5
+Liverpool FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.08,12.0,15.0
+Southampton FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,True,6.5,5.25,1.42
+Wolverhampton Wanderers FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,7.0,4.5,1.45
+Manchester City FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,True,2.05,4.0,3.3
+Crystal Palace FC vs Brentford FC,HOME_TEAM,AWAY_TEAM,False,2.05,3.75,3.3
+Tottenham Hotspur FC vs Leicester City FC,HOME_TEAM,AWAY_TEAM,False,1.45,5.5,5.5
+Aston Villa FC vs West Ham United FC,HOME_TEAM,DRAW,False,1.53,4.33,5.75
+Fulham FC vs Manchester United FC,HOME_TEAM,AWAY_TEAM,False,2.3,3.4,3.1
+Nottingham Forest FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,True,2.38,3.5,2.8
+AFC Bournemouth vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,4.5,4.33,1.67
+Everton FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.75,3.75,4.5
+Ipswich Town FC vs Southampton FC,HOME_TEAM,AWAY_TEAM,False,1.95,3.6,3.8
+Newcastle United FC vs Fulham FC,HOME_TEAM,AWAY_TEAM,False,1.7,4.0,4.75
+Wolverhampton Wanderers FC vs Aston Villa FC,AWAY_TEAM,HOME_TEAM,False,3.3,3.6,2.1
+Brentford FC vs Tottenham Hotspur FC,HOME_TEAM,AWAY_TEAM,False,2.1,3.9,3.2
+Manchester United FC vs Crystal Palace FC,HOME_TEAM,AWAY_TEAM,False,2.0,3.5,3.8
+Arsenal FC vs Manchester City FC,HOME_TEAM,HOME_TEAM,True,1.95,3.5,4.0
+Chelsea FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,True,1.36,4.75,8.0
+Everton FC vs Liverpool FC,AWAY_TEAM,DRAW,False,7.5,4.5,1.44
+Brighton & Hove Albion FC vs Chelsea FC,AWAY_TEAM,HOME_TEAM,False,2.7,3.6,2.45
+Leicester City FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,8.5,5.0,1.33
+Aston Villa FC vs Ipswich Town FC,HOME_TEAM,DRAW,False,1.4,4.75,7.0
+Fulham FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,True,2.2,3.4,3.3
+Manchester City FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,True,1.95,4.2,3.3
+Southampton FC vs AFC Bournemouth,AWAY_TEAM,AWAY_TEAM,True,6.0,4.5,1.5
+West Ham United FC vs Brentford FC,HOME_TEAM,AWAY_TEAM,False,2.35,3.6,2.88
+Crystal Palace FC vs Everton FC,HOME_TEAM,AWAY_TEAM,False,1.8,3.4,5.0
+Liverpool FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,1.15,8.0,12.0
+Tottenham Hotspur FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,True,2.45,3.75,2.62
+Aston Villa FC vs Liverpool FC,AWAY_TEAM,DRAW,False,3.9,4.0,1.83
+Leicester City FC vs Brentford FC,AWAY_TEAM,AWAY_TEAM,True,3.6,3.8,1.91
+Everton FC vs Manchester United FC,HOME_TEAM,DRAW,False,2.5,3.2,2.9
+Arsenal FC vs West Ham United FC,HOME_TEAM,AWAY_TEAM,False,1.27,6.0,10.0
+AFC Bournemouth vs Wolverhampton Wanderers FC,HOME_TEAM,AWAY_TEAM,False,1.53,4.5,5.5
+Fulham FC vs Crystal Palace FC,HOME_TEAM,AWAY_TEAM,False,2.05,3.4,3.7
+Ipswich Town FC vs Tottenham Hotspur FC,AWAY_TEAM,AWAY_TEAM,True,4.1,3.6,1.9
+Southampton FC vs Brighton & Hove Albion FC,AWAY_TEAM,AWAY_TEAM,True,6.0,4.1,1.55
+Aston Villa FC vs Chelsea FC,AWAY_TEAM,HOME_TEAM,False,2.63,3.4,2.6
+Newcastle United FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,True,1.8,3.8,4.2
+Manchester City FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,2.88,3.8,2.25
+Brighton & Hove Albion FC vs AFC Bournemouth,HOME_TEAM,HOME_TEAM,True,2.0,3.8,3.3
+Crystal Palace FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,True,2.45,3.4,2.8
+Wolverhampton Wanderers FC vs Fulham FC,HOME_TEAM,AWAY_TEAM,False,2.63,3.3,2.63
+Chelsea FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.17,8.0,13.0
+Brentford FC vs Everton FC,HOME_TEAM,DRAW,False,2.0,3.7,3.5
+Manchester United FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.53,4.33,6.0
+Nottingham Forest FC vs Arsenal FC,AWAY_TEAM,DRAW,False,3.9,3.6,1.95
+Tottenham Hotspur FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,True,3.25,4.0,2.0
+Liverpool FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,True,1.5,4.5,5.75
+West Ham United FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.62,4.2,5.0
+Nottingham Forest FC vs Manchester City FC,AWAY_TEAM,HOME_TEAM,False,4.0,3.75,1.85
+Brighton & Hove Albion FC vs Fulham FC,HOME_TEAM,HOME_TEAM,True,1.95,3.6,3.75
+Crystal Palace FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.45,4.75,6.25
+Liverpool FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.1,9.0,19.0
+Brentford FC vs Aston Villa FC,HOME_TEAM,AWAY_TEAM,False,2.2,3.8,2.9
+Wolverhampton Wanderers FC vs Everton FC,HOME_TEAM,DRAW,False,2.6,3.1,2.88
+Chelsea FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.18,8.0,12.0
+Tottenham Hotspur FC vs AFC Bournemouth,AWAY_TEAM,DRAW,False,2.7,3.9,2.35
+Manchester United FC vs Arsenal FC,AWAY_TEAM,DRAW,False,5.75,3.5,1.7
+West Ham United FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,True,3.25,3.4,2.2
+Everton FC vs West Ham United FC,HOME_TEAM,DRAW,False,2.05,3.2,3.9
+Ipswich Town FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,True,3.75,3.5,2.0
+Manchester City FC vs Brighton & Hove Albion FC,HOME_TEAM,DRAW,False,1.67,4.33,4.5
+Southampton FC vs Wolverhampton Wanderers FC,AWAY_TEAM,AWAY_TEAM,True,3.7,3.4,2.0
+AFC Bournemouth vs Brentford FC,HOME_TEAM,AWAY_TEAM,False,1.73,4.2,4.2
+Arsenal FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,True,1.8,3.6,4.5
+Fulham FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,True,2.0,3.75,3.6
+Leicester City FC vs Manchester United FC,AWAY_TEAM,AWAY_TEAM,True,4.5,3.5,1.83
+Arsenal FC vs Fulham FC,HOME_TEAM,HOME_TEAM,True,1.48,4.33,7.0
+Wolverhampton Wanderers FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,True,2.5,3.2,2.9
+Nottingham Forest FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,True,2.3,3.4,3.1
+AFC Bournemouth vs Ipswich Town FC,HOME_TEAM,AWAY_TEAM,False,1.36,5.25,7.5
+Brighton & Hove Albion FC vs Aston Villa FC,HOME_TEAM,AWAY_TEAM,False,2.05,3.8,3.25
+Manchester City FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.2,8.0,10.0
+Newcastle United FC vs Brentford FC,HOME_TEAM,HOME_TEAM,True,1.73,4.5,4.0
+Southampton FC vs Crystal Palace FC,AWAY_TEAM,DRAW,False,5.75,3.8,1.62
+Liverpool FC vs Everton FC,HOME_TEAM,HOME_TEAM,True,1.36,5.0,8.0
+Chelsea FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,True,1.65,4.5,4.5
+Everton FC vs Arsenal FC,AWAY_TEAM,DRAW,False,5.25,3.25,1.75
+Crystal Palace FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,True,2.35,3.6,2.8
+Ipswich Town FC vs Wolverhampton Wanderers FC,AWAY_TEAM,AWAY_TEAM,True,2.7,3.25,2.63
+West Ham United FC vs AFC Bournemouth,AWAY_TEAM,DRAW,False,3.0,3.5,2.3
+Aston Villa FC vs Nottingham Forest FC,HOME_TEAM,HOME_TEAM,True,1.95,3.6,3.7
+Brentford FC vs Chelsea FC,AWAY_TEAM,DRAW,False,3.2,3.6,2.15
+Fulham FC vs Liverpool FC,AWAY_TEAM,HOME_TEAM,False,4.5,3.5,1.83
+Tottenham Hotspur FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.38,5.5,6.5
+Manchester United FC vs Manchester City FC,AWAY_TEAM,DRAW,False,3.4,3.6,2.1
+Leicester City FC vs Newcastle United FC,AWAY_TEAM,AWAY_TEAM,True,6.5,4.2,1.48
+Manchester City FC vs Crystal Palace FC,HOME_TEAM,HOME_TEAM,True,1.5,4.75,5.75
+Brighton & Hove Albion FC vs Leicester City FC,HOME_TEAM,DRAW,False,1.29,6.0,10.0
+Nottingham Forest FC vs Everton FC,HOME_TEAM,AWAY_TEAM,False,2.1,3.3,3.7
+Southampton FC vs Aston Villa FC,AWAY_TEAM,AWAY_TEAM,True,6.0,4.2,1.55
+Arsenal FC vs Brentford FC,HOME_TEAM,DRAW,False,1.6,4.33,5.0
+Chelsea FC vs Ipswich Town FC,HOME_TEAM,DRAW,False,1.27,7.0,8.5
+Liverpool FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,True,1.3,6.0,8.0
+Wolverhampton Wanderers FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,True,2.2,3.6,3.1
+Newcastle United FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,True,1.65,4.2,4.75
+AFC Bournemouth vs Fulham FC,HOME_TEAM,HOME_TEAM,True,2.15,3.5,3.3
+Newcastle United FC vs Crystal Palace FC,HOME_TEAM,HOME_TEAM,True,1.67,3.9,5.0
+Brentford FC vs Brighton & Hove Albion FC,HOME_TEAM,HOME_TEAM,True,2.4,3.75,2.63
+Crystal Palace FC vs AFC Bournemouth,HOME_TEAM,DRAW,False,2.45,3.6,2.63
+Everton FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,True,3.7,3.6,1.91
+West Ham United FC vs Southampton FC,HOME_TEAM,DRAW,False,1.48,4.33,6.5
+Aston Villa FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,True,2.3,3.6,2.75
+Fulham FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,True,2.7,3.7,2.35
+Ipswich Town FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,8.0,4.5,1.4
+Manchester United FC vs Wolverhampton Wanderers FC,HOME_TEAM,AWAY_TEAM,False,2.0,3.6,3.6
+Leicester City FC vs Liverpool FC,AWAY_TEAM,AWAY_TEAM,True,11.0,6.25,1.22
+Tottenham Hotspur FC vs Nottingham Forest FC,HOME_TEAM,AWAY_TEAM,False,2.45,3.6,2.63
+Manchester City FC vs Aston Villa FC,HOME_TEAM,HOME_TEAM,True,1.8,4.1,3.9
+Arsenal FC vs Crystal Palace FC,HOME_TEAM,DRAW,False,1.4,4.75,7.5
+Chelsea FC vs Everton FC,HOME_TEAM,HOME_TEAM,True,1.55,4.0,6.0
+Brighton & Hove Albion FC vs West Ham United FC,HOME_TEAM,HOME_TEAM,True,1.67,4.2,4.75
+Newcastle United FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,1.18,7.5,13.0
+Southampton FC vs Fulham FC,AWAY_TEAM,AWAY_TEAM,True,5.25,4.0,1.6
+Wolverhampton Wanderers FC vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.5,4.2,6.25
+AFC Bournemouth vs Manchester United FC,HOME_TEAM,DRAW,False,1.67,4.0,4.5
+Liverpool FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,True,1.25,6.0,11.0
+Nottingham Forest FC vs Brentford FC,HOME_TEAM,AWAY_TEAM,False,2.15,3.5,3.25
+Manchester City FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,1.4,4.75,7.5
+Aston Villa FC vs Fulham FC,HOME_TEAM,HOME_TEAM,True,1.77,3.75,4.5
+Everton FC vs Ipswich Town FC,HOME_TEAM,DRAW,False,1.45,4.33,6.5
+Leicester City FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,2.3,3.6,2.88
+Arsenal FC vs AFC Bournemouth,HOME_TEAM,AWAY_TEAM,False,2.05,3.7,3.4
+Brentford FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,True,1.65,4.1,4.75
+Brighton & Hove Albion FC vs Newcastle United FC,AWAY_TEAM,DRAW,False,2.88,3.7,2.3
+West Ham United FC vs Tottenham Hotspur FC,HOME_TEAM,DRAW,False,2.1,3.7,3.25
+Chelsea FC vs Liverpool FC,HOME_TEAM,HOME_TEAM,True,2.15,3.7,3.1
+Crystal Palace FC vs Nottingham Forest FC,HOME_TEAM,DRAW,False,2.25,3.4,3.2
+Fulham FC vs Everton FC,HOME_TEAM,AWAY_TEAM,False,1.82,3.4,4.5
+Ipswich Town FC vs Brentford FC,AWAY_TEAM,AWAY_TEAM,True,5.0,4.0,1.65
+Southampton FC vs Manchester City FC,AWAY_TEAM,DRAW,False,11.0,7.5,1.2
+Wolverhampton Wanderers FC vs Brighton & Hove Albion FC,AWAY_TEAM,AWAY_TEAM,True,2.7,3.5,2.5
+AFC Bournemouth vs Aston Villa FC,HOME_TEAM,AWAY_TEAM,False,2.4,3.6,2.75
+Newcastle United FC vs Chelsea FC,HOME_TEAM,HOME_TEAM,True,2.1,3.75,3.1
+Manchester United FC vs West Ham United FC,HOME_TEAM,AWAY_TEAM,False,1.9,3.6,4.0
+Nottingham Forest FC vs Leicester City FC,HOME_TEAM,DRAW,False,1.33,5.25,8.0
+Tottenham Hotspur FC vs Crystal Palace FC,AWAY_TEAM,AWAY_TEAM,True,2.63,3.6,2.5
+Liverpool FC vs Arsenal FC,HOME_TEAM,DRAW,False,2.0,3.6,3.6
+Aston Villa FC vs Tottenham Hotspur FC,HOME_TEAM,HOME_TEAM,True,1.3,6.0,8.5
+Chelsea FC vs Manchester United FC,HOME_TEAM,HOME_TEAM,True,1.44,5.0,6.25
+Everton FC vs Southampton FC,HOME_TEAM,HOME_TEAM,True,1.4,4.75,7.5
+West Ham United FC vs Nottingham Forest FC,AWAY_TEAM,AWAY_TEAM,True,2.75,3.3,2.55
+Brentford FC vs Fulham FC,HOME_TEAM,AWAY_TEAM,False,1.91,3.9,3.6
+Leicester City FC vs Ipswich Town FC,HOME_TEAM,HOME_TEAM,True,2.3,3.6,2.9
+Arsenal FC vs Newcastle United FC,HOME_TEAM,HOME_TEAM,True,1.95,3.7,3.7
+Brighton & Hove Albion FC vs Liverpool FC,AWAY_TEAM,HOME_TEAM,False,2.6,3.75,2.45
+Crystal Palace FC vs Wolverhampton Wanderers FC,HOME_TEAM,HOME_TEAM,True,2.25,3.3,3.2
+Manchester City FC vs AFC Bournemouth,HOME_TEAM,HOME_TEAM,True,1.55,4.33,5.75
+AFC Bournemouth vs Leicester City FC,HOME_TEAM,HOME_TEAM,True,1.33,5.25,8.5
+Fulham FC vs Manchester City FC,AWAY_TEAM,AWAY_TEAM,True,5.0,4.2,1.6
+Ipswich Town FC vs West Ham United FC,AWAY_TEAM,AWAY_TEAM,True,3.0,3.8,2.2
+Liverpool FC vs Crystal Palace FC,HOME_TEAM,DRAW,False,1.4,6.0,5.75
+Manchester United FC vs Aston Villa FC,AWAY_TEAM,HOME_TEAM,False,4.33,4.2,1.7
+Newcastle United FC vs Everton FC,HOME_TEAM,AWAY_TEAM,False,1.33,5.5,8.5
+Nottingham Forest FC vs Chelsea FC,AWAY_TEAM,AWAY_TEAM,True,3.0,3.75,2.2
+Southampton FC vs Arsenal FC,AWAY_TEAM,AWAY_TEAM,True,8.5,6.0,1.3
+Tottenham Hotspur FC vs Brighton & Hove Albion FC,AWAY_TEAM,AWAY_TEAM,True,4.2,4.33,1.7
+Wolverhampton Wanderers FC vs Brentford FC,AWAY_TEAM,DRAW,False,2.7,3.7,2.45
