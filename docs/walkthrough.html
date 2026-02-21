@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap');
+  
+  body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #1a1a1a;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+  h1 {
+    color: #1e3a5f;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+  h2 {
+    color: #2563eb;
+    margin-top: 30px;
+    font-size: 18px;
+    page-break-before: auto;
+  }
+  h3 { color: #374151; font-size: 15px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+    font-size: 13px;
+  }
+  th {
+    background: #2563eb;
+    color: white;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  td {
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+  }
+  tr:nth-child(even) { background: #f3f4f6; }
+  code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 12px;
+  }
+  pre code {
+    background: none;
+    color: inherit;
+  }
+  blockquote {
+    border-left: 4px solid #2563eb;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: #eff6ff;
+    border-radius: 0 8px 8px 0;
+  }
+  hr {
+    border: none;
+    border-top: 2px solid #e5e7eb;
+    margin: 30px 0;
+  }
+  @media print {
+    body { margin: 20px; font-size: 12px; }
+    h2 { page-break-before: auto; }
+  }
+</style>
+</head>
+<body>
+<h1>PremierPredict-AI: Project Walkthrough 🏆</h1>
+<h2>โปรเจกต์นี้คืออะไร</h2>
+<p><strong>วิชา:</strong> SEA612 Artificial Intelligence Foundation (KMUTT-SIT)
+<strong>โจทย์:</strong> สร้าง AI ทำนายผลการแข่งขัน Premier League ให้แม่นกว่า Baseline ของมนุษย์
+<strong>ผลลัพธ์สุดท้าย:</strong> AI ทำได้ <strong>55.26%</strong> — เอาชนะทุก Baseline! 🏆</p>
+<hr />
+<h2>สรุปผลลัพธ์</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: left;">Baseline</th>
+<th style="text-align: center;">Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🏢</td>
+<td style="text-align: left;">Official Rating (FPL FDR)</td>
+<td style="text-align: center;">47.11%</td>
+</tr>
+<tr>
+<td style="text-align: center;">💰</td>
+<td style="text-align: left;">Crowd Odds (Betting Market)</td>
+<td style="text-align: center;">53.95%</td>
+</tr>
+<tr>
+<td style="text-align: center;">👥</td>
+<td style="text-align: left;"><strong>FPL Fan Confidence</strong></td>
+<td style="text-align: center;"><strong>54.74%</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">🤖</td>
+<td style="text-align: left;"><strong>AI Model v5 (Stacking)</strong></td>
+<td style="text-align: center;"><strong>55.26% 🏆</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Timeline การพัฒนา</h2>
+<h3>Phase 1-3: พื้นฐาน</h3>
+<ul>
+<li>สร้าง Project Structure, ติดตั้ง Dependencies</li>
+<li>ดึงข้อมูลจาก Football-Data.org API (5 ซีซัน: 2020-2025, 2,148 นัด)</li>
+<li>สร้าง Features:</li>
+<li><strong>Elo Rating</strong> — คำนวณค่าความแข็งแกร่งของแต่ละทีมจากผลย้อนหลัง</li>
+<li><strong>Market Value</strong> — มูลค่าผู้เล่นรวมของทีม</li>
+<li><strong>Form L5</strong> — ฟอร์ม 5 นัดล่าสุด</li>
+<li><strong>H2H</strong> — สถิตเจอกัน</li>
+</ul>
+<h3>Phase 4: AI Model v1-v4</h3>
+<ul>
+<li><strong>RandomForest Classifier</strong> + GridSearchCV</li>
+<li>ทดสอบบน 2024/25 Season (380 นัด)</li>
+<li>v4 Accuracy: <strong>52.37%</strong> (ชนะ Official Rating 47.11%)</li>
+</ul>
+<h3>Phase 5: Streamlit Dashboard</h3>
+<ul>
+<li>Dashboard แสดงผลการทำนายอินเตอร์แอ็คทีฟ</li>
+<li>เลือกคู่ทีม → แสดงโอกาส Win/Draw/Lose</li>
+<li>แปลภาษาไทยทั้งหมด</li>
+<li>Deploy บน Hugging Face Spaces</li>
+</ul>
+<h3>Phase 6: Human Baselines</h3>
+<ul>
+<li><strong>FPL Fan Confidence (54.74%)</strong> — จาก Ownership % ของแฟนบอลทั่วโลก</li>
+<li><strong>FPL Official Rating (47.11%)</strong> — ค่า FDR ทางการของ Premier League</li>
+<li><strong>Crowd Betting Odds (53.95%)</strong> — Market-implied probability จากเจ้ามือ</li>
+<li><strong>Sutton Expert Template</strong> — แม่แบบทำนายของนักวิเคราะห์</li>
+</ul>
+<h3>Phase 7A: Ensemble v2 (GB Hybrid) → 53.95%</h3>
+<ul>
+<li>เปลี่ยนจาก RandomForest → <strong>GradientBoosting</strong></li>
+<li>เพิ่ม 6 Feature ใหม่: FPL scores + Elo-derived probabilities</li>
+<li><strong>เทียบเท่า Betting Odds</strong> (53.95%)</li>
+</ul>
+<h3>Phase 7B: Dixon-Coles Experiment ❌</h3>
+<p>จากงานวิจัย <a href="https://cdn.aaai.org/ojs/17815/17815-13-21309-1-2-20210518.pdf">Beal et al., AAAI 2021</a>:
+- สร้าง <strong>Poisson Regression Model</strong> ประมาณจำนวนประตูแต่ละทีม
+- Standalone accuracy: 45.53%
+- ไม่ช่วยเพิ่ม accuracy เมื่อรวมกับ ensemble (ข้อมูลซ้ำซ้อนกับ Elo)</p>
+<h3>Phase 7C: NLP Text Features Experiment ❌</h3>
+<p>จากงานวิจัยเดียวกัน:
+- ดึง <strong>878 บทความ</strong> จาก Guardian API (Free, ซีซัน 2024/25)
+- สร้าง Sentiment Analysis (football lexicon) + TF-IDF + SVD
+- ช่วย <strong>+0.26% เท่านั้น</strong> — ไม่มีบทความสำหรับ training seasons (2020-2023)</p>
+<h3>Phase 8: Stacking Ensemble v5 → 55.26% 🏆</h3>
+<ul>
+<li><strong>สถาปัตยกรรม Stacking:</strong></li>
+</ul>
+<pre><code>GradientBoosting ─┐
+XGBoost          ─┼─→ LogisticRegression (Meta-Learner)
+RandomForest     ─┘
+</code></pre>
+<ul>
+<li>5-fold CV Stacking ป้องกัน data leakage</li>
+<li>3 โมเดลจับ pattern ต่างกัน → LR รวมจุดแข็งของทุกโมเดล</li>
+<li><strong>ชนะ FPL Fan Confidence +0.52%</strong></li>
+</ul>
+<hr />
+<h2>โครงสร้างไฟล์</h2>
+<pre><code>PremierPredict-AI/
+├── app/
+│   └── dashboard.py              # Streamlit Dashboard (ภาษาไทย)
+├── data/
+│   ├── raw/
+│   │   ├── all_matches_2020_2024.csv    # ข้อมูลดิบ 2,148 นัด
+│   │   ├── crowd_predictions_2024.csv   # Betting odds
+│   │   ├── fpl_baselines_2024.csv       # FPL Fan/Official scores
+│   │   ├── sutton_predictions_2024.json # Expert template
+│   │   └── guardian_epl_articles_2024.json # 878 Guardian articles
+│   └── processed/
+│       ├── features.csv                 # 14 engineered features
+│       └── nlp_features_2024.csv        # NLP text features
+├── models/
+│   ├── stacking_ensemble_v5.pkl         # 🏆 Best model (55.26%)
+│   ├── random_forest_v4.pkl             # Original RF model
+│   └── metrics_v5.json                  # Performance metrics
+├── src/
+│   ├── data_loader.py                   # API data collection
+│   ├── features.py                      # Feature engineering
+│   ├── models.py                        # Model training pipeline
+│   ├── evaluation/
+│   │   └── compare_ai_vs_crowd.py       # AI vs Human comparison
+│   ├── models/
+│   │   └── dixon_coles.py               # Dixon-Coles experiment
+│   └── nlp/
+│       └── text_features.py             # NLP experiment
+└── requirements.txt
+</code></pre>
+<hr />
+<h2>Features (20 ตัว)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">ที่มา</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1-2</td>
+<td style="text-align: left;">Home/Away_Form_L5</td>
+<td style="text-align: left;">ผลงาน 5 นัดล่าสุด</td>
+</tr>
+<tr>
+<td style="text-align: center;">3-6</td>
+<td style="text-align: left;">Home/Away_Avg_GF/GA_L5</td>
+<td style="text-align: left;">เฉลี่ยประตูได้/เสีย 5 นัดล่าสุด</td>
+</tr>
+<tr>
+<td style="text-align: center;">7-9</td>
+<td style="text-align: left;">Home/Away_MV, MV_Diff</td>
+<td style="text-align: left;">Market Value ผู้เล่น (Transfermarkt)</td>
+</tr>
+<tr>
+<td style="text-align: center;">10-12</td>
+<td style="text-align: left;">Home/Away_Elo, Elo_Diff</td>
+<td style="text-align: left;">Elo Rating (คำนวณจากผลย้อนหลัง)</td>
+</tr>
+<tr>
+<td style="text-align: center;">13-14</td>
+<td style="text-align: left;">H2H_Home/Away_Wins</td>
+<td style="text-align: left;">สถิติเจอกัน</td>
+</tr>
+<tr>
+<td style="text-align: center;">15-17</td>
+<td style="text-align: left;">fpl_home/away/diff</td>
+<td style="text-align: left;">FPL Fan Ownership Score</td>
+</tr>
+<tr>
+<td style="text-align: center;">18-20</td>
+<td style="text-align: left;">elo_prob_home/draw/away</td>
+<td style="text-align: left;">Betting-implied probability</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Data Split</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: left;">ซีซัน</th>
+<th style="text-align: center;">จำนวน</th>
+<th style="text-align: left;">ใช้ทำ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🏋️</td>
+<td style="text-align: left;">2020/21 – 2023/24 + 2025/26</td>
+<td style="text-align: center;">1,768 นัด</td>
+<td style="text-align: left;">Training</td>
+</tr>
+<tr>
+<td style="text-align: center;">🧪</td>
+<td style="text-align: left;">2024/25</td>
+<td style="text-align: center;">380 นัด</td>
+<td style="text-align: left;">Testing</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>สิ่งที่เรียนรู้</h2>
+<ol>
+<li><strong>Betting Odds คือ "เพดาน" ที่ยากจะเอาชนะ</strong> — ตลาดพนันรวมข้อมูลจำนวนมหาศาล</li>
+<li><strong>Stacking &gt; Single Model</strong> — LR meta-learner เรียนรู้จุดแข็งจุดอ่อนของแต่ละโมเดล</li>
+<li><strong>Feature Engineering สำคัญกว่า Model Selection</strong> — Elo probs + FPL scores ช่วยมากกว่าเปลี่ยนอัลกอริทึม</li>
+<li><strong>NLP ต้องมีข้อมูลเพียงพอ</strong> — มี articles เฉพาะ 1 ซีซัน ไม่พอจะเรียนรู้ pattern</li>
+<li><strong>Dixon-Coles ซ้ำซ้อนกับ Elo</strong> — ทั้งคู่จับ "ความแข็งแกร่งของทีม" ในมุมเดียวกัน</li>
+</ol>
+</body>
+</html>

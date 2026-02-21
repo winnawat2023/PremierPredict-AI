@@ -6,6 +6,7 @@ import sys
 # Add project root to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from src.features import process_features
+from src.utils import normalize_team_name
 
 def main():
     print("--- AI vs FPL Baselines Comparison ---")
@@ -57,37 +58,9 @@ def main():
     ai_preds = model.predict(X_test)
     matches_2024['ai_pred'] = ai_preds # 0=Home, 1=Draw, 2=Away
     
-    # Normalize Crowd Team Names (just in case)
-    name_replacements = {
-        'Man United': 'Manchester United FC',
-        'Manchester Utd': 'Manchester United FC',
-        'Man Utd': 'Manchester United FC',
-        'Man City': 'Manchester City FC',
-        'Tottenham': 'Tottenham Hotspur FC',
-        'Spurs': 'Tottenham Hotspur FC',
-        'Newcastle': 'Newcastle United FC',
-        'West Ham': 'West Ham United FC',
-        'Wolves': 'Wolverhampton Wanderers FC',
-        'Brighton': 'Brighton & Hove Albion FC',
-        'Leicester': 'Leicester City FC',
-        'Leeds': 'Leeds United FC',
-        'Nott\'m Forest': 'Nottingham Forest FC',
-        'Sheffield Utd': 'Sheffield United FC',
-        'Luton': 'Luton Town FC',
-        'Arsenal': 'Arsenal FC',
-        'Aston Villa': 'Aston Villa FC',
-        'Bournemouth': 'AFC Bournemouth',
-        'Brentford': 'Brentford FC',
-        'Chelsea': 'Chelsea FC',
-        'Crystal Palace': 'Crystal Palace FC',
-        'Everton': 'Everton FC',
-        'Fulham': 'Fulham FC',
-        'Ipswich': 'Ipswich Town FC',
-        'Liverpool': 'Liverpool FC',
-        'Southampton': 'Southampton FC'
-    }
-    crowd_df['HomeTeam'] = crowd_df['HomeTeam'].replace(name_replacements)
-    crowd_df['AwayTeam'] = crowd_df['AwayTeam'].replace(name_replacements)
+    # Normalize Crowd Team Names
+    crowd_df['HomeTeam'] = crowd_df['HomeTeam'].apply(normalize_team_name)
+    crowd_df['AwayTeam'] = crowd_df['AwayTeam'].apply(normalize_team_name)
     
     # DEBUG: Check names
     ai_teams = sorted(matches_2024['home_team'].unique())

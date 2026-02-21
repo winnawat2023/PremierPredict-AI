@@ -2,14 +2,9 @@ import pandas as pd
 import numpy as np
 import os
 from difflib import get_close_matches
+from .utils import calculate_points, normalize_team_name
+from .constants import TEAM_NAME_MAPPING
 
-def calculate_points(result):
-    if result == 'win':
-        return 3
-    elif result == 'draw':
-        return 1
-    else:
-        return 0
 
 def calculate_form(past_matches_history):
     """
@@ -49,7 +44,7 @@ def update_elo(rating_a, rating_b, actual_score_a, k=20):
     new_rating_a = rating_a + k * (actual_score_a - expected_a)
     return new_rating_a
 
-def process_features(input_path="data/raw/all_matches_2020_2024.csv", output_path="data/processed/features.csv"):
+def process_features(input_path="data/raw/pl_matches_2021_2026.csv", output_path="data/processed/features.csv"):
     if not os.path.exists(input_path):
         print(f"Input file {input_path} not found.")
         return
@@ -58,29 +53,8 @@ def process_features(input_path="data/raw/all_matches_2020_2024.csv", output_pat
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date')
 
-    # NORMALIZE TEAM NAMES
-    # Fix inconsistencies (Man United vs Manchester United FC vs Manchester Utd)
-    name_replacements = {
-        'Man United': 'Manchester United FC',
-        'Manchester Utd': 'Manchester United FC',
-        'Man Utd': 'Manchester United FC',
-        'Manchester United': 'Manchester United FC',
-        'Man City': 'Manchester City FC',
-        'Manchester City': 'Manchester City FC',
-        'Tottenham': 'Tottenham Hotspur FC',
-        'Spurs': 'Tottenham Hotspur FC',
-        'Newcastle': 'Newcastle United FC',
-        'West Ham': 'West Ham United FC',
-        'Wolves': 'Wolverhampton Wanderers FC',
-        'Brighton': 'Brighton & Hove Albion FC',
-        'Leicester': 'Leicester City FC',
-        'Leeds': 'Leeds United FC',
-        'Gardners': 'Luton Town FC', # Just in case
-        'Sheffield Utd': 'Sheffield United FC',
-        'Nott\'m Forest': 'Nottingham Forest FC'
-    }
-    df['home_team'] = df['home_team'].replace(name_replacements)
-    df['away_team'] = df['away_team'].replace(name_replacements)
+    df['home_team'] = df['home_team'].apply(normalize_team_name)
+    df['away_team'] = df['away_team'].apply(normalize_team_name)
 
     # Load Market Values
     mv_df = load_market_values()

@@ -1,5 +1,16 @@
 import pandas as pd
 import os
+from .constants import TEAM_NAME_MAPPING
+
+def calculate_points(result):
+    """Standard point calculation for football results."""
+    if result in ['win', 'HOME_WIN', 'HOME_TEAM', 'AWAY_WIN', 'AWAY_TEAM']: return 3
+    elif result in ['draw', 'DRAW']: return 1
+    return 0
+
+def normalize_team_name(name):
+    """Normalize team names using the centralized mapping."""
+    return TEAM_NAME_MAPPING.get(name, name)
 
 def get_latest_team_stats(filepath="data/raw/pl_matches_2021_2025.csv"):
     """
@@ -16,7 +27,6 @@ def get_latest_team_stats(filepath="data/raw/pl_matches_2021_2025.csv"):
     df = df.sort_values('date')
 
     # We only care about the latest season for current form/rank
-    # Ideally, find the max season
     if 'season' in df.columns:
         latest_season = df['season'].max()
         df = df[df['season'] == latest_season]
@@ -24,11 +34,6 @@ def get_latest_team_stats(filepath="data/raw/pl_matches_2021_2025.csv"):
     # Initialize stats
     all_teams = set(df['home_team'].unique()).union(set(df['away_team'].unique()))
     team_stats = {team: {'points': 0, 'games': 0, 'history': [], 'goal_diff': 0, 'goals_for': 0} for team in all_teams}
-
-    def calculate_points(result):
-        if result == 'win': return 3
-        elif result == 'draw': return 1
-        return 0
 
     for index, row in df.iterrows():
         home = row['home_team']

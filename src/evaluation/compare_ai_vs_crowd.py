@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import os
+from src.utils import normalize_team_name
 
 def load_data():
     features_path = 'data/processed/features.csv'
@@ -17,42 +18,6 @@ def load_data():
     df_crowd = pd.read_csv(crowd_path)
     
     return df_features, df_crowd
-
-def normalize_crowd_names(name):
-    # Mapping crowd data names (Bet365) to our feature names (likely full names)
-    # Our features use names like 'Manchester United FC', crowd uses 'Man United'
-    mapping = {
-        'Man United': 'Manchester United FC',
-        'Man Utd': 'Manchester United FC',
-        'Man City': 'Manchester City FC',
-        'Liverpool': 'Liverpool FC',
-        'Arsenal': 'Arsenal FC',
-        'Aston Villa': 'Aston Villa FC',
-        'Tottenham': 'Tottenham Hotspur FC',
-        'Chelsea': 'Chelsea FC',
-        'Newcastle': 'Newcastle United FC',
-        'West Ham': 'West Ham United FC',
-        'Brighton': 'Brighton & Hove Albion FC',
-        'Brentford': 'Brentford FC',
-        'Crystal Palace': 'Crystal Palace FC',
-        'Wolves': 'Wolverhampton Wanderers FC',
-        'Fulham': 'Fulham FC',
-        'Bournemouth': 'AFC Bournemouth',
-        'Everton': 'Everton FC',
-        'Nott\'m Forest': 'Nottingham Forest FC',
-        'Luton': 'Luton Town FC',
-        'Burnley': 'Burnley FC',
-        'Sheffield United': 'Sheffield United FC',
-        'Leicester': 'Leicester City FC',
-        'Ipswich': 'Ipswich Town FC',
-        'Southampton': 'Southampton FC',
-        'Leeds': 'Leeds United FC',
-        # Handle cases where names might be strictly equal already or slight variations
-        'Ipswich Town': 'Ipswich Town FC',
-        'Leicester City': 'Leicester City FC',
-        'Nottingham Forest': 'Nottingham Forest FC'
-    }
-    return mapping.get(name, name)
 
 def compare_ai_vs_crowd(df_features, df_crowd):
     print("--- AI Model vs Crowd Baseline Comparison ---")
@@ -135,8 +100,8 @@ def compare_ai_vs_crowd(df_features, df_crowd):
     
     # 4. Merge with Crowd Data to compare on EXACT subset
     # Normalize crowd names first
-    df_crowd['HomeTeam_Norm'] = df_crowd['HomeTeam'].apply(normalize_crowd_names)
-    df_crowd['AwayTeam_Norm'] = df_crowd['AwayTeam'].apply(normalize_crowd_names)
+    df_crowd['HomeTeam_Norm'] = df_crowd['HomeTeam'].apply(normalize_team_name)
+    df_crowd['AwayTeam_Norm'] = df_crowd['AwayTeam'].apply(normalize_team_name)
     
     # Create join keys
     df_crowd['match_key'] = df_crowd['HomeTeam_Norm'] + " vs " + df_crowd['AwayTeam_Norm']

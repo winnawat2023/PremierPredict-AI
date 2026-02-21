@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+from src.utils import normalize_team_name
 
 def load_data():
     actual_path = 'data/raw/pl_matches_2021_2025.csv'
@@ -16,42 +17,12 @@ def load_data():
     
     return df_actual, df_crowd
 
-def normalize_name(name):
-    # Mapping football-data.co.uk names to our dataset names
-    mapping = {
-        'Man City': 'Manchester City FC',
-        'Man United': 'Manchester United FC',
-        'Liverpool': 'Liverpool FC',
-        'Arsenal': 'Arsenal FC',
-        'Aston Villa': 'Aston Villa FC',
-        'Tottenham': 'Tottenham Hotspur FC',
-        'Chelsea': 'Chelsea FC',
-        'Newcastle': 'Newcastle United FC',
-        'West Ham': 'West Ham United FC',
-        'Brighton': 'Brighton & Hove Albion FC',
-        'Brentford': 'Brentford FC',
-        'Crystal Palace': 'Crystal Palace FC',
-        'Wolves': 'Wolverhampton Wanderers FC',
-        'Fulham': 'Fulham FC',
-        'Bournemouth': 'AFC Bournemouth',
-        'Everton': 'Everton FC',
-        'Nott\'m Forest': 'Nottingham Forest FC',
-        'Luton': 'Luton Town FC',
-        'Burnley': 'Burnley FC',
-        'Sheffield United': 'Sheffield United FC',
-        'Leicester': 'Leicester City FC',
-        'Ipswich': 'Ipswich Town FC',
-        'Southampton': 'Southampton FC',
-        'Leeds': 'Leeds United FC'
-    }
-    return mapping.get(name, name)
-
 def compare_crowd(df_actual, df_crowd):
     print(f"Comparing {len(df_crowd)} crowd predictions against actual results...")
     
     # Normalize names in crowd data
-    df_crowd['HomeTeam_Norm'] = df_crowd['HomeTeam'].apply(normalize_name)
-    df_crowd['AwayTeam_Norm'] = df_crowd['AwayTeam'].apply(normalize_name)
+    df_crowd['HomeTeam_Norm'] = df_crowd['HomeTeam'].apply(normalize_team_name)
+    df_crowd['AwayTeam_Norm'] = df_crowd['AwayTeam'].apply(normalize_team_name)
     
     # Create match keys
     df_crowd['match_key'] = df_crowd['HomeTeam_Norm'] + " vs " + df_crowd['AwayTeam_Norm']

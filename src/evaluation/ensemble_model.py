@@ -13,57 +13,9 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, classification_report
-import joblib
-import json
-import os
-import sys
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
-
-# === Name Mappings ===
-CROWD_NAME_MAP = {
-    'Man United': 'Manchester United FC', 'Man City': 'Manchester City FC',
-    'Liverpool': 'Liverpool FC', 'Arsenal': 'Arsenal FC',
-    'Aston Villa': 'Aston Villa FC', 'Tottenham': 'Tottenham Hotspur FC',
-    'Chelsea': 'Chelsea FC', 'Newcastle': 'Newcastle United FC',
-    'West Ham': 'West Ham United FC', 'Brighton': 'Brighton & Hove Albion FC',
-    'Brentford': 'Brentford FC', 'Crystal Palace': 'Crystal Palace FC',
-    'Wolves': 'Wolverhampton Wanderers FC', 'Fulham': 'Fulham FC',
-    'Bournemouth': 'AFC Bournemouth', 'Everton': 'Everton FC',
-    "Nott'm Forest": 'Nottingham Forest FC', 'Luton': 'Luton Town FC',
-    'Burnley': 'Burnley FC', 'Sheffield United': 'Sheffield United FC',
-    'Leicester': 'Leicester City FC', 'Ipswich': 'Ipswich Town FC',
-    'Southampton': 'Southampton FC', 'Ipswich Town': 'Ipswich Town FC',
-    'Nottingham Forest': 'Nottingham Forest FC', 'Leicester City': 'Leicester City FC',
-}
-
-FPL_NAME_MAP = {
-    'Arsenal': 'Arsenal FC', 'Aston Villa': 'Aston Villa FC',
-    'Bournemouth': 'AFC Bournemouth', 'Brentford': 'Brentford FC',
-    'Brighton': 'Brighton & Hove Albion FC', 'Chelsea': 'Chelsea FC',
-    'Crystal Palace': 'Crystal Palace FC', 'Everton': 'Everton FC',
-    'Fulham': 'Fulham FC', 'Ipswich': 'Ipswich Town FC',
-    'Leicester': 'Leicester City FC', 'Liverpool': 'Liverpool FC',
-    'Man City': 'Manchester City FC', 'Man Utd': 'Manchester United FC',
-    'Newcastle': 'Newcastle United FC', "Nott'm Forest": 'Nottingham Forest FC',
-    'Southampton': 'Southampton FC', 'Spurs': 'Tottenham Hotspur FC',
-    'West Ham': 'West Ham United FC', 'Wolves': 'Wolverhampton Wanderers FC',
-}
-
-BASE_FEATURES = [
-    'Home_Form_L5', 'Away_Form_L5',
-    'Home_Avg_GF_L5', 'Home_Avg_GA_L5',
-    'Away_Avg_GF_L5', 'Away_Avg_GA_L5',
-    'Home_MV', 'Away_MV', 'MV_Diff',
-    'Home_Elo', 'Away_Elo', 'Elo_Diff',
-    'H2H_Home_Wins', 'H2H_Away_Wins'
-]
-
-HYBRID_FEATURES = BASE_FEATURES + [
-    'fpl_home', 'fpl_away', 'fpl_diff',
-    'elo_prob_home', 'elo_prob_draw', 'elo_prob_away'
-]
+from src.utils import normalize_team_name
+from src.constants import BASE_FEATURES, HYBRID_FEATURES
+# Features are now imported from src.constants
 
 
 def build_ensemble():
@@ -77,7 +29,7 @@ def build_ensemble():
     fpl_df = pd.read_csv('data/raw/fpl_baselines_2024.csv')
 
     # 2. Prepare FPL scores
-    fpl_df['name_norm'] = fpl_df['name'].map(FPL_NAME_MAP).fillna(fpl_df['name'])
+    fpl_df['name_norm'] = fpl_df['name'].apply(normalize_team_name)
     fpl_scores = dict(zip(fpl_df['name_norm'], fpl_df['fan_ownership_score']))
 
     # 3. Augment ALL data with human-signal features
@@ -92,8 +44,8 @@ def build_ensemble():
     df['elo_prob_draw'] = (1 - df['elo_prob_home'] - df['elo_prob_away']).clip(0.1, 0.4)
 
     # 4. For 2024 test set: use REAL betting odds instead of Elo proxy
-    crowd_df['home_norm'] = crowd_df['HomeTeam'].map(CROWD_NAME_MAP).fillna(crowd_df['HomeTeam'])
-    crowd_df['away_norm'] = crowd_df['AwayTeam'].map(CROWD_NAME_MAP).fillna(crowd_df['AwayTeam'])
+    crowd_df['home_norm'] = crowd_df['HomeTeam'].apply(normalize_team_name)
+    crowd_df['away_norm'] = crowd_df['AwayTeam'].apply(normalize_team_name)
     crowd_df['match_key'] = crowd_df['home_norm'] + ' vs ' + crowd_df['away_norm']
     crowd_df['total_prob'] = 1/crowd_df['HomeOdd'] + 1/crowd_df['DrawOdd'] + 1/crowd_df['AwayOdd']
     crowd_df['odds_h'] = (1/crowd_df['HomeOdd']) / crowd_df['total_prob']

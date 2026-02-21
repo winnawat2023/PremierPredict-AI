@@ -11,8 +11,12 @@ import seaborn as sns
 st.set_page_config(page_title="PremierPredict-AI", layout="wide")
 
 # Paths
-MODEL_PATH = "models/random_forest_v4.pkl"
+MODEL_PATH = "models/stacking_ensemble_v5.pkl"
 STATS_PATH = "data/processed/latest_team_stats.json"
+
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from src.utils import normalize_team_name
 
 # Cache Compatibility
 if hasattr(st, 'cache_resource'):
@@ -30,18 +34,27 @@ def load_resources():
         model = joblib.load(MODEL_PATH)
     except FileNotFoundError:
         st.error(f"Model not found at {MODEL_PATH}")
-        return None, None
+        return None, None, None
 
     try:
         with open(STATS_PATH, "r") as f:
             stats = json.load(f)
     except FileNotFoundError:
         st.error(f"Stats file not found at {STATS_PATH}")
-        return None, None
+        return None, None, None
         
-    return model, stats
+    # Load FPL scores
+    try:
+        fpl_df = pd.read_csv('data/raw/fpl_baselines_2024.csv')
+        fpl_df['name_norm'] = fpl_df['name'].apply(normalize_team_name)
+        fpl_scores = dict(zip(fpl_df['name_norm'], fpl_df['fan_ownership_score']))
+    except Exception as e:
+        st.warning(f"Could not load FPL scores: {e}. Using defaults.")
+        fpl_scores = {}
 
-def calculate_features(home_team, away_team, stats):
+    return model, stats, fpl_scores
+
+def calculate_features(home_team, away_team, stats, fpl_scores):
     # Extract sub-dictionaries
     elo_dict = stats.get('elo', {})
     history_dict = stats.get('history', {})
@@ -83,6 +96,15 @@ def calculate_features(home_team, away_team, stats):
     h2h_home = last_5.count(home_team)
     h2h_away = last_5.count(away_team)
     
+    # 5. Hybrid Features (Elo Probs & FPL)
+    elo_prob_home = 1 / (1 + 10**((away_elo - home_elo) / 400))
+    elo_prob_away = 1 / (1 + 10**((home_elo - away_elo) / 400))
+    elo_prob_draw = max(0.1, min(0.4, 1 - elo_prob_home - elo_prob_away))
+    
+    fpl_h = fpl_scores.get(home_team, 50.0)
+    fpl_a = fpl_scores.get(away_team, 50.0)
+    fpl_diff = fpl_h - fpl_a
+
     # Construct DataFrame (Order must match training!)
     features = {
         'Home_Form_L5': h_form,
@@ -98,16 +120,22 @@ def calculate_features(home_team, away_team, stats):
         'Away_Elo': away_elo,
         'Elo_Diff': home_elo - away_elo,
         'H2H_Home_Wins': h2h_home,
-        'H2H_Away_Wins': h2h_away
+        'H2H_Away_Wins': h2h_away,
+        'fpl_home': fpl_h,
+        'fpl_away': fpl_a,
+        'fpl_diff': fpl_diff,
+        'elo_prob_home': elo_prob_home,
+        'elo_prob_draw': elo_prob_draw,
+        'elo_prob_away': elo_prob_away
     }
     
     return pd.DataFrame([features])
 
 def main():
-    st.title("⚽ PremierPredict-AI: Expert System (98% Complete)")
-    st.markdown("### Model Version 4.0 (Elo + Market Value + Form)")
+    st.title("⚽ PremierPredict-AI: Expert System (v5.0)")
+    st.markdown("### Stacking Ensemble (GB + XGB + RF → LR)")
     
-    model, stats = load_resources()
+    model, stats, fpl_scores = load_resources()
     
     if not model or not stats:
         st.stop()
@@ -124,7 +152,7 @@ def main():
         st.stop()
         
     # Calculate Features
-    input_df = calculate_features(home_team, away_team, stats)
+    input_df = calculate_features(home_team, away_team, stats, fpl_scores)
     
     # Display Stats Comparison
     st.subheader("📊 Head-to-Head Stats Comparison")
