@@ -1,140 +1,168 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap');
-  
-  body {
-    font-family: 'Noto Sans Thai', sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    color: #1a1a1a;
-    line-height: 1.7;
-    font-size: 14px;
-  }
-  h1 {
-    color: #1e3a5f;
-    border-bottom: 3px solid #2563eb;
-    padding-bottom: 10px;
-    font-size: 24px;
-  }
-  h2 {
-    color: #2563eb;
-    margin-top: 30px;
-    font-size: 18px;
-    page-break-before: auto;
-  }
-  h3 { color: #374151; font-size: 15px; }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 15px 0;
-    font-size: 13px;
-  }
-  th {
-    background: #2563eb;
-    color: white;
-    padding: 8px 12px;
-    text-align: left;
-  }
-  td {
-    border: 1px solid #d1d5db;
-    padding: 6px 12px;
-  }
-  tr:nth-child(even) { background: #f3f4f6; }
-  code {
-    background: #f3f4f6;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 13px;
-  }
-  pre {
-    background: #1e293b;
-    color: #e2e8f0;
-    padding: 15px;
-    border-radius: 8px;
-    overflow-x: auto;
-    font-size: 12px;
-  }
-  pre code {
-    background: none;
-    color: inherit;
-  }
-  blockquote {
-    border-left: 4px solid #2563eb;
-    margin: 15px 0;
-    padding: 10px 20px;
-    background: #eff6ff;
-    border-radius: 0 8px 8px 0;
-  }
-  hr {
-    border: none;
-    border-top: 2px solid #e5e7eb;
-    margin: 30px 0;
-  }
-  @media print {
-    body { margin: 20px; font-size: 12px; }
-    h2 { page-break-before: auto; }
-  }
-</style>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap');
+
+    body {
+      font-family: 'Noto Sans Thai', sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #1a1a1a;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    h1 {
+      color: #1e3a5f;
+      border-bottom: 3px solid #2563eb;
+      padding-bottom: 10px;
+      font-size: 24px;
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-top: 30px;
+      font-size: 18px;
+      page-break-before: auto;
+    }
+
+    h3 {
+      color: #374151;
+      font-size: 15px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 15px 0;
+      font-size: 13px;
+    }
+
+    th {
+      background: #2563eb;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    td {
+      border: 1px solid #d1d5db;
+      padding: 6px 12px;
+    }
+
+    tr:nth-child(even) {
+      background: #f3f4f6;
+    }
+
+    code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    pre {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 12px;
+    }
+
+    pre code {
+      background: none;
+      color: inherit;
+    }
+
+    blockquote {
+      border-left: 4px solid #2563eb;
+      margin: 15px 0;
+      padding: 10px 20px;
+      background: #eff6ff;
+      border-radius: 0 8px 8px 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #e5e7eb;
+      margin: 30px 0;
+    }
+
+    @media print {
+      body {
+        margin: 20px;
+        font-size: 12px;
+      }
+
+      h2 {
+        page-break-before: auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<h1>PremierPredict-AI: Project Proposal</h1>
-<h3>SEA612 Artificial Intelligence Fundamentals | KMUTT-SIT</h3>
-<hr />
-<h2>Slide 1: ปก</h2>
-<blockquote>
-<p><strong>PremierPredict-AI</strong>
-<strong>ทำนายผลฟุตบอลพรีเมียร์ลีกด้วย Ensemble Machine Learning</strong></p>
-<p>วิชา SEA612 Artificial Intelligence Fundamentals
-อาจารย์: ผศ.ดร.พรรณรัศมิ์ ศิลปรัตนวงศ์</p>
-<p>👤 ชื่อ: [ใส่ชื่อ]
-🆔 Student ID: [ใส่ ID]
-📅 22 กุมภาพันธ์ 2026</p>
-</blockquote>
-<hr />
-<h2>Slide 2: Research Problem &amp; AI ที่เกี่ยวข้อง</h2>
-<blockquote>
-<p><strong>โจทย์วิจัย:</strong>
-<em>"AI สามารถทำนายผลฟุตบอลพรีเมียร์ลีกได้แม่นกว่ามนุษย์หรือไม่?"</em></p>
-<p><strong>ประเภทปัญหาทาง AI:</strong>
-- <strong>Supervised Learning</strong> — เรียนรู้จากข้อมูลที่มี Label (ผลแพ้/เสมอ/ชนะ)
-- <strong>Multi-class Classification</strong> — จำแนก 3 คลาส: Home Win / Draw / Away Win
-- ไม่ใช่ Regression เพราะเราทำนาย "ผลลัพธ์" ไม่ใช่ "สกอร์"</p>
-<p><strong>ทฤษฎี AI ที่เกี่ยวข้อง:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">ทฤษฎี</th>
-<th style="text-align: left;">ใช้ตรงไหน</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Supervised Learning</td>
-<td style="text-align: left;">เรียนรู้จากผลนัดที่ผ่านมา (2,148 นัด)</td>
-</tr>
-<tr>
-<td style="text-align: left;">Ensemble Methods</td>
-<td style="text-align: left;">รวมหลายโมเดลให้แม่นกว่าตัวเดียว</td>
-</tr>
-<tr>
-<td style="text-align: left;">Stacking (Meta-Learning)</td>
-<td style="text-align: left;">ให้โมเดลเรียนรู้จุดแข็งของกันและกัน</td>
-</tr>
-<tr>
-<td style="text-align: left;">Feature Engineering</td>
-<td style="text-align: left;">สร้าง Feature จาก Domain Knowledge ฟุตบอล</td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-<hr />
-<h2>Slide 3: AI Input → Process → Output</h2>
-<blockquote>
-<p><code>┌─────────────────────────────────────────────────────────┐
+  <h1>PremierPredict-AI: Project Proposal</h1>
+  <h3>SEA612 Artificial Intelligence Fundamentals | KMUTT-SIT</h3>
+  <hr />
+  <h2>Slide 1: ปก</h2>
+  <blockquote>
+    <p><strong>PremierPredict-AI</strong>
+      <strong>ทำนายผลฟุตบอลพรีเมียร์ลีกด้วย Ensemble Machine Learning</strong>
+    </p>
+    <p>วิชา SEA612 Artificial Intelligence Fundamentals
+      อาจารย์: ผศ.ดร.พรรณรัศมิ์ ศิลปรัตนวงศ์</p>
+    <p>👤 ชื่อ: [ใส่ชื่อ]
+      🆔 Student ID: [ใส่ ID]
+      📅 22 กุมภาพันธ์ 2026</p>
+  </blockquote>
+  <hr />
+  <h2>Slide 2: Research Problem &amp; AI ที่เกี่ยวข้อง</h2>
+  <blockquote>
+    <p><strong>โจทย์วิจัย:</strong>
+      <em>"AI สามารถทำนายผลฟุตบอลพรีเมียร์ลีกได้แม่นกว่ามนุษย์หรือไม่?"</em>
+    </p>
+    <p><strong>ประเภทปัญหาทาง AI:</strong>
+      - <strong>Supervised Learning</strong> — เรียนรู้จากข้อมูลที่มี Label (ผลแพ้/เสมอ/ชนะ)
+      - <strong>Multi-class Classification</strong> — จำแนก 3 คลาส: Home Win / Draw / Away Win
+      - ไม่ใช่ Regression เพราะเราทำนาย "ผลลัพธ์" ไม่ใช่ "สกอร์"</p>
+    <p><strong>ทฤษฎี AI ที่เกี่ยวข้อง:</strong></p>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left;">ทฤษฎี</th>
+          <th style="text-align: left;">ใช้ตรงไหน</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">Supervised Learning</td>
+          <td style="text-align: left;">เรียนรู้จากผลนัดที่ผ่านมา (2,148 นัด)</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Ensemble Methods</td>
+          <td style="text-align: left;">รวมหลายโมเดลให้แม่นกว่าตัวเดียว</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Stacking (Meta-Learning)</td>
+          <td style="text-align: left;">ให้โมเดลเรียนรู้จุดแข็งของกันและกัน</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Feature Engineering</td>
+          <td style="text-align: left;">สร้าง Feature จาก Domain Knowledge ฟุตบอล</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <hr />
+  <h2>Slide 3: AI Input → Process → Output</h2>
+  <blockquote>
+    <p><code>┌─────────────────────────────────────────────────────────┐
 │                    AI PIPELINE                          │
 │                                                         │
 │  INPUT (20 Features)          PROCESS              OUTPUT│
@@ -147,324 +175,341 @@
 │  │ 👥 FPL/Odds   │     └──────────────────┘   └───────┘│
 │  └───────────────┘                                      │
 └─────────────────────────────────────────────────────────┘</code></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">ส่วน</th>
-<th style="text-align: left;">รายละเอียด</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Input</strong></td>
-<td style="text-align: left;">20 ตัวเลขต่อนัด (ฟอร์ม, มูลค่า, Elo, สถิติเจอกัน, FPL, Odds)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Process</strong></td>
-<td style="text-align: left;">Stacking Ensemble — 3 โมเดลทำนายแยกกัน แล้ว LR เลือกคำตอบดีที่สุด</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Output</strong></td>
-<td style="text-align: left;">ความน่าจะเป็นของ 3 ผลลัพธ์ (Home Win / Draw / Away Win)</td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-<hr />
-<h2>Slide 4: Input — Features อธิบายละเอียด</h2>
-<blockquote>
-<p>AI ไม่รู้จัก "ชื่อทีม" — ต้องแปลงข้อมูลดิบเป็นตัวเลขที่มีความหมาย:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Feature</th>
-<th style="text-align: left;">คำอธิบาย</th>
-<th style="text-align: left;">ตัวอย่าง (Liverpool vs Man City)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Home_Form_L5</td>
-<td style="text-align: left;">ผลงาน 5 นัดล่าสุด (0-1)</td>
-<td style="text-align: left;">Liverpool = 0.87</td>
-</tr>
-<tr>
-<td style="text-align: left;">Away_Form_L5</td>
-<td style="text-align: left;">ผลงานฝั่ง Away</td>
-<td style="text-align: left;">Man City = 0.73</td>
-</tr>
-<tr>
-<td style="text-align: left;">Home_Elo</td>
-<td style="text-align: left;">คะแนนความแข็งแกร่ง</td>
-<td style="text-align: left;">Liverpool = 1,850</td>
-</tr>
-<tr>
-<td style="text-align: left;">Away_Elo</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Man City = 1,820</td>
-</tr>
-<tr>
-<td style="text-align: left;">Elo_Diff</td>
-<td style="text-align: left;">ส่วนต่าง Elo</td>
-<td style="text-align: left;">+30 (Liverpool เหนือกว่า)</td>
-</tr>
-<tr>
-<td style="text-align: left;">MV_Diff</td>
-<td style="text-align: left;">ส่วนต่างมูลค่าผู้เล่น</td>
-<td style="text-align: left;">-€50M (Man City แพงกว่า)</td>
-</tr>
-<tr>
-<td style="text-align: left;">elo_prob_home</td>
-<td style="text-align: left;">ความน่าจะเป็นจาก Odds</td>
-<td style="text-align: left;">0.45</td>
-</tr>
-<tr>
-<td style="text-align: left;">fpl_diff</td>
-<td style="text-align: left;">ส่วนต่าง FPL Ownership</td>
-<td style="text-align: left;">+5.2</td>
-</tr>
-</tbody>
-</table>
-<p><strong>แนวคิด:</strong> ยิ่ง Feature ดี → AI ยิ่งตัดสินใจได้ดี (Garbage In = Garbage Out)</p>
-</blockquote>
-<hr />
-<h2>Slide 5: Process — Stacking Ensemble ทำงานยังไง</h2>
-<blockquote>
-<p><strong>ทฤษฎี Ensemble Learning:</strong>
-"โมเดลหลายตัวรวมกัน แม่นกว่าตัวเดียว" (Wisdom of Models)</p>
-<p><strong>ขั้นตอน Stacking:</strong>
-```
-ขั้น 1: แบ่ง Training Data เป็น 5 ส่วน (5-fold CV)</p>
-<p>ขั้น 2: แต่ละโมเดลฝึก 4 ส่วน ทำนาย 1 ส่วน (สลับรอบ)
-        ┌─ GradientBoosting  → ทำนาย Prob [H, D, A]
-        ├─ XGBoost           → ทำนาย Prob [H, D, A]
-        └─ RandomForest      → ทำนาย Prob [H, D, A]</p>
-<p>ขั้น 3: Logistic Regression (Meta-Learner) เรียนรู้ว่า
-        "เมื่อไหร่ควรเชื่อโมเดลไหน"</p>
-<p>ขั้น 4: ผลลัพธ์สุดท้าย = คำตอบที่ดีที่สุดจาก 3 โมเดลรวมกัน
-```</p>
-<p><strong>ทำไมถึงดีกว่าโมเดลเดียว?</strong>
-- GB เก่งเรื่องจับ pattern ต่อเนื่อง (Sequential)
-- RF เก่งเรื่องความเสถียร (Bagging)
-- XGBoost เก่งเรื่อง Regularization (ลด Overfitting)
-- LR เรียนรู้ว่าเมื่อไหร่โมเดลไหน "ถูก" บ่อยกว่า</p>
-</blockquote>
-<hr />
-<h2>Slide 6: Output — AI ทำนายอะไรออกมา</h2>
-<blockquote>
-<p><strong>ตัวอย่าง Output (นัดจริงซีซัน 2024/25):</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">นัด</th>
-<th style="text-align: center;">P(Home)</th>
-<th style="text-align: center;">P(Draw)</th>
-<th style="text-align: center;">P(Away)</th>
-<th style="text-align: center;">AI ทำนาย</th>
-<th style="text-align: center;">ผลจริง</th>
-<th style="text-align: center;">✅/❌</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Newcastle vs Southampton</td>
-<td style="text-align: center;">0.63</td>
-<td style="text-align: center;">0.20</td>
-<td style="text-align: center;">0.17</td>
-<td style="text-align: center;">Home Win</td>
-<td style="text-align: center;">Home Win</td>
-<td style="text-align: center;">✅</td>
-</tr>
-<tr>
-<td style="text-align: left;">Ipswich vs Liverpool</td>
-<td style="text-align: center;">0.20</td>
-<td style="text-align: center;">0.25</td>
-<td style="text-align: center;">0.55</td>
-<td style="text-align: center;">Away Win</td>
-<td style="text-align: center;">Away Win</td>
-<td style="text-align: center;">✅</td>
-</tr>
-<tr>
-<td style="text-align: left;">Forest vs Bournemouth</td>
-<td style="text-align: center;">0.39</td>
-<td style="text-align: center;">0.25</td>
-<td style="text-align: center;">0.36</td>
-<td style="text-align: center;">Home Win</td>
-<td style="text-align: center;">Draw</td>
-<td style="text-align: center;">❌</td>
-</tr>
-</tbody>
-</table>
-<p><strong>วิธีตัดสินใจ:</strong> เลือกผลลัพธ์ที่มี <strong>ความน่าจะเป็นสูงสุด</strong></p>
-<p><strong>จุดอ่อน:</strong> Draw ทำนายยากที่สุด — โมเดลแทบไม่เคยเลือก Draw เพราะ P(Draw) มักต่ำกว่า Home/Away เสมอ</p>
-</blockquote>
-<hr />
-<h2>Slide 7: Experiment &amp; Analysis</h2>
-<blockquote>
-<p><strong>เราทดลอง 5 แนวทาง แล้ววัดผลบน 380 นัดจริง:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">#</th>
-<th style="text-align: left;">วิธี</th>
-<th style="text-align: center;">Accuracy</th>
-<th style="text-align: center;">สถานะ</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;">Random Forest (Baseline AI)</td>
-<td style="text-align: center;">52.37%</td>
-<td style="text-align: center;">❌</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: left;">GradientBoosting + FPL + Odds</td>
-<td style="text-align: center;">53.95%</td>
-<td style="text-align: center;">❌</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: left;">Dixon-Coles (Poisson Regression)</td>
-<td style="text-align: center;">45.53%</td>
-<td style="text-align: center;">❌</td>
-</tr>
-<tr>
-<td style="text-align: center;">4</td>
-<td style="text-align: left;">NLP Text Features (Guardian)</td>
-<td style="text-align: center;">+0.26%</td>
-<td style="text-align: center;">❌</td>
-</tr>
-<tr>
-<td style="text-align: center;">5</td>
-<td style="text-align: left;"><strong>Stacking Ensemble (GB+XGB+RF→LR)</strong></td>
-<td style="text-align: center;"><strong>55.26%</strong></td>
-<td style="text-align: center;"><strong>✅</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>วิเคราะห์:</strong>
-- Dixon-Coles ไม่ช่วย → ซ้ำซ้อนกับ Elo (จับ "ความแข็งแกร่ง" เหมือนกัน)
-- NLP ช่วยน้อย → ขาดบทความสำหรับ training data ย้อนหลัง
-- <strong>Stacking คือคำตอบ</strong> → ใช้จุดแข็งของหลายโมเดลร่วมกัน</p>
-</blockquote>
-<hr />
-<h2>Slide 8: เปรียบเทียบ AI vs มนุษย์</h2>
-<blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: left;">วิธี</th>
-<th style="text-align: center;">Accuracy</th>
-<th style="text-align: center;">AI ดีกว่า</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">🏢</td>
-<td style="text-align: left;">Official Rating (ค่าพลังทางการ)</td>
-<td style="text-align: center;">47.11%</td>
-<td style="text-align: center;"><strong>+8.15%</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;">💰</td>
-<td style="text-align: left;">Betting Odds (ตลาดพนัน)</td>
-<td style="text-align: center;">53.95%</td>
-<td style="text-align: center;"><strong>+1.31%</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;">👥</td>
-<td style="text-align: left;">FPL Fan (แฟนบอล 11 ล้านคน)</td>
-<td style="text-align: center;">54.74%</td>
-<td style="text-align: center;"><strong>+0.52%</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;">🤖</td>
-<td style="text-align: left;"><strong>AI Stacking v5</strong></td>
-<td style="text-align: center;"><strong>55.26%</strong></td>
-<td style="text-align: center;"><strong>🏆</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>ข้อสังเกตสำคัญ:</strong>
-- AI ชนะ "ค่าพลังทางการ" ง่าย (+8%) → Official Rating ไม่ปรับตามฟอร์ม
-- AI ชนะ "ตลาดพนัน" ได้ (+1%) → AI ใช้หลาย Feature ไม่ใช่แค่ Odds
-- AI ชนะ "แฟนบอลทั่วโลก" ได้ (+0.5%) → Stacking มีประสิทธิภาพสูง</p>
-</blockquote>
-<hr />
-<h2>Slide 9: ประโยชน์ &amp; การนำไปใช้จริง</h2>
-<blockquote>
-<p><strong>ด้านกีฬา:</strong>
-- ⚽ ช่วยโค้ช/สโมสรวางแผนกลยุทธ์
-- 📊 วิเคราะห์จุดแข็ง/จุดอ่อนคู่แข่ง</p>
-<p><strong>ด้าน Business:</strong>
-- 💰 Sports Analytics Industry (มูลค่า $4.6B globally)
-- 📈 Fantasy Football — ช่วยผู้เล่น FPL เลือกนักเตะ</p>
-<p><strong>ด้าน AI Theory:</strong>
-- 🧠 พิสูจน์ว่า Ensemble &gt; Single Model ในปัญหาจริง
-- 📚 ยืนยันทฤษฎี Feature Engineering &gt; Model Selection
-- 🔬 แสดงข้อจำกัดของ NLP เมื่อข้อมูลน้อย (ต้องมี text data ทุกซีซัน)</p>
-<p><strong>สรุปการโยงทฤษฎี AI:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">ทฤษฎี AI</th>
-<th style="text-align: left;">ใช้ในโปรเจกต์</th>
-<th style="text-align: left;">ผลลัพธ์</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Supervised Learning</td>
-<td style="text-align: left;">ฝึกจากผลจริง 1,768 นัด</td>
-<td style="text-align: left;">✅</td>
-</tr>
-<tr>
-<td style="text-align: left;">Feature Engineering</td>
-<td style="text-align: left;">สร้าง 20 features จาก domain knowledge</td>
-<td style="text-align: left;">+3% accuracy</td>
-</tr>
-<tr>
-<td style="text-align: left;">Ensemble (Bagging)</td>
-<td style="text-align: left;">RandomForest</td>
-<td style="text-align: left;">52.37%</td>
-</tr>
-<tr>
-<td style="text-align: left;">Ensemble (Boosting)</td>
-<td style="text-align: left;">GradientBoosting, XGBoost</td>
-<td style="text-align: left;">53.95%</td>
-</tr>
-<tr>
-<td style="text-align: left;">Meta-Learning (Stacking)</td>
-<td style="text-align: left;">LR learns from 3 models</td>
-<td style="text-align: left;"><strong>55.26%</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">NLP / Text Mining</td>
-<td style="text-align: left;">TF-IDF จาก Guardian articles</td>
-<td style="text-align: left;">+0.26% (เล็กน้อย)</td>
-</tr>
-<tr>
-<td style="text-align: left;">Statistical Model</td>
-<td style="text-align: left;">Dixon-Coles Poisson</td>
-<td style="text-align: left;">45.53% (ไม่ช่วย)</td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-<hr />
-<h2>Slide 10: สรุป &amp; คำถาม</h2>
-<blockquote>
-<p><strong>ตอบ Research Question:</strong>
-✅ <em>AI สามารถทำนายผลฟุตบอลได้แม่นกว่ามนุษย์</em> — 55.26% vs 54.74%</p>
-<p><strong>Key Takeaways:</strong>
-1. Stacking Ensemble คือเทคนิคที่ทำให้ชนะได้
-2. Feature Engineering สำคัญกว่าการเปลี่ยนอัลกอริทึม
-3. ฟุตบอลมี "เพดาน" ~55% แม้แต่ผู้เชี่ยวชาญก็ทำยาก</p>
-<p><strong>🌐 Live Demo:</strong> <a href="https://github.com/winnawat2023/PremierPredict-AI">Dashboard</a></p>
-<p><em>ขอบคุณครับ — มีคำถามไหมครับ?</em></p>
-</blockquote>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left;">ส่วน</th>
+          <th style="text-align: left;">รายละเอียด</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;"><strong>Input</strong></td>
+          <td style="text-align: left;">20 ตัวเลขต่อนัด (ฟอร์ม, มูลค่า, Elo, สถิติเจอกัน, FPL, Odds)</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><strong>Process</strong></td>
+          <td style="text-align: left;">Stacking Ensemble — 3 โมเดลทำนายแยกกัน แล้ว LR เลือกคำตอบดีที่สุด</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><strong>Output</strong></td>
+          <td style="text-align: left;">ความน่าจะเป็นของ 3 ผลลัพธ์ (Home Win / Draw / Away Win)</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <hr />
+  <h2>Slide 4: Input — Features อธิบายละเอียด</h2>
+  <blockquote>
+    <p>AI ไม่รู้จัก "ชื่อทีม" — ต้องแปลงข้อมูลดิบเป็นตัวเลขที่มีความหมาย:</p>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left;">Feature</th>
+          <th style="text-align: left;">คำอธิบาย</th>
+          <th style="text-align: left;">ตัวอย่าง (Liverpool vs Man City)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">Home_Form_L5</td>
+          <td style="text-align: left;">ผลงาน 5 นัดล่าสุด (0-1)</td>
+          <td style="text-align: left;">Liverpool = 0.87</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Away_Form_L5</td>
+          <td style="text-align: left;">ผลงานฝั่ง Away</td>
+          <td style="text-align: left;">Man City = 0.73</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Home_Elo</td>
+          <td style="text-align: left;">คะแนนความแข็งแกร่ง</td>
+          <td style="text-align: left;">Liverpool = 1,850</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Away_Elo</td>
+          <td style="text-align: left;"></td>
+          <td style="text-align: left;">Man City = 1,820</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Elo_Diff</td>
+          <td style="text-align: left;">ส่วนต่าง Elo</td>
+          <td style="text-align: left;">+30 (Liverpool เหนือกว่า)</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">MV_Diff</td>
+          <td style="text-align: left;">ส่วนต่างมูลค่าผู้เล่น</td>
+          <td style="text-align: left;">-€50M (Man City แพงกว่า)</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">elo_prob_home</td>
+          <td style="text-align: left;">ความน่าจะเป็นจาก Odds</td>
+          <td style="text-align: left;">0.45</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">fpl_diff</td>
+          <td style="text-align: left;">ส่วนต่าง FPL Ownership</td>
+          <td style="text-align: left;">+5.2</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>แนวคิด:</strong> ยิ่ง Feature ดี → AI ยิ่งตัดสินใจได้ดี (Garbage In = Garbage Out)</p>
+  </blockquote>
+  <hr />
+  <h2>Slide 5: Process — Stacking Ensemble ทำงานยังไง</h2>
+  <blockquote>
+    <p><strong>ทฤษฎี Ensemble Learning:</strong>
+      "โมเดลหลายตัวรวมกัน แม่นกว่าตัวเดียว" (Wisdom of Models)</p>
+    <p><strong>ขั้นตอน Stacking:</strong>
+      ```
+      ขั้น 1: แบ่ง Training Data เป็น 5 ส่วน (5-fold CV)</p>
+    <p>ขั้น 2: แต่ละโมเดลฝึก 4 ส่วน ทำนาย 1 ส่วน (สลับรอบ)
+      ┌─ GradientBoosting → ทำนาย Prob [H, D, A]
+      ├─ XGBoost → ทำนาย Prob [H, D, A]
+      └─ RandomForest → ทำนาย Prob [H, D, A]</p>
+    <p>ขั้น 3: Logistic Regression (Meta-Learner) เรียนรู้ว่า
+      "เมื่อไหร่ควรเชื่อโมเดลไหน"</p>
+    <p>ขั้น 4: ผลลัพธ์สุดท้าย = คำตอบที่ดีที่สุดจาก 3 โมเดลรวมกัน
+      ```</p>
+    <p><strong>ทำไมถึงดีกว่าโมเดลเดียว?</strong>
+      - GB เก่งเรื่องจับ pattern ต่อเนื่อง (Sequential)
+      - RF เก่งเรื่องความเสถียร (Bagging)
+      - XGBoost เก่งเรื่อง Regularization (ลด Overfitting)
+      - LR เรียนรู้ว่าเมื่อไหร่โมเดลไหน "ถูก" บ่อยกว่า</p>
+  </blockquote>
+  <hr />
+  <h2>Slide 6: Output — AI ทำนายอะไรออกมา</h2>
+  <blockquote>
+    <p><strong>ตัวอย่าง Output (นัดจริงซีซัน 2024/25):</strong></p>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left;">นัด</th>
+          <th style="text-align: center;">P(Home)</th>
+          <th style="text-align: center;">P(Draw)</th>
+          <th style="text-align: center;">P(Away)</th>
+          <th style="text-align: center;">AI ทำนาย</th>
+          <th style="text-align: center;">ผลจริง</th>
+          <th style="text-align: center;">✅/❌</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">Newcastle vs Southampton</td>
+          <td style="text-align: center;">0.63</td>
+          <td style="text-align: center;">0.20</td>
+          <td style="text-align: center;">0.17</td>
+          <td style="text-align: center;">Home Win</td>
+          <td style="text-align: center;">Home Win</td>
+          <td style="text-align: center;">✅</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Ipswich vs Liverpool</td>
+          <td style="text-align: center;">0.20</td>
+          <td style="text-align: center;">0.25</td>
+          <td style="text-align: center;">0.55</td>
+          <td style="text-align: center;">Away Win</td>
+          <td style="text-align: center;">Away Win</td>
+          <td style="text-align: center;">✅</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Forest vs Bournemouth</td>
+          <td style="text-align: center;">0.39</td>
+          <td style="text-align: center;">0.25</td>
+          <td style="text-align: center;">0.36</td>
+          <td style="text-align: center;">Home Win</td>
+          <td style="text-align: center;">Draw</td>
+          <td style="text-align: center;">❌</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>วิธีตัดสินใจ:</strong> เลือกผลลัพธ์ที่มี <strong>ความน่าจะเป็นสูงสุด</strong></p>
+    <p><strong>จุดอ่อน:</strong> Draw ทำนายยากที่สุด — โมเดลแทบไม่เคยเลือก Draw เพราะ P(Draw) มักต่ำกว่า Home/Away เสมอ
+    </p>
+  </blockquote>
+  <hr />
+  <h2>Slide 7: Experiment &amp; Analysis</h2>
+  <blockquote>
+    <p><strong>เราทดลอง 5 แนวทาง แล้ววัดผลบน 380 นัดจริง:</strong></p>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center;">#</th>
+          <th style="text-align: left;">วิธี</th>
+          <th style="text-align: center;">Accuracy</th>
+          <th style="text-align: center;">สถานะ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">1</td>
+          <td style="text-align: left;">Random Forest (Baseline AI)</td>
+          <td style="text-align: center;">52.37%</td>
+          <td style="text-align: center;">❌</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2</td>
+          <td style="text-align: left;">GradientBoosting + FPL + Odds</td>
+          <td style="text-align: center;">53.95%</td>
+          <td style="text-align: center;">❌</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">3</td>
+          <td style="text-align: left;">Dixon-Coles (Poisson Regression)</td>
+          <td style="text-align: center;">45.53%</td>
+          <td style="text-align: center;">❌</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">4</td>
+          <td style="text-align: left;">NLP Text Features (Guardian)</td>
+          <td style="text-align: center;">+0.26%</td>
+          <td style="text-align: center;">❌</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">5</td>
+          <td style="text-align: left;"><strong>Stacking Ensemble (GB+XGB+RF→LR)</strong></td>
+          <td style="text-align: center;"><strong>55.26%</strong></td>
+          <td style="text-align: center;"><strong>✅</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>วิเคราะห์:</strong>
+      - Dixon-Coles ไม่ช่วย → ซ้ำซ้อนกับ Elo (จับ "ความแข็งแกร่ง" เหมือนกัน)
+      - NLP ช่วยน้อย → ขาดบทความสำหรับ training data ย้อนหลัง
+      - <strong>Stacking คือคำตอบ</strong> → ใช้จุดแข็งของหลายโมเดลร่วมกัน</p>
+  </blockquote>
+  <hr />
+  <h2>Slide 8: เปรียบเทียบ AI vs มนุษย์</h2>
+  <blockquote>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center;"></th>
+          <th style="text-align: left;">วิธี</th>
+          <th style="text-align: center;">Accuracy</th>
+          <th style="text-align: center;">AI ดีกว่า</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">🏢</td>
+          <td style="text-align: left;">Official Rating (ค่าพลังทางการ)</td>
+          <td style="text-align: center;">47.11%</td>
+          <td style="text-align: center;"><strong>+8.15%</strong></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">💰</td>
+          <td style="text-align: left;">Betting Odds (ตลาดพนัน)</td>
+          <td style="text-align: center;">53.95%</td>
+          <td style="text-align: center;"><strong>+1.31%</strong></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">👥</td>
+          <td style="text-align: left;">FPL Fan (แฟนบอล 11 ล้านคน)</td>
+          <td style="text-align: center;">54.74%</td>
+          <td style="text-align: center;"><strong>+0.52%</strong></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">🤖</td>
+          <td style="text-align: left;"><strong>AI Stacking v5</strong></td>
+          <td style="text-align: center;"><strong>55.26%</strong></td>
+          <td style="text-align: center;"><strong>🏆</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>ข้อสังเกตสำคัญ:</strong>
+      - AI ชนะ "ค่าพลังทางการ" ง่าย (+8%) → Official Rating ไม่ปรับตามฟอร์ม
+      - AI ชนะ "ตลาดพนัน" ได้ (+1%) → AI ใช้หลาย Feature ไม่ใช่แค่ Odds
+      - AI ชนะ "แฟนบอลทั่วโลก" ได้ (+0.5%) → Stacking มีประสิทธิภาพสูง</p>
+  </blockquote>
+  <hr />
+  <h2>Slide 9: ประโยชน์ &amp; การนำไปใช้จริง</h2>
+  <blockquote>
+    <p><strong>ด้านกีฬา:</strong>
+      - ⚽ ช่วยโค้ช/สโมสรวางแผนกลยุทธ์
+      - 📊 วิเคราะห์จุดแข็ง/จุดอ่อนคู่แข่ง</p>
+    <p><strong>ด้าน Business:</strong>
+      - 💰 Sports Analytics Industry (มูลค่า $4.6B globally)
+      - 📈 Fantasy Football — ช่วยผู้เล่น FPL เลือกนักเตะ</p>
+    <p><strong>ด้าน AI Theory:</strong>
+      - 🧠 พิสูจน์ว่า Ensemble &gt; Single Model ในปัญหาจริง
+      - 📚 ยืนยันทฤษฎี Feature Engineering &gt; Model Selection
+      - 🔬 แสดงข้อจำกัดของ NLP เมื่อข้อมูลน้อย (ต้องมี text data ทุกซีซัน)</p>
+    <p><strong>สรุปการโยงทฤษฎี AI:</strong></p>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left;">ทฤษฎี AI</th>
+          <th style="text-align: left;">ใช้ในโปรเจกต์</th>
+          <th style="text-align: left;">ผลลัพธ์</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">Supervised Learning</td>
+          <td style="text-align: left;">ฝึกจากผลจริง 1,768 นัด</td>
+          <td style="text-align: left;">✅</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Feature Engineering</td>
+          <td style="text-align: left;">สร้าง 20 features จาก domain knowledge</td>
+          <td style="text-align: left;">+3% accuracy</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Ensemble (Bagging)</td>
+          <td style="text-align: left;">RandomForest</td>
+          <td style="text-align: left;">52.37%</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Ensemble (Boosting)</td>
+          <td style="text-align: left;">GradientBoosting, XGBoost</td>
+          <td style="text-align: left;">53.95%</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Meta-Learning (Stacking)</td>
+          <td style="text-align: left;">LR learns from 3 models</td>
+          <td style="text-align: left;"><strong>55.26%</strong></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">NLP / Text Mining</td>
+          <td style="text-align: left;">TF-IDF จาก Guardian articles</td>
+          <td style="text-align: left;">+0.26% (เล็กน้อย)</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Statistical Model</td>
+          <td style="text-align: left;">Dixon-Coles Poisson</td>
+          <td style="text-align: left;">45.53% (ไม่ช่วย)</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+  <hr />
+  <h2>Slide 10: V2 Premium UI Dashboard (Front-End Engineering)</h2>
+  <blockquote>
+    <p><strong>การยกระดับ User Experience (UX/UI):</strong>
+      เปลี่ยนจากตารางข้อมูลธรรมดา เป็น <strong>Match Analysis Dashboard</strong> ระดับมืออาชีพ (Stitch Design V2)</p>
+    <ul>
+      <li><strong>Native Dark Mode:</strong> ออกแบบธีมมืด (Dark Theme `1A202C`) สบายตาและดูพรีเมียม</li>
+      <li><strong>Custom HTML/CSS Injection:</strong> ทะลุข้อจำกัดของ Streamlit ด้วยการเขียน CSS เองเพื่อควบคุม Layout,
+        Progress Bars, สีสันของ Selectbox และการแสดง Team Logos แบบ Dynamic</li>
+      <li><strong>Head-to-Head Cards:</strong> แสดงข้อมูลเปรียบเทียบทีม (ELO, Market Value) แบบ Card UI ที่เข้าใจง่าย
+      </li>
+      <li><strong>Confidence Calibration:</strong> ใช้ Progress bar สีสันสดใสเปรียบเทียบ AI Probability กับ FPL Fan
+        Confidence ให้เห็นภาพชัดเจน</li>
+    </ul>
+  </blockquote>
+  <hr />
+  <h2>Slide 11: สรุป &amp; คำถาม</h2>
+  <blockquote>
+    <p><strong>ตอบ Research Question:</strong>
+      ✅ <em>AI สามารถทำนายผลฟุตบอลได้แม่นกว่ามนุษย์</em> — 55.26% vs 54.74%</p>
+    <p><strong>Key Takeaways:</strong>
+      1. Stacking Ensemble คือเทคนิคที่ทำให้ชนะได้
+      2. Feature Engineering สำคัญกว่าการเปลี่ยนอัลกอริทึม
+      3. ฟุตบอลมี "เพดาน" ~55% แม้แต่ผู้เชี่ยวชาญก็ทำยาก</p>
+    <p><strong>🌐 Live Demo:</strong> <a href="https://github.com/winnawat2023/PremierPredict-AI">Dashboard</a></p>
+    <p><em>ขอบคุณครับ — มีคำถามไหมครับ?</em></p>
+  </blockquote>
 </body>
+
 </html>
