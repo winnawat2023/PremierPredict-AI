@@ -55,17 +55,20 @@ st.markdown("""
         margin-bottom: 0.75rem;
     }
     
-    /* Better Badge: Move it into a cleaner position */
+    /* Better Badge: Pinned to the very top */
     .sidebar-badge {
-        background: rgba(37,99,235,0.22);
+        background: rgba(37,99,235,0.25);
         color: #93c5fd;
-        padding: 10px 15px;
-        font-size: 0.75rem;
+        padding: 8px 15px;
+        font-size: 0.7rem;
         font-weight: 600;
         border-bottom: 1px solid rgba(59,130,246,0.35);
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        margin-top: -5px !important;
         font-family: 'Inter', sans-serif;
         text-align: center;
+        width: 100%;
+        letter-spacing: 0.5px;
     }
 
     /* Ensure icons always use their native font, don't override them */
@@ -109,6 +112,7 @@ st.markdown("""
     
     [data-testid="stSidebarContent"] {
         font-family: 'Inter', sans-serif !important;
+        padding-top: 0.5rem !important;
     }
     
     /* Top Header Adjustments */
