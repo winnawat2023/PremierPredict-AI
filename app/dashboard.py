@@ -295,7 +295,69 @@ st.markdown("""
     
     /* Hide selectbox label */
     .stSelectbox label { display: none; }
+
+    /* Handle horizontal benchmark cards wrapping on mobile */
+    .benchmark-container {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* ── RESPONSIVE: Tablet (≤ 1024px) ── */
+    @media (max-width: 1024px) {
+        .block-container { padding-top: 1rem !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+        .dash-title { font-size: 1.6rem !important; }
+        .card-title { font-size: 0.95rem !important; }
+        .metric-value { font-size: 1.6rem !important; }
+        .cyan-text, .red-text { font-size: 1.2rem !important; }
+        .pred-result-text { font-size: 2rem !important; }
+        .benchmark-container { flex-wrap: wrap; }
+    }
+
+    /* ── RESPONSIVE: Mobile (≤ 768px) ── */
+    @media (max-width: 768px) {
+        .block-container {
+            padding-top: 0.5rem !important;
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+        /* Scale down main title */
+        .dash-title { font-size: 1.3rem !important; letter-spacing: 0.5px !important; margin-top: 1rem !important; }
+        /* Card titles */
+        .card-title { font-size: 0.9rem !important; flex-wrap: wrap; }
+        /* Metric numbers */
+        .metric-value { font-size: 1.2rem !important; }
+        .metric-label { font-size: 0.65rem !important; }
+        /* Team name text */
+        .cyan-text, .red-text { font-size: 1.1rem !important; }
+        /* Prediction result */
+        .pred-result-text { font-size: 1.6rem !important; }
+        /* Cards: reduce padding */
+        .card { padding: 16px !important; }
+        /* Reduce sidebar logo size */
+        .sidebar-logo { font-size: 1.2rem !important; }
+        /* Data source floated right — hide on mobile or adjust */
+        .data-source { display: block; float: none; font-size: 0.55rem; margin-top: 5px; }
+        /* Confidence calibration section title */
+        .card-title span { font-size: 0.9rem !important; }
+        /* Feature rows */
+        .feature-row { font-size: 0.8rem !important; }
+        /* Aggressive font size reduction for inline styles */
+        [style*="font-size:2.8rem"], [style*="font-size: 2.8rem"] { font-size: 1.6rem !important; }
+        [style*="font-size:2.5rem"], [style*="font-size: 2.5rem"] { font-size: 1.5rem !important; }
+        [style*="font-size:2.2rem"], [style*="font-size: 2.2rem"] { font-size: 1.4rem !important; }
+        [style*="font-size:2rem"], [style*="font-size: 2rem"] { font-size: 1.3rem !important; }
+        [style*="font-size:1.8rem"], [style*="font-size: 1.8rem"] { font-size: 1.2rem !important; }
+        [style*="font-size:1.6rem"], [style*="font-size: 1.6rem"] { font-size: 1.1rem !important; }
+        [style*="font-size:1.4rem"], [style*="font-size: 1.4rem"] { font-size: 1rem !important; }
+        [style*="height:200px"], [style*="height: 200px"] { height: 120px !important; }
+        [style*="max-height:120px"], [style*="max-height: 120px"] { max-height: 80px !important; }
+        [style*="margin-top:140px"], [style*="margin-top: 140px"] { margin-top: 20px !important; padding: 20px 0; }
+        .benchmark-container { flex-direction: column; }
+    }
+
 </style>
+
 """, unsafe_allow_html=True)
 
 # Paths
@@ -859,7 +921,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 </div>
 </div>
 
-<div style="display:flex; gap:20px; margin-bottom:20px;">
+<div class="benchmark-container">
 <!-- Card 1 -->
 <div style="flex:1; border:1px solid #064e3b; border-radius:8px; padding:20px; background:rgba(6,78,59,0.1); position:relative;">
 <div style="display:flex; justify-content:space-between; align-items:flex-start;">
