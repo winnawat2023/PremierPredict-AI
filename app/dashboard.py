@@ -22,10 +22,13 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap');
     
-    /* Hide Streamlit default elements */
+    /* Hide Streamlit default elements but KEEP header for the toggle */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
+    [data-testid="stHeader"] { 
+        background-color: rgba(0,0,0,0) !important;
+        visibility: visible !important;
+    }
 
     /* Base App Theme */
     html, body, .stApp {
@@ -75,26 +78,33 @@ st.markdown("""
     }
     
     /* UNIVERSAL SIDEBAR TOGGLE FIX - Force the arrow to show on top */
-    [data-testid="stHeader"] {
-        z-index: 100 !important;
-        background: transparent !important;
-    }
     [data-testid="stSidebarCollapsedControl"] {
-        display: block !important;
+        display: flex !important;
         visibility: visible !important;
         z-index: 999999 !important;
-        left: 20px !important;
-        top: 20px !important;
+        left: 10px !important;
+        top: 10px !important;
+        background-color: rgba(22, 26, 37, 0.8) !important;
+        border-radius: 0 8px 8px 0 !important;
+        padding: 5px !important;
     }
+    
     /* Force the button inside the collapsed control to be blue and visible */
     [data-testid="stSidebarCollapsedControl"] button {
         background-color: #2563eb !important; /* Royal Blue */
         color: white !important;
-        border: 2px solid white !important;
-        border-radius: 8px !important;
-        width: 45px !important;
-        height: 45px !important;
+        border: 1px solid rgba(255,255,255,0.2) !important;
+        border-radius: 6px !important;
         opacity: 1 !important;
+    }
+
+    /* Style the CLOSE button when sidebar is open */
+    [data-testid="stSidebar"] [data-testid="stBaseButton-headerNoPadding"] {
+        color: white !important;
+        background-color: #2563eb !important;
+        border-radius: 6px !important;
+        margin-top: 10px !important;
+        margin-right: 10px !important;
     }
     
     [data-testid="stSidebarContent"] {
