@@ -51,24 +51,24 @@ st.markdown("""
         font-weight: 600;
         margin-bottom: 0.75rem;
     }
-    /* Pin the SEA612 badge to the very top of the sidebar via fixed positioning */
-    [data-testid="stSidebar"]::before {
-        content: 'SEA612  AI Fundamentals';
-        display: block;
-        position: relative;
-        top: 0;
-        z-index: 1;
-        width: 100%;
-        padding: 1.5rem 1rem 0.6rem 1rem; /* Added top padding to clear the collapse button */
+    
+    /* Better Badge: Move it into a cleaner position */
+    .sidebar-badge {
+        background: rgba(37,99,235,0.22);
+        color: #93c5fd;
+        padding: 10px 15px;
         font-size: 0.75rem;
         font-weight: 600;
-        letter-spacing: 0.8px;
-        color: #93c5fd;
-        background: rgba(37,99,235,0.22);
         border-bottom: 1px solid rgba(59,130,246,0.35);
+        margin-bottom: 10px;
         font-family: 'Inter', sans-serif;
+        text-align: center;
     }
-    [data-testid="stSidebar"] * {
+
+    /* Remove the problematic ::before badge */
+    [data-testid="stSidebar"]::before { content: none !important; }
+    /* Remove global sidebar font override that breaks icons */
+    [data-testid="stSidebarContent"] {
         font-family: 'Inter', sans-serif;
     }
     
@@ -389,6 +389,9 @@ def main():
 
     # --- SIDEBAR ---
     with st.sidebar:
+        # Pinned Badge as a div instead of CSS ::before for better stability
+        st.markdown('<div class="sidebar-badge">SEA612 | AI Fundamentals</div>', unsafe_allow_html=True)
+        
         # SEA612 badge is injected via CSS ::before on the sidebar element
         st.markdown('<div class="sidebar-logo" style="margin-top:0.75rem;">🤖 PremierPredict</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-size:0.7rem; color:#64748b; margin-bottom:1rem;">AI ENSEMBLE SYSTEM V5.0</div>', unsafe_allow_html=True)
