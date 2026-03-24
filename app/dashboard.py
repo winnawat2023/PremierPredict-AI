@@ -34,21 +34,13 @@ st.markdown("""
         font-family: 'Inter', sans-serif;
     }
     
-    /* Override Streamlit Sidebar - kill ALL top padding at every level */
-    [data-testid="stSidebar"],
-    [data-testid="stSidebar"] > div,
-    [data-testid="stSidebar"] > div > div,
-    [data-testid="stSidebar"] > div > div > div,
-    [data-testid="stSidebarContent"],
-    [data-testid="stSidebarContent"] > div,
-    section[data-testid="stSidebar"] > div:first-child {
-        padding-top: 0 !important;
-        margin-top: 0 !important;
-    }
     [data-testid="stSidebar"] {
         background-color: #161A25 !important;
         border-right: 1px solid #1f2937 !important;
     }
+    /* Specifically hide only the decoration line at the top, not the whole header */
+    [data-testid="stDecoration"] { display: none; }
+    [data-testid="stHeader"] { background: transparent !important; }
     .sea612-bar {
         padding: 0.55rem 1rem;
         font-size: 0.62rem;
@@ -61,14 +53,14 @@ st.markdown("""
     }
     /* Pin the SEA612 badge to the very top of the sidebar via fixed positioning */
     [data-testid="stSidebar"]::before {
-        content: 'SEA612  Artificial Intelligence Fundamentals';
+        content: 'SEA612  AI Fundamentals';
         display: block;
-        position: sticky;
+        position: relative;
         top: 0;
-        z-index: 9999;
+        z-index: 1;
         width: 100%;
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
+        padding: 1.5rem 1rem 0.6rem 1rem; /* Added top padding to clear the collapse button */
+        font-size: 0.75rem;
         font-weight: 600;
         letter-spacing: 0.8px;
         color: #93c5fd;
@@ -80,9 +72,8 @@ st.markdown("""
         font-family: 'Inter', sans-serif;
     }
     
-    /* Top Header */
-    header { visibility: hidden; }
-    .block-container { padding-top: 2rem !important; max-width: 1400px; }
+    /* Top Header Adjustments */
+    .block-container { padding-top: 3.5rem !important; max-width: 1400px; }
     
     .dash-title {
         font-family: 'Orbitron', sans-serif;
