@@ -80,13 +80,21 @@ st.markdown("""
         background: transparent !important;
     }
     [data-testid="stSidebarCollapsedControl"] {
-        left: 10px !important;
-        top: 10px !important;
-        z-index: 1000 !important;
-        background: rgba(30, 41, 59, 0.7) !important; /* Subtle background for the arrow button */
-        border-radius: 50%;
-        padding: 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        display: block !important;
+        visibility: visible !important;
+        z-index: 999999 !important;
+        left: 20px !important;
+        top: 20px !important;
+    }
+    /* Force the button inside the collapsed control to be blue and visible */
+    [data-testid="stSidebarCollapsedControl"] button {
+        background-color: #2563eb !important; /* Royal Blue */
+        color: white !important;
+        border: 2px solid white !important;
+        border-radius: 8px !important;
+        width: 45px !important;
+        height: 45px !important;
+        opacity: 1 !important;
     }
     
     [data-testid="stSidebarContent"] {
