@@ -65,14 +65,28 @@ st.markdown("""
         text-align: center;
     }
 
-    /* Remove the problematic ::before badge */
-    [data-testid="stSidebar"]::before { content: none !important; }
     /* Ensure icons always use their native font, don't override them */
     [data-testid="stSidebar"] button[kind="secondary"] i,
     [data-testid="stSidebar"] button[kind="secondary"] svg,
-    .stApp [data-testid="stHeader"] i,
-    .stApp [data-testid="stHeader"] svg {
+    [data-testid="stHeader"] i,
+    [data-testid="stHeader"] svg {
         font-family: inherit !important;
+        color: white !important; /* Force icons to be white */
+    }
+    
+    /* UNIVERSAL SIDEBAR TOGGLE FIX - Force the arrow to show on top */
+    [data-testid="stHeader"] {
+        z-index: 100 !important;
+        background: transparent !important;
+    }
+    [data-testid="stSidebarCollapsedControl"] {
+        left: 10px !important;
+        top: 10px !important;
+        z-index: 1000 !important;
+        background: rgba(30, 41, 59, 0.7) !important; /* Subtle background for the arrow button */
+        border-radius: 50%;
+        padding: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     
     [data-testid="stSidebarContent"] {
