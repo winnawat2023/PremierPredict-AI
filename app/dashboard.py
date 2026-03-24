@@ -434,7 +434,7 @@ def main():
         st.markdown('<div class="sidebar-logo" style="margin-top:0.75rem;">🤖 PremierPredict</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-size:0.7rem; color:#64748b; margin-bottom:1rem;">AI ENSEMBLE SYSTEM V5.0</div>', unsafe_allow_html=True)
         
-        st.markdown('<div class="sidebar-section">MATCH SIMULATION</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sidebar-section">จำลองการแข่งขัน</div>', unsafe_allow_html=True)
         
         team_list = sorted(list(stats['elo'].keys()))
         app_dir = os.path.dirname(__file__)
@@ -445,7 +445,7 @@ def main():
         home_logo_b64 = get_base64_image(home_logo_path)
         home_img_tag = f'<img src="data:image/png;base64,{home_logo_b64}" width="20" style="vertical-align: middle; margin-right: 8px;">' if home_logo_b64 else ''
         
-        st.markdown(f'<div style="font-size:0.75rem; color:#06b6d4; font-weight:700; margin-bottom:5px; letter-spacing:1px; display:flex; align-items:center;">{home_img_tag}HOME TEAM</div>', unsafe_allow_html=True)
+        st.markdown(f'<div style="font-size:0.75rem; color:#06b6d4; font-weight:700; margin-bottom:5px; letter-spacing:1px; display:flex; align-items:center;">{home_img_tag}ทีมเจ้าบ้าน</div>', unsafe_allow_html=True)
         home_team = st.selectbox("home", team_list, index=team_list.index(home_team_val) if home_team_val in team_list else 0, key="home")
         
         st.markdown('<div style="text-align:center; color:#64748b; margin:10px 0;">⚔️</div>', unsafe_allow_html=True)
@@ -456,10 +456,10 @@ def main():
         away_logo_b64 = get_base64_image(away_logo_path)
         away_img_tag = f'<img src="data:image/png;base64,{away_logo_b64}" width="20" style="vertical-align: middle; margin-right: 8px;">' if away_logo_b64 else ''
         
-        st.markdown(f'<div style="font-size:0.75rem; color:#f43f5e; font-weight:700; margin-bottom:5px; letter-spacing:1px; display:flex; align-items:center;">{away_img_tag}AWAY TEAM</div>', unsafe_allow_html=True)
+        st.markdown(f'<div style="font-size:0.75rem; color:#f43f5e; font-weight:700; margin-bottom:5px; letter-spacing:1px; display:flex; align-items:center;">{away_img_tag}ทีมเยือน</div>', unsafe_allow_html=True)
         away_team = st.selectbox("away", team_list, index=team_list.index(away_team_val) if away_team_val in team_list else (len(team_list)-1 if team_list else 1), key="away")
         
-        st.markdown('<div class="sidebar-section" style="margin-top:2rem;">ACTIVE MODELS</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sidebar-section" style="margin-top:2rem;">โมเดลที่ใช้งานอยู่</div>', unsafe_allow_html=True)
         st.markdown("""
             <div>
                 <span class="model-tag" style="background:#1e3a8a;">XGBoost</span>
@@ -475,7 +475,7 @@ def main():
     st.markdown("""
     <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 2rem;">
         <div>
-            <div class="dash-title">Match Analysis Dashboard</div>
+            <div class="dash-title">แดชบอร์ดวิเคราะห์ผลการแข่งขัน</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -524,17 +524,17 @@ def main():
     prob_away = probs[2] * 100
 
     # Map Prediction Text
-    outcomes = {0: "HOME WIN", 1: "DRAW", 2: "AWAY WIN"}
+    outcomes = {0: "เจ้าบ้านชนะ", 1: "เสมอ", 2: "ทีมเยือนชนะ"}
     pred_text = outcomes[prediction]
 
     # Map Confidence
     max_prob = max(prob_home, prob_away, prob_draw)
     if max_prob > 55:
-        conf_badge = '<div style="background:rgba(16,185,129,0.2); color:#10b981; border:1px solid #10b981; padding:2px 8px; border-radius:4px; font-size:0.6rem; font-weight:700;">HIGH CONFIDENCE</div>'
+        conf_badge = '<div style="background:rgba(16,185,129,0.2); color:#10b981; border:1px solid #10b981; padding:2px 8px; border-radius:4px; font-size:0.6rem; font-weight:700;">ความมั่นใจสูง</div>'
     elif max_prob > 45:
-        conf_badge = '<div style="background:rgba(245,158,11,0.2); color:#f59e0b; border:1px solid #f59e0b; padding:2px 8px; border-radius:4px; font-size:0.6rem; font-weight:700;">MODERATE CONFIDENCE</div>'
+        conf_badge = '<div style="background:rgba(245,158,11,0.2); color:#f59e0b; border:1px solid #f59e0b; padding:2px 8px; border-radius:4px; font-size:0.6rem; font-weight:700;">ความมั่นใจปานกลาง</div>'
     else:
-        conf_badge = '<div style="background:rgba(244,63,94,0.2); color:#f43f5e; border:1px solid #f43f5e; padding:2px 8px; border-radius:4px; font-size:0.6rem; font-weight:700;">RISK / UNCERTAIN</div>'
+        conf_badge = '<div style="background:rgba(244,63,94,0.2); color:#f43f5e; border:1px solid #f43f5e; padding:2px 8px; border-radius:4px; font-size:0.6rem; font-weight:700;">ความเสี่ยง / ไม่แน่นอน</div>'
 
 
     # --- V2 Head-to-Head Card ---
@@ -543,9 +543,9 @@ def main():
     <div class="card-title" style="justify-content:space-between; border-bottom:1px solid #2d3748; padding-bottom:15px; margin-bottom:0;">
         <div style="display:flex; align-items:center; gap:10px;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#217AFA" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-            <span>Head-to-Head Comparison</span>
+            <span>การเปรียบเทียบสถิติ (Head-to-Head)</span>
         </div>
-        <span class="data-source">DATA SOURCE: OPTA + TRANSFERMARKT</span>
+        <span class="data-source">แหล่งข้อมูล: OPTA + TRANSFERMARKT</span>
     </div>
 """, unsafe_allow_html=True)
     
@@ -563,18 +563,18 @@ def main():
 <div style="text-align:center;">
     {home_img}
     <div class="cyan-text" style="font-size:1.6rem; margin-bottom:5px;">{home_team.upper()}</div>
-    <div style="background:#1e293b; display:inline-block; padding:2px 10px; border-radius:4px; font-size:0.6rem; color:#94a3b8; margin-bottom: 40px; border:1px solid #334155;">HOME</div>
+    <div style="background:#1e293b; display:inline-block; padding:2px 10px; border-radius:4px; font-size:0.6rem; color:#94a3b8; margin-bottom: 40px; border:1px solid #334155;">เจ้าบ้าน</div>
 </div>
 
 <div style="padding: 0 20px 20px 20px;">
-<div class="metric-label" style="text-align:left;">ELO RATING</div>
+<div class="metric-label" style="text-align:left;">คะแนน ELO</div>
 <div class="metric-value" style="text-align:left;">{input_df['Home_Elo'][0]:.0f}</div>
 <div class="line-home" style="width:100%; margin-bottom:40px;"></div>
 
-<div class="metric-label" style="text-align:left;">MARKET VALUE</div>
+<div class="metric-label" style="text-align:left;">มูลค่าทีม</div>
 <div class="metric-value" style="font-size:1.6rem; text-align:left; margin-bottom:40px;">€{input_df['Home_MV'][0]:.0f}m</div>
 
-<div class="metric-label" style="text-align:left;">FORM (LAST 5)</div>
+<div class="metric-label" style="text-align:left;">ฟอร์ม 5 นัดล่าสุด</div>
 <div class="metric-value" style="font-size:1.6rem; text-align:left; color:#94a3b8;">{input_df['Home_Form_L5'][0]:.2f}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -584,10 +584,10 @@ def main():
 <div style="height: 100%; display:flex; flex-direction:column; justify-content:flex-start; align-items:center; margin-top:140px;">
     <div style="width:80px; height:80px; border-radius:50%; border:2px solid #334155; background:#0f172a; display:flex; align-items:center; justify-content:center; font-family:'Inter', sans-serif; font-style:italic; font-size:1.8rem; color:#94a3b8; margin-bottom:30px;">VS</div>
     <div style="background:#161B22; border-radius:8px; padding:15px 30px; text-align:center; border:1px solid #2d3748; margin-bottom:15px; width:180px;">
-        <div style="font-size:0.65rem; color:#64748b; margin-bottom:5px; text-transform:uppercase;">ELO DIFFERENCE</div>
+        <div style="font-size:0.65rem; color:#64748b; margin-bottom:5px; text-transform:uppercase;">ส่วนต่างคะแนน ELO</div>
         <div style="font-family:'Inter', sans-serif; font-size:1.8rem; font-weight:800; color:{'#06b6d4' if elo_diff > 0 else '#f43f5e'};">{'+' if elo_diff > 0 else ''}{elo_diff:.0f}</div>
     </div>
-    <div style="font-size:0.6rem; color:#64748b; text-align:center; text-transform:uppercase; line-height:1.4;">Historical Rivalry<br>Matchday 26</div>
+    <div style="font-size:0.6rem; color:#64748b; text-align:center; text-transform:uppercase; line-height:1.4;">ประวัติการพบกัน<br>นัดที่ 26</div>
 </div>
 """, unsafe_allow_html=True)
         
@@ -600,18 +600,18 @@ def main():
 <div style="text-align:center;">
     {away_img}
     <div class="red-text" style="font-size:1.6rem; margin-bottom:5px;">{away_team.upper()}</div>
-    <div style="background:#1e293b; display:inline-block; padding:2px 10px; border-radius:4px; font-size:0.6rem; color:#94a3b8; margin-bottom: 40px; border:1px solid #334155;">AWAY</div>
+    <div style="background:#1e293b; display:inline-block; padding:2px 10px; border-radius:4px; font-size:0.6rem; color:#94a3b8; margin-bottom: 40px; border:1px solid #334155;">ทีมเยือน</div>
 </div>
 
 <div style="padding: 0 20px 20px 20px;">
-<div class="metric-label" style="text-align:right;">ELO RATING</div>
+<div class="metric-label" style="text-align:right;">คะแนน ELO</div>
 <div class="metric-value" style="text-align:right;">{input_df['Away_Elo'][0]:.0f}</div>
 <div class="line-away" style="width:100%; margin-bottom:40px;"></div>
 
-<div class="metric-label" style="text-align:right;">MARKET VALUE</div>
+<div class="metric-label" style="text-align:right;">มูลค่าทีม</div>
 <div class="metric-value" style="font-size:1.6rem; text-align:right; margin-bottom:40px;">€{input_df['Away_MV'][0]:.0f}m</div>
 
-<div class="metric-label" style="text-align:right;">FORM (LAST 5)</div>
+<div class="metric-label" style="text-align:right;">ฟอร์ม 5 นัดล่าสุด</div>
 <div class="metric-value" style="font-size:1.6rem; text-align:right; color:#94a3b8;">{input_df['Away_Form_L5'][0]:.2f}</div>
 </div>
 """, unsafe_allow_html=True)
@@ -634,12 +634,12 @@ def main():
 <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:40px;">
 <div style="display:flex; align-items:center; gap:10px;">
 <div style="width:4px; height:24px; background:#10b981; border-radius:4px; box-shadow:0 0 10px rgba(16,185,129,0.5);"></div>
-<span style="font-size:1.6rem; font-weight:800; color:#f8fafc; letter-spacing:0.5px; font-family:'Inter', sans-serif; text-transform:uppercase;">AI PREDICTION ENGINE</span>
+<span style="font-size:1.6rem; font-weight:800; color:#f8fafc; letter-spacing:0.5px; font-family:'Inter', sans-serif; text-transform:uppercase;">ระบบวิเคราะห์และทำนายผล AI</span>
 </div>
 </div>
 <div style="display:flex; gap:10px; margin-top:-25px; margin-bottom:30px; align-items:center;">
 {conf_badge}
-<span style="font-size:0.6rem; color:#64748b; font-family:'Inter', sans-serif;">MODEL: ENSEMBLE V5.2</span>
+<span style="font-size:0.6rem; color:#64748b; font-family:'Inter', sans-serif;">โมเดล: ENSEMBLE V5.2</span>
 </div>
 
 <!-- Home Win Probability -->
@@ -650,8 +650,8 @@ def main():
 <span style="font-size:1.2rem; filter: sepia(100%) hue-rotate(180deg) saturate(300%) opacity(0.8);">🏃</span>
 </div>
 <div>
-<div style="font-size:0.7rem; color:#64748b; font-weight:600; letter-spacing:1px; margin-bottom:2px;">OUTCOME</div>
-<div style="font-size:1.2rem; font-weight:700; color:{'#06b6d4' if pred_home_win else '#e2e8f0'}; font-family:'Inter', sans-serif; text-transform:uppercase;">{home_team} WIN</div>
+<div style="font-size:0.7rem; color:#64748b; font-weight:600; letter-spacing:1px; margin-bottom:2px;">สรุปผล</div>
+<div style="font-size:1.2rem; font-weight:700; color:{'#06b6d4' if pred_home_win else '#e2e8f0'}; font-family:'Inter', sans-serif; text-transform:uppercase;">{home_team} ชนะ</div>
 </div>
 </div>
 <div style="font-size:2rem; font-weight:800; color:#f8fafc; font-family:'Inter', sans-serif;">{prob_home:.1f}%</div>
@@ -669,8 +669,8 @@ def main():
 <span style="font-size:1.4rem; color:#64748b;">=</span>
 </div>
 <div>
-<div style="font-size:0.7rem; color:#64748b; font-weight:600; letter-spacing:1px; margin-bottom:2px;">STABILITY</div>
-<div style="font-size:1.2rem; font-weight:700; color:{'#06b6d4' if pred_draw else '#e2e8f0'}; font-family:'Inter', sans-serif;">MATCH DRAW</div>
+<div style="font-size:0.7rem; color:#64748b; font-weight:600; letter-spacing:1px; margin-bottom:2px;">ความเสถียร</div>
+<div style="font-size:1.2rem; font-weight:700; color:{'#06b6d4' if pred_draw else '#e2e8f0'}; font-family:'Inter', sans-serif;">เสมอ</div>
 </div>
 </div>
 <div style="font-size:2rem; font-weight:800; color:#f8fafc; font-family:'Inter', sans-serif;">{prob_draw:.1f}%</div>
@@ -688,8 +688,8 @@ def main():
 <span style="font-size:1.2rem; filter: sepia(100%) hue-rotate(0deg) saturate(300%) opacity(0.8);">🏙️</span>
 </div>
 <div>
-<div style="font-size:0.7rem; color:#64748b; font-weight:600; letter-spacing:1px; margin-bottom:2px;">RISK</div>
-<div style="font-size:1.2rem; font-weight:700; color:{'#06b6d4' if pred_away_win else '#f43f5e'}; font-family:'Inter', sans-serif; text-transform:uppercase;">{away_team} WIN</div>
+<div style="font-size:0.7rem; color:#64748b; font-weight:600; letter-spacing:1px; margin-bottom:2px;">ความเสี่ยง</div>
+<div style="font-size:1.2rem; font-weight:700; color:{'#06b6d4' if pred_away_win else '#f43f5e'}; font-family:'Inter', sans-serif; text-transform:uppercase;">{away_team} ชนะ</div>
 </div>
 </div>
 <div style="font-size:2rem; font-weight:800; color:#f8fafc; font-family:'Inter', sans-serif;">{prob_away:.1f}%</div>
@@ -724,49 +724,49 @@ def main():
         a_adv = []
         
         if home_goals > away_goals * 1.1:
-            h_adv.append(f"offensive output (+{((home_goals-away_goals)/max(0.1, away_goals))*100:.0f}% Goals)")
+            h_adv.append(f"ประสิทธิภาพเกมรุก (+{((home_goals-away_goals)/max(0.1, away_goals))*100:.0f}% ประตู)")
         elif away_goals > home_goals * 1.1:
-            a_adv.append(f"offensive output (+{((away_goals-home_goals)/max(0.1, home_goals))*100:.0f}% Goals)")
+            a_adv.append(f"ประสิทธิภาพเกมรุก (+{((away_goals-home_goals)/max(0.1, home_goals))*100:.0f}% ประตู)")
             
         home_ga = input_df['Home_Avg_GA_L5'][0]
         away_ga = input_df['Away_Avg_GA_L5'][0]
         if home_ga < away_ga * 0.9:
-            h_adv.append("defensive solidity")
+            h_adv.append("ความแข็งแกร่งของเกมรับ")
         elif away_ga < home_ga * 0.9:
-            a_adv.append("defensive solidity")
+            a_adv.append("ความแข็งแกร่งของเกมรับ")
             
         mv_diff = input_df['MV_Diff'][0]
         if mv_diff > 50_000_000:
-            h_adv.append("squad valuation")
+            h_adv.append("มูลค่านักเตะในทีม")
         elif mv_diff < -50_000_000:
-            a_adv.append("squad valuation")
+            a_adv.append("มูลค่านักเตะในทีม")
             
         if home_form > away_form + 0.3:
-            h_adv.append("recent form")
+            h_adv.append("ฟอร์มล่าสุดที่เหนือกว่า")
         elif away_form > home_form + 0.3:
-            a_adv.append("recent form")
+            a_adv.append("ฟอร์มล่าสุดที่เหนือกว่า")
             
         if not h_adv and not a_adv:
-            delta_text = "Both teams share very similar statistical profiles across key metrics, making this a tightly contested matchup."
+            delta_text = "ทั้งสองทีมมีสถิติที่ใกล้เคียงกันมากในคุณลักษณะหลัก ทำให้การแข่งขันครั้งนี้ค่อนข้างสูสีและต้องระมัดระวังเป็นพิเศษ"
         else:
             parts = []
             if h_adv:
-                parts.append(f"Home team shows strength in {', '.join(h_adv)}")
+                parts.append(f"ทีมเจ้าบ้านมีข้อได้เปรียบในเรื่อง {', '.join(h_adv)}")
             if a_adv:
-                parts.append(f"Away team holds an edge in {', '.join(a_adv)}")
-            delta_text = " while ".join(parts).capitalize() + "."
+                parts.append(f"ทีมเยือนมีจุดแข็งในเรื่อง {', '.join(a_adv)}")
+            delta_text = " ในขณะที่ ".join(parts) + "."
 
         st.markdown(f"""
 <div class="card" style="height: 100%; padding:25px;">
 <div style="font-size:1.1rem; color:#94a3b8; font-family:'Inter', sans-serif; text-transform:uppercase; letter-spacing:1px; margin-bottom:30px; line-height:1.4;">
-COMPARATIVE FEATURE<br>ANALYSIS
+การวิเคราะห์คุณลักษณะ<br>เปรียบเทียบ
 </div>
 
 <!-- ELO Rating -->
 <div style="margin-bottom:25px;">
 <div style="display:flex; justify-content:space-between; font-size:0.7rem; font-weight:700; font-family:'Inter', sans-serif; margin-bottom:6px;">
 <div style="color:#06b6d4;">{home_elo:,.0f}</div>
-<div style="color:#475569; letter-spacing:1px;">ELO RATING</div>
+<div style="color:#475569; letter-spacing:1px;">คะแนน ELO</div>
 <div style="color:#f43f5e;">{away_elo:,.0f}</div>
 </div>
 <div style="display:flex; gap:10px; height:8px;">
@@ -783,7 +783,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 <div style="margin-bottom:25px;">
 <div style="display:flex; justify-content:space-between; font-size:0.7rem; font-weight:700; font-family:'Inter', sans-serif; margin-bottom:6px;">
 <div style="color:#06b6d4;">{home_mv_display}</div>
-<div style="color:#475569; letter-spacing:1px;">MARKET VALUE</div>
+<div style="color:#475569; letter-spacing:1px;">มูลค่าทีม</div>
 <div style="color:#f43f5e;">{away_mv_display}</div>
 </div>
 <div style="display:flex; gap:10px; height:8px;">
@@ -800,7 +800,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 <div style="margin-bottom:25px;">
 <div style="display:flex; justify-content:space-between; font-size:0.7rem; font-weight:700; font-family:'Inter', sans-serif; margin-bottom:6px;">
 <div style="color:#06b6d4;">{home_form:.2f}</div>
-<div style="color:#475569; letter-spacing:1px;">RECENT FORM</div>
+<div style="color:#475569; letter-spacing:1px;">ฟอร์มล่าสุด</div>
 <div style="color:#f43f5e;">{away_form:.2f}</div>
 </div>
 <div style="display:flex; gap:10px; height:8px;">
@@ -817,7 +817,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 <div style="margin-bottom:40px;">
 <div style="display:flex; justify-content:space-between; font-size:0.7rem; font-weight:700; font-family:'Inter', sans-serif; margin-bottom:6px;">
 <div style="color:#06b6d4;">{home_goals:.1f}</div>
-<div style="color:#475569; letter-spacing:1px;">AVG GOALS</div>
+<div style="color:#475569; letter-spacing:1px;">ค่าเฉลี่ยประตู</div>
 <div style="color:#f43f5e;">{away_goals:.1f}</div>
 </div>
 <div style="display:flex; gap:10px; height:8px;">
@@ -834,7 +834,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 <div style="border-top:1px solid #1e293b; padding-top:20px;">
 <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
 <span style="color:#06b6d4;">📊</span>
-<span style="font-size:0.75rem; font-weight:700; color:#06b6d4; letter-spacing:1px;">DELTA ANALYSIS</span>
+<span style="font-size:0.75rem; font-weight:700; color:#06b6d4; letter-spacing:1px;">การวิเคราะห์ส่วนต่าง (DELTA ANALYSIS)</span>
 </div>
 <div style="font-size:0.8rem; color:#94a3b8; line-height:1.5; font-family:'Inter', sans-serif;">
 {delta_text}
@@ -852,14 +852,14 @@ COMPARATIVE FEATURE<br>ANALYSIS
     fan_draw = 100 - fan_home - fan_away
     
     diff_home = prob_home - fan_home
-    leading_text = f"AI LEADING BY {diff_home:+.2f}% OVER CROWD" if abs(diff_home) > 0.5 else "AI ALIGNED WITH CROWD CONSENSUS"
+    leading_text = f"AI มีความมั่นใจสูงกว่าฝูงชน {diff_home:+.2f}%" if abs(diff_home) > 0.5 else "AI มีความมั่นใจสอดคล้องกับฝูงชน"
     lead_color = "#10b981" if diff_home > 0 else "#f59e0b"
 
     st.markdown("""
 <div class="card-title" style="justify-content:space-between; margin-bottom:30px;">
     <div style="display:flex; align-items:center; gap:10px;">
         <span style="font-size:1.2rem;">⚖️</span>
-        <span style="font-size:1.4rem; color:#f8fafc;">Confidence Calibration</span>
+        <span style="font-size:1.4rem; color:#f8fafc;">การปรับเทียบความแม่นยำ (Confidence Calibration)</span>
     </div>
     <div style="background:rgba(16,185,129,0.15); color:""" + lead_color + """; border:1px solid rgba(16,185,129,0.3); padding:4px 12px; border-radius:4px; font-size:0.65rem; font-weight:700; font-family:'Inter', sans-serif;">
         ⚡ """ + leading_text + """
@@ -871,14 +871,14 @@ COMPARATIVE FEATURE<br>ANALYSIS
     st.markdown(f"""
 <div style="margin-bottom:25px;">
     <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:8px;">
-        <div style="font-size:0.75rem; color:#94a3b8; font-weight:600; letter-spacing:1px; text-transform:uppercase;">{home_team} Win Probabilities</div>
+        <div style="font-size:0.75rem; color:#94a3b8; font-weight:600; letter-spacing:1px; text-transform:uppercase;">โอกาสชนะของ {home_team}</div>
         <div style="display:flex; gap:30px; text-align:right;">
             <div>
-                <div style="font-size:0.6rem; color:#10b981; margin-bottom:2px;">AI CONFIDENCE</div>
+                <div style="font-size:0.6rem; color:#10b981; margin-bottom:2px;">ความมั่นใจของ AI</div>
                 <div style="font-size:1.4rem; font-weight:700; color:#f8fafc; font-family:'Inter', sans-serif;">{prob_home:.1f}%</div>
             </div>
             <div>
-                <div style="font-size:0.6rem; color:#3b82f6; margin-bottom:2px;">FAN CONFIDENCE</div>
+                <div style="font-size:0.6rem; color:#3b82f6; margin-bottom:2px;">ความมั่นใจของแฟนบอล</div>
                 <div style="font-size:1.1rem; font-weight:600; color:#e2e8f0; font-family:'Inter', sans-serif;">{fan_home:.1f}%</div>
             </div>
         </div>
@@ -894,14 +894,14 @@ COMPARATIVE FEATURE<br>ANALYSIS
     st.markdown(f"""
 <div style="margin-bottom:25px;">
     <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:8px;">
-        <div style="font-size:0.75rem; color:#94a3b8; font-weight:600; letter-spacing:1px;">DRAW PROBABILITIES</div>
+        <div style="font-size:0.75rem; color:#94a3b8; font-weight:600; letter-spacing:1px;">โอกาสเสมอ</div>
         <div style="display:flex; gap:30px; text-align:right;">
             <div>
-                <div style="font-size:0.6rem; color:#10b981; margin-bottom:2px;">AI CONFIDENCE</div>
+                <div style="font-size:0.6rem; color:#10b981; margin-bottom:2px;">ความมั่นใจของ AI</div>
                 <div style="font-size:1.4rem; font-weight:700; color:#f8fafc; font-family:'Inter', sans-serif;">{prob_draw:.1f}%</div>
             </div>
             <div>
-                <div style="font-size:0.6rem; color:#3b82f6; margin-bottom:2px;">FAN CONFIDENCE</div>
+                <div style="font-size:0.6rem; color:#3b82f6; margin-bottom:2px;">ความมั่นใจของแฟนบอล</div>
                 <div style="font-size:1.1rem; font-weight:600; color:#e2e8f0; font-family:'Inter', sans-serif;">{fan_draw:.1f}%</div>
             </div>
         </div>
@@ -917,14 +917,14 @@ COMPARATIVE FEATURE<br>ANALYSIS
     st.markdown(f"""
 <div style="margin-bottom:40px;">
     <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:8px;">
-        <div style="font-size:0.75rem; color:#94a3b8; font-weight:600; letter-spacing:1px; text-transform:uppercase;">{away_team} Win Probabilities</div>
+        <div style="font-size:0.75rem; color:#94a3b8; font-weight:600; letter-spacing:1px; text-transform:uppercase;">โอกาสชนะของ {away_team}</div>
         <div style="display:flex; gap:30px; text-align:right;">
             <div>
-                <div style="font-size:0.6rem; color:#10b981; margin-bottom:2px;">AI CONFIDENCE</div>
+                <div style="font-size:0.6rem; color:#10b981; margin-bottom:2px;">ความมั่นใจของ AI</div>
                 <div style="font-size:1.4rem; font-weight:700; color:#f8fafc; font-family:'Inter', sans-serif;">{prob_away:.1f}%</div>
             </div>
             <div>
-                <div style="font-size:0.6rem; color:#3b82f6; margin-bottom:2px;">FAN CONFIDENCE</div>
+                <div style="font-size:0.6rem; color:#3b82f6; margin-bottom:2px;">ความมั่นใจของแฟนบอล</div>
                 <div style="font-size:1.1rem; font-weight:600; color:#e2e8f0; font-family:'Inter', sans-serif;">{fan_away:.1f}%</div>
             </div>
         </div>
@@ -937,7 +937,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 
 <div style="display:flex; align-items:center; gap:10px; padding-top:15px; border-top:1px solid #1f2937;">
     <div style="color:#64748b;">ⓘ</div>
-    <div style="font-size:0.75rem; color:#64748b; font-style:italic;">Human Fan Confidence is derived from current FPL ownership data and live social sentiment analysis (Mocked).</div>
+    <div style="font-size:0.75rem; color:#64748b; font-style:italic;">ความมั่นใจของแฟนบอลประมวลผลจากข้อมูลการถือครองนักเตะใน FPL และการวิเคราะห์กระแสสังคมออนไลน์ (ข้อมูลจำลอง)</div>
 </div>
 """, unsafe_allow_html=True)
     
@@ -949,7 +949,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 <div class="card-title" style="margin-bottom:30px;">
 <div style="display:flex; align-items:center; gap:10px;">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="w-6 h-6"><path d="M4 14V20M8 8V20M12 12V20M16 16V20M20 4V20" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<span style="font-size:1.4rem; color:#f8fafc; font-weight:800; font-family:'Orbitron', sans-serif;">AI vs Human Performance Benchmark</span>
+<span style="font-size:1.4rem; color:#f8fafc; font-weight:800; font-family:'Orbitron', sans-serif;">เปรียบเทียบประสิทธิภาพ AI เทียบกับมนุษย์</span>
 </div>
 </div>
 
@@ -958,7 +958,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 <div style="flex:1; border:1px solid #064e3b; border-radius:8px; padding:20px; background:rgba(6,78,59,0.1); position:relative;">
 <div style="display:flex; justify-content:space-between; align-items:flex-start;">
 <div>
-<div style="font-size:0.75rem; color:#10b981; font-weight:700; margin-bottom:5px; letter-spacing:1px;">OUR MODEL (V5)</div>
+<div style="font-size:0.75rem; color:#10b981; font-weight:700; margin-bottom:5px; letter-spacing:1px;">โมเดลของเรา (V5)</div>
 <div style="font-size:2.5rem; font-weight:800; color:#f8fafc; font-family:'Inter', sans-serif; line-height:1;">55.26%</div>
 </div>
 <div style="opacity:0.3;">
@@ -967,7 +967,7 @@ COMPARATIVE FEATURE<br>ANALYSIS
 </div>
 <div style="margin-top:20px; font-size:0.8rem; color:#10b981; display:flex; align-items:center; gap:5px;">
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-Highest Accuracy
+ความแม่นยำสูงสุด
 </div>
 </div>
 
@@ -975,7 +975,7 @@ Highest Accuracy
 <div style="flex:1; border:1px solid #1e3a8a; border-radius:8px; padding:20px; background:rgba(30,58,138,0.1);">
 <div style="display:flex; justify-content:space-between; align-items:flex-start;">
 <div>
-<div style="font-size:0.75rem; color:#60a5fa; font-weight:700; margin-bottom:5px; letter-spacing:1px;">HUMAN FANS (FPL)</div>
+<div style="font-size:0.75rem; color:#60a5fa; font-weight:700; margin-bottom:5px; letter-spacing:1px;">แฟนบอล (FPL)</div>
 <div style="font-size:2.5rem; font-weight:800; color:#f8fafc; font-family:'Inter', sans-serif; line-height:1;">54.74%</div>
 </div>
 <div style="opacity:0.3;">
@@ -983,7 +983,7 @@ Highest Accuracy
 </div>
 </div>
 <div style="margin-top:20px; font-size:0.8rem; color:#94a3b8;">
-Baseline Target
+เกณฑ์เป้าหมาย
 </div>
 </div>
 
@@ -991,7 +991,7 @@ Baseline Target
 <div style="flex:1; border:1px solid #4c1d95; border-radius:8px; padding:20px; background:rgba(76,29,149,0.1);">
 <div style="display:flex; justify-content:space-between; align-items:flex-start;">
 <div>
-<div style="font-size:0.75rem; color:#c084fc; font-weight:700; margin-bottom:5px; letter-spacing:1px;">BBC EXPERTS</div>
+<div style="font-size:0.75rem; color:#c084fc; font-weight:700; margin-bottom:5px; letter-spacing:1px;">ผู้เชี่ยวชาญ BBC</div>
 <div style="font-size:2.5rem; font-weight:800; color:#f8fafc; font-family:'Inter', sans-serif; line-height:1;">47.11%</div>
 </div>
 <div style="opacity:0.3;">
@@ -999,7 +999,7 @@ Baseline Target
 </div>
 </div>
 <div style="margin-top:20px; font-size:0.8rem; color:#94a3b8;">
-Standard Metric
+เกณฑ์มาตรฐาน
 </div>
 </div>
 </div>
