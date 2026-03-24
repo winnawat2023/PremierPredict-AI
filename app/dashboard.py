@@ -67,9 +67,16 @@ st.markdown("""
 
     /* Remove the problematic ::before badge */
     [data-testid="stSidebar"]::before { content: none !important; }
-    /* Remove global sidebar font override that breaks icons */
+    /* Ensure icons always use their native font, don't override them */
+    [data-testid="stSidebar"] button[kind="secondary"] i,
+    [data-testid="stSidebar"] button[kind="secondary"] svg,
+    .stApp [data-testid="stHeader"] i,
+    .stApp [data-testid="stHeader"] svg {
+        font-family: inherit !important;
+    }
+    
     [data-testid="stSidebarContent"] {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', sans-serif !important;
     }
     
     /* Top Header Adjustments */
@@ -273,15 +280,10 @@ st.markdown("""
     }
     
     /* Dropdown Target Wrappers */
-    div[data-testid="stSidebar"] div[data-testid="stSelectbox"]:first-of-type > div > div {
-        border-bottom: 3px solid #06b6d4 !important;
+    div[data-testid="stSidebar"] div[data-testid="stSelectbox"] > div > div {
         border-radius: 4px;
         box-shadow: none;
-    }
-    div[data-testid="stSidebar"] div[data-testid="stSelectbox"]:last-of-type > div > div {
-        border-bottom: 3px solid #f43f5e !important;
-        border-radius: 4px;
-        box-shadow: none;
+        border-bottom: 2px solid #334155 !important;
     }
     
     /* Hide selectbox label */
