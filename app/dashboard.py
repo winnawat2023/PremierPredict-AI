@@ -34,11 +34,47 @@ st.markdown("""
         font-family: 'Inter', sans-serif;
     }
     
-    /* Override Streamlit Sidebar */
+    /* Override Streamlit Sidebar - kill ALL top padding at every level */
+    [data-testid="stSidebar"],
+    [data-testid="stSidebar"] > div,
+    [data-testid="stSidebar"] > div > div,
+    [data-testid="stSidebar"] > div > div > div,
+    [data-testid="stSidebarContent"],
+    [data-testid="stSidebarContent"] > div,
+    section[data-testid="stSidebar"] > div:first-child {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
     [data-testid="stSidebar"] {
         background-color: #161A25 !important;
         border-right: 1px solid #1f2937 !important;
-        padding-top: 1rem;
+    }
+    .sea612-bar {
+        padding: 0.55rem 1rem;
+        font-size: 0.62rem;
+        color: #93c5fd;
+        background: rgba(37,99,235,0.18);
+        border-bottom: 1px solid rgba(59,130,246,0.3);
+        letter-spacing: 0.8px;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    /* Pin the SEA612 badge to the very top of the sidebar via fixed positioning */
+    [data-testid="stSidebar"]::before {
+        content: 'SEA612  Artificial Intelligence Fundamentals';
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        color: #93c5fd;
+        background: rgba(37,99,235,0.22);
+        border-bottom: 1px solid rgba(59,130,246,0.35);
+        font-family: 'Inter', sans-serif;
     }
     [data-testid="stSidebar"] * {
         font-family: 'Inter', sans-serif;
@@ -300,7 +336,8 @@ def main():
 
     # --- SIDEBAR ---
     with st.sidebar:
-        st.markdown('<div class="sidebar-logo">🤖 PremierPredict</div>', unsafe_allow_html=True)
+        # SEA612 badge is injected via CSS ::before on the sidebar element
+        st.markdown('<div class="sidebar-logo" style="margin-top:0.75rem;">🤖 PremierPredict</div>', unsafe_allow_html=True)
         st.markdown('<div style="font-size:0.7rem; color:#64748b; margin-bottom:1rem;">AI ENSEMBLE SYSTEM V5.0</div>', unsafe_allow_html=True)
         
         st.markdown('<div class="sidebar-section">MATCH SIMULATION</div>', unsafe_allow_html=True)
