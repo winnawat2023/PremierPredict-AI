@@ -403,6 +403,7 @@ RESULTS_PATH = "data/processed/ensemble_results.json"
 METRICS_PATH = "models/metrics_v5.json"
 COMP_PATH = "data/processed/ai_vs_crowd_comparison.csv"
 HUMAN_COMP_PATH = "data/processed/human_baseline_comparison.csv"
+PRED_2025_PATH = "data/processed/predictions_2025.csv"
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(BASE_DIR)
@@ -1216,7 +1217,7 @@ Expert Global Benchmark
             ::-webkit-scrollbar-thumb:hover {{ background: #718096; }}
         </style>
         <div class="card">
-            <div class="card-title">📜 AI Prediction History</div>
+            <div class="card-title">📜 AI Prediction History 2024/2025 Season</div>
             <div class="scroll-area">
                 <table>
                     <thead>
@@ -1237,6 +1238,132 @@ Expert Global Benchmark
         </div>
         """
         components.html(html_content, height=520, scrolling=False)
+        
+    try:
+        pred_2025_df = pd.read_csv(PRED_2025_PATH)
+    except FileNotFoundError:
+        pred_2025_df = pd.DataFrame()
+        
+    if not pred_2025_df.empty:
+        # Build Table HTML for 2025
+        table_rows_2025 = ""
+        recent_history_2025 = pred_2025_df
+        
+        match_details_2025 = {}
+        try:
+            pl_matches = pd.read_csv("data/raw/pl_matches_2021_2025.csv")
+            pl_matches = pl_matches[pl_matches['season'] == 2025]
+            pl_matches['match_name'] = pl_matches['home_team'] + ' vs ' + pl_matches['away_team']
+            match_details_2025 = pl_matches.drop_duplicates(subset=['match_name'], keep='last').set_index('match_name')[['date', 'home_score']].to_dict('index')
+        except:
+            pass
+
+        for _, row in recent_history_2025.iterrows():
+            match_name = row['Match']
+            details = match_details_2025.get(match_name, {})
+            
+            # Skip if match has a score already (meaning result is known)
+            if pd.notna(details.get('home_score')):
+                continue
+            
+            # Extract date
+            raw_date = details.get('date', '')
+            if isinstance(raw_date, str) and len(raw_date) >= 16:
+                try:
+                    dt = pd.to_datetime(raw_date)
+                    if dt < pd.Timestamp.now(tz='UTC'):
+                        continue
+                    dt_th = dt + pd.Timedelta(hours=7)
+                    date_str = dt_th.strftime('%d %b %Y %H:%M')
+                except:
+                    date_str = raw_date[:10] + " " + raw_date[11:16]
+            else:
+                date_str = ""
+            
+            ai_pred = row['AI_Pred']
+            ai_score = row.get('AI_Score', '')
+            actual_display = "<span style='font-size:0.75rem; color:#64748b; font-weight:600;'>TBD</span>"
+
+            # Map labels for UI
+            ai_color = "#38bdf8"
+            
+            match_display = f"<div>{match_name}</div><div style='font-size:0.75rem; color:#64748b; margin-top:2px;'>{date_str}</div>" if date_str else match_name
+            ai_display = f"<div>{ai_pred}</div><div style='font-size:0.75rem; color:#94a3b8; font-weight:600; margin-top:2px;'>Score: {ai_score}</div>" if ai_score else ai_pred
+            
+            table_rows_2025 += f"""
+            <tr style="border-bottom:1px solid #2d3748;">
+                <td style="padding:12px; text-align:left;">{match_display}</td>
+                <td style="padding:12px; text-align:center; color:#94a3b8;">{actual_display}</td>
+                <td style="padding:12px; text-align:center; font-weight:600; color:{ai_color};">{ai_display}</td>
+            </tr>
+            """
+
+        html_content_2025 = f"""
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+            body {{
+                background: #11141E;
+                color: #f8fafc;
+                font-family: 'Inter', sans-serif;
+                margin: 0; padding: 0;
+            }}
+            .card {{
+                background-color: #1A202C;
+                border: 1px solid #2d3748;
+                border-radius: 12px;
+                padding: 24px;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+                margin-top: 20px;
+            }}
+            .card-title {{
+                font-size: 1.1rem;
+                color: #f8fafc;
+                font-weight: 800;
+                margin-bottom: 20px;
+                display: flex; gap: 10px; align-items: center;
+            }}
+            .scroll-area {{
+                height: 380px; 
+                overflow-y: auto; 
+                border: 1px solid #2d3748; 
+                border-radius: 8px; 
+                background: rgba(15,23,42,0.5);
+            }}
+            table {{
+                width: 100%; border-collapse: collapse; font-size: 0.85rem;
+            }}
+            th {{
+                position: sticky; top: 0; background: #1e293b; 
+                padding: 12px; text-align: center; border-bottom: 1px solid #334155;
+            }}
+            th:first-child {{ text-align: left; }}
+            td {{ padding: 12px; text-align: center; font-family: 'Inter', sans-serif; }}
+            td:first-child {{ text-align: left; }}
+            ::-webkit-scrollbar {{ width: 8px; }}
+            ::-webkit-scrollbar-track {{ background: #1e293b; }}
+            ::-webkit-scrollbar-thumb {{ background: #4a5568; border-radius: 4px; }}
+            ::-webkit-scrollbar-thumb:hover {{ background: #718096; }}
+        </style>
+        <div class="card">
+            <div class="card-title">🔮 Future AI Predictions 2025/2026</div>
+            <div class="scroll-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:50%;">Match</th>
+                            <th style="width:25%;">Actual</th>
+                            <th style="width:25%;">AI Predict</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {table_rows_2025}
+                    </tbody>
+                </table>
+            </div>
+            <div style="margin-top:10px; font-size:0.7rem; color:#64748b; text-align:right;">* Showing simulated future fixtures without known results for the 2025/2026 Season.</div>
+        </div>
+        """
+        components.html(html_content_2025, height=540, scrolling=False)
 
 
 if __name__ == "__main__":
