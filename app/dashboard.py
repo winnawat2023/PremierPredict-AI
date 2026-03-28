@@ -400,6 +400,7 @@ MODEL_PATH = "models/stacking_ensemble_v5.pkl"
 STATS_PATH = "data/processed/latest_team_stats.json"
 RESULTS_PATH = "data/processed/ensemble_results.json"
 METRICS_PATH = "models/metrics_v5.json"
+COMP_PATH = "data/processed/ai_vs_crowd_comparison.csv"
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(BASE_DIR)
@@ -435,10 +436,14 @@ def load_resources():
             metrics = json.load(f)
     except FileNotFoundError:
         metrics = {}
-    return model, stats, results, metrics
+    try:
+        history_df = pd.read_csv(COMP_PATH)
+    except FileNotFoundError:
+        history_df = pd.DataFrame()
+    return model, stats, results, metrics, history_df
 
 def main():
-    model, stats, results, metrics = load_resources()
+    model, stats, results, metrics, history_df = load_resources()
     if not model or not stats:
         st.error("Backend models/stats error: Unable to access system resources.")
         return
@@ -1053,6 +1058,61 @@ Expert Global Benchmark
 <span style="color:#fbbf24; font-size:1.2rem;">🏆</span>
 <span style="color:#10b981; font-weight:600; font-size:0.95rem; font-family:'Inter', sans-serif;">RESULT: Our AI model outperforms all benchmarks! Accuracy exceeds the Crowd by (+{(ai_acc-crowd_acc):.2f}%) and BBC Experts by (+{(ai_acc-human_acc):.2f}%).</span>
 </div>
+</div>
+""", unsafe_allow_html=True)
+
+    # --- AI Prediction History Table ---
+    if not history_df.empty:
+        st.markdown("""
+<div class="card" style="margin-top:20px;">
+<div class="card-title" style="margin-bottom:20px;">
+    <div style="display:flex; align-items:center; gap:10px;">
+        <span style="font-size:1.4rem;">📜</span>
+        <span style="font-size:1.4rem; color:#f8fafc; font-weight:800; font-family:'Inter', sans-serif;">AI Prediction History</span>
+    </div>
+</div>
+<div style="height:400px; overflow-y:auto; border:1px solid #2d3748; border-radius:8px; background:rgba(15,23,42,0.5);">
+    <table style="width:100%; border-collapse:collapse; color:#e2e8f0; font-family:'Inter', sans-serif; font-size:0.85rem;">
+        <thead style="position:sticky; top:0; background:#1e293b; z-index:10;">
+            <tr>
+                <th style="padding:12px; text-align:left; border-bottom:1px solid #334155;">Match</th>
+                <th style="padding:12px; text-align:center; border-bottom:1px solid #334155;">Actual</th>
+                <th style="padding:12px; text-align:center; border-bottom:1px solid #334155;">AI Prediction</th>
+                <th style="padding:12px; text-align:center; border-bottom:1px solid #334155;">Accuracy</th>
+            </tr>
+        </thead>
+        <tbody>
+""", unsafe_allow_html=True)
+
+        # Iterate through history (reversing to show latest first)
+        rows = []
+        for _, row in history_df.iloc[::-1].iterrows():
+            match = row['Match']
+            actual = row['Actual'].replace("_TEAM", "").capitalize() if isinstance(row['Actual'], str) else "N/A"
+            pred = row['AI_Pred'].replace("_TEAM", "").capitalize() if isinstance(row['AI_Pred'], str) else "N/A"
+            correct = row['AI_Correct']
+            
+            # Map labels
+            actual = actual.replace("Home", "Home Win").replace("Away", "Away Win")
+            pred = pred.replace("Home", "Home Win").replace("Away", "Away Win")
+            
+            icon = "✅" if correct else "❌"
+            color = "#10b981" if correct else "#f43f5e"
+            
+            st.markdown(f"""
+            <tr style="border-bottom:1px solid #1e293b; transition: background 0.2s;">
+                <td style="padding:12px; text-align:left;">{match}</td>
+                <td style="padding:12px; text-align:center; color:#94a3b8;">{actual}</td>
+                <td style="padding:12px; text-align:center; font-weight:600; color:{color};">{pred}</td>
+                <td style="padding:12px; text-align:center;">{icon}</td>
+            </tr>
+            """, unsafe_allow_html=True)
+
+        st.markdown("""
+        </tbody>
+    </table>
+</div>
+<div style="margin-top:10px; font-size:0.7rem; color:#64748b; text-align:right;">* Showing latest results from competitive verification datasets.</div>
 </div>
 """, unsafe_allow_html=True)
 
