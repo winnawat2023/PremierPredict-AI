@@ -70,6 +70,34 @@ TEAM_NAME_MAPPING = {
     'hammers': 'West Ham United FC'
 }
 
+# Thai Team Name Mapping for Dashboard Display
+TEAM_NAME_TH = {
+    'Arsenal FC': 'อาร์เซนอล',
+    'Aston Villa FC': 'แอสตัน วิลล่า',
+    'AFC Bournemouth': 'บอร์นมัธ',
+    'Brentford FC': 'เบรนท์ฟอร์ด',
+    'Brighton & Hove Albion FC': 'ไบรท์ตัน',
+    'Chelsea FC': 'เชลซี',
+    'Crystal Palace FC': 'คริสตัล พาเลซ',
+    'Everton FC': 'เอฟเวอร์ตัน',
+    'Fulham FC': 'ฟูแล่ม',
+    'Ipswich Town FC': 'อิปสวิช ทาวน์',
+    'Leicester City FC': 'เลสเตอร์ ซิตี้',
+    'Liverpool FC': 'ลิเวอร์พูล',
+    'Manchester City FC': 'แมนฯ ซิตี้',
+    'Manchester United FC': 'แมนฯ ยูไนเต็ด',
+    'Newcastle United FC': 'นิวคาสแซิล',
+    'Nottingham Forest FC': 'น็อตติ้งแฮม ฟอเรสต์',
+    'Southampton FC': 'เซาแธมป์ตัน',
+    'Tottenham Hotspur FC': 'ท็อตแน่ม ฮ็อทสเปอร์',
+    'West Ham United FC': 'เวสต์แฮม ยูไนเต็ด',
+    'Wolverhampton Wanderers FC': 'วูล์ฟแฮมป์ตัน',
+    'Luton Town FC': 'ลูตัน ทาวน์',
+    'Burnley FC': 'เบิร์นลีย์',
+    'Sheffield United FC': 'เชฟฯ ยูไนเต็ด',
+    'Leeds United FC': 'ลีดส์ ยูไนเต็ด'
+}
+
 # Features used in models
 BASE_FEATURES = [
     'Home_Form_L5', 'Away_Form_L5',

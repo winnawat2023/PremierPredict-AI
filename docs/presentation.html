@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PremierPredict-AI | SEA612 Presentation</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<html lang="th">
 
-    :root {
-      --bg:        #0b0f1a;
-      --surface:   #111827;
-      --card:      #1a2035;
-      --border:    #2d3748;
-      --cyan:      #06b6d4;
-      --green:     #10b981;
-      --red:       #f43f5e;
-      --purple:    #8b5cf6;
-      --amber:     #f59e0b;
-      --text:      #f8fafc;
-      --muted:     #94a3b8;
-      --dim:       #475569;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PremierPredict-AI | การนำเสนอ SEA612</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    html, body {
-      width: 100%; height: 100%;
+    :root {
+      --bg: #0b0f1a;
+      --surface: #111827;
+      --card: #1a2035;
+      --border: #2d3748;
+      --cyan: #06b6d4;
+      --green: #10b981;
+      --red: #f43f5e;
+      --purple: #8b5cf6;
+      --amber: #f59e0b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --dim: #475569;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
       background: var(--bg);
       font-family: 'Inter', sans-serif;
       color: var(--text);
@@ -33,713 +44,1436 @@
     }
 
     /* ── Deck ── */
-    .deck { width: 100%; height: 100%; position: relative; }
+    .deck {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
 
     .slide {
-      position: absolute; inset: 0;
+      position: absolute;
+      inset: 0;
       display: none;
       flex-direction: column;
       padding: 0;
       background: var(--bg);
       animation: fadeIn .35s ease;
     }
-    .slide.active { display: flex; }
 
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .slide.active {
+      display: flex;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
     /* ── Nav ── */
     .nav {
-      position: fixed; bottom: 2.2rem; left: 50%; transform: translateX(-50%);
-      display: flex; align-items: center; gap: 1.6rem;
-      background: rgba(17,24,39,.85); backdrop-filter: blur(12px);
-      border: 1px solid var(--border); border-radius: 9999px;
-      padding: .6rem 1.6rem; z-index: 100;
+      position: fixed;
+      bottom: 2.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      background: rgba(17, 24, 39, .85);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      padding: .6rem 1.6rem;
+      z-index: 100;
     }
+
     .nav button {
-      background: none; border: none; cursor: pointer;
-      color: var(--muted); font-size: 1.1rem; padding: .3rem .6rem;
-      border-radius: 50%; transition: all .2s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 1.1rem;
+      padding: .3rem .6rem;
+      border-radius: 50%;
+      transition: all .2s;
     }
-    .nav button:hover { color: var(--cyan); background: rgba(6,182,212,.12); }
-    .nav .counter { font-size: .78rem; color: var(--muted); min-width: 52px; text-align: center; letter-spacing: 1px; }
+
+    .nav button:hover {
+      color: var(--cyan);
+      background: rgba(6, 182, 212, .12);
+    }
+
+    .nav .counter {
+      font-size: .78rem;
+      color: var(--muted);
+      min-width: 52px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
 
     /* ── Slide 1: Cover ── */
     #s1 {
-      background: radial-gradient(ellipse at 30% 40%, rgba(6,182,212,.15) 0%, transparent 60%),
-                  radial-gradient(ellipse at 80% 80%, rgba(139,92,246,.12) 0%, transparent 50%),
-                  var(--bg);
-      justify-content: center; align-items: center;
+      background: radial-gradient(ellipse at 30% 40%, rgba(6, 182, 212, .15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(139, 92, 246, .12) 0%, transparent 50%),
+        var(--bg);
+      justify-content: center;
+      align-items: center;
     }
-    .cover-inner { text-align: center; max-width: 780px; padding: 2rem; }
+
+    .cover-inner {
+      text-align: center;
+      max-width: 780px;
+      padding: 2rem;
+    }
+
     .course-badge {
       display: inline-block;
-      background: rgba(6,182,212,.12); border: 1px solid rgba(6,182,212,.35);
-      color: var(--cyan); font-size: .72rem; letter-spacing: 2px; font-weight: 700;
-      padding: .4rem 1.1rem; border-radius: 9999px; margin-bottom: 1.8rem;
+      background: rgba(6, 182, 212, .12);
+      border: 1px solid rgba(6, 182, 212, .35);
+      color: var(--cyan);
+      font-size: .72rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      padding: .4rem 1.1rem;
+      border-radius: 9999px;
+      margin-bottom: 1.8rem;
     }
+
     .cover-title {
       font-family: 'Orbitron', sans-serif;
       font-size: clamp(2rem, 5vw, 3.4rem);
-      font-weight: 900; line-height: 1.15;
+      font-weight: 900;
+      line-height: 1.15;
       background: linear-gradient(135deg, #f8fafc 0%, var(--cyan) 50%, var(--green) 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
       margin-bottom: .9rem;
     }
+
     .cover-sub {
-      font-size: 1.05rem; color: var(--muted); margin-bottom: 2.4rem; line-height: 1.6;
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 2.4rem;
+      line-height: 1.6;
     }
-    .cover-divider { width: 60px; height: 3px; background: linear-gradient(90deg, var(--cyan), var(--green)); border-radius: 9999px; margin: 0 auto 2rem; }
+
+    .cover-divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--cyan), var(--green));
+      border-radius: 9999px;
+      margin: 0 auto 2rem;
+    }
+
     .member-box {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 16px; padding: 1.6rem 2rem; display: inline-block;
-      text-align: left; min-width: 380px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.6rem 2rem;
+      display: inline-block;
+      text-align: left;
+      min-width: 380px;
     }
-    .member-row { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .5rem; }
-    .member-id { font-size: .7rem; color: var(--cyan); font-weight: 700; letter-spacing: 1px; min-width: 100px; }
-    .member-name { font-size: .92rem; color: var(--text); font-weight: 500; }
-    .meta-row { display: flex; justify-content: space-between; margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
-    .meta-item { font-size: .72rem; }
-    .meta-label { color: var(--dim); text-transform: uppercase; letter-spacing: 1px; margin-bottom: .2rem; }
-    .meta-val { color: var(--muted); font-weight: 600; }
+
+    .member-row {
+      display: flex;
+      align-items: baseline;
+      gap: .6rem;
+      margin-bottom: .5rem;
+    }
+
+    .member-id {
+      font-size: .7rem;
+      color: var(--cyan);
+      font-weight: 700;
+      letter-spacing: 1px;
+      min-width: 100px;
+    }
+
+    .member-name {
+      font-size: .92rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .meta-item {
+      font-size: .72rem;
+    }
+
+    .meta-label {
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: .2rem;
+    }
+
+    .meta-val {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
     .orbit-deco {
-      position: absolute; border-radius: 50%; border: 1px solid;
-      animation: spin linear infinite; pointer-events: none;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid;
+      animation: spin linear infinite;
+      pointer-events: none;
     }
-    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ── PDF Print Styles ── */
+    @media print {
+      body {
+        background: #0b0f1a !important; /* Keep dark theme for PDF if possible, or white if safer */
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .nav {
+        display: none !important;
+      }
+
+      .slide {
+        display: flex !important;
+        position: relative !important;
+        page-break-after: always !important;
+        height: 100vh !important;
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+      }
+
+      .deck {
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      #s1 {
+        background: #0b0f1a !important;
+      }
+
+      .card {
+        background: #1a2035 !important;
+        border: 1px solid #2d3748 !important;
+        color: white !important;
+      }
+
+      .pill {
+        -webkit-print-color-adjust: exact;
+      }
+
+      .slide-header h2,
+      .cover-title {
+        background: none !important;
+        -webkit-text-fill-color: var(--cyan) !important;
+        color: var(--cyan) !important;
+      }
+
+      .slide-body {
+        overflow: visible !important;
+      }
+    }
 
     /* ── Slide header ── */
     .slide-header {
       padding: 2rem 3.5rem 1.2rem;
       border-bottom: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: flex-end;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
     }
+
     .slide-header h2 {
       font-family: 'Orbitron', sans-serif;
       font-size: clamp(1.2rem, 2.5vw, 1.7rem);
       background: linear-gradient(90deg, var(--text), var(--cyan));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    .slide-tag { font-size: .65rem; color: var(--dim); text-transform: uppercase; letter-spacing: 2px; }
+
+    .slide-tag {
+      font-size: .65rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
     .slide-body {
-      flex: 1; overflow-y: auto;
+      flex: 1;
+      overflow-y: auto;
       padding: 2rem 3.5rem 5rem;
-      scrollbar-width: thin; scrollbar-color: var(--border) transparent;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
     }
 
     /* ── Cards ── */
     .card {
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 14px; padding: 1.5rem 1.8rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem 1.8rem;
     }
+
     .card-title {
-      font-size: .7rem; color: var(--cyan); text-transform: uppercase;
-      letter-spacing: 2px; font-weight: 700; margin-bottom: .8rem;
-      display: flex; align-items: center; gap: .5rem;
+      font-size: .7rem;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: .8rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
     }
-    .card-title::before { content: ''; display: block; width: 3px; height: 14px; background: var(--cyan); border-radius: 2px; }
+
+    .card-title::before {
+      content: '';
+      display: block;
+      width: 3px;
+      height: 14px;
+      background: var(--cyan);
+      border-radius: 2px;
+    }
 
     /* ── Grid helpers ── */
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
-    .mb { margin-bottom: 1.4rem; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.4rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .mb {
+      margin-bottom: 1.4rem;
+    }
 
     /* ── Pills / tags ── */
     .pill {
-      display: inline-block; padding: .28rem .8rem;
-      border-radius: 9999px; font-size: .68rem; font-weight: 700; letter-spacing: .5px;
+      display: inline-block;
+      padding: .28rem .8rem;
+      border-radius: 9999px;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .5px;
     }
-    .pill-cyan  { background: rgba(6,182,212,.15); color: var(--cyan); border: 1px solid rgba(6,182,212,.3); }
-    .pill-green { background: rgba(16,185,129,.15); color: var(--green); border: 1px solid rgba(16,185,129,.3); }
-    .pill-red   { background: rgba(244,63,94,.15); color: var(--red); border: 1px solid rgba(244,63,94,.3); }
-    .pill-pur   { background: rgba(139,92,246,.15); color: var(--purple); border: 1px solid rgba(139,92,246,.3); }
-    .pill-amb   { background: rgba(245,158,11,.15); color: var(--amber); border: 1px solid rgba(245,158,11,.3); }
+
+    .pill-cyan {
+      background: rgba(6, 182, 212, .15);
+      color: var(--cyan);
+      border: 1px solid rgba(6, 182, 212, .3);
+    }
+
+    .pill-green {
+      background: rgba(16, 185, 129, .15);
+      color: var(--green);
+      border: 1px solid rgba(16, 185, 129, .3);
+    }
+
+    .pill-red {
+      background: rgba(244, 63, 94, .15);
+      color: var(--red);
+      border: 1px solid rgba(244, 63, 94, .3);
+    }
+
+    .pill-pur {
+      background: rgba(139, 92, 246, .15);
+      color: var(--purple);
+      border: 1px solid rgba(139, 92, 246, .3);
+    }
+
+    .pill-amb {
+      background: rgba(245, 158, 11, .15);
+      color: var(--amber);
+      border: 1px solid rgba(245, 158, 11, .3);
+    }
 
     /* ── Stat cells ── */
-    .stat-val  { font-family: 'Orbitron', sans-serif; font-size: 2.2rem; font-weight: 700; color: var(--text); line-height: 1; }
-    .stat-unit { font-size: .65rem; color: var(--dim); text-transform: uppercase; letter-spacing: 1.5px; margin-top: .3rem; }
+    .stat-val {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .stat-unit {
+      font-size: .65rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: .3rem;
+    }
 
     /* ── Progress bar ── */
-    .bar-row { margin-bottom: .9rem; }
-    .bar-label { display: flex; justify-content: space-between; font-size: .72rem; color: var(--muted); margin-bottom: .35rem; }
-    .bar-track { height: 8px; background: var(--surface); border-radius: 9999px; overflow: hidden; }
-    .bar-fill  { height: 100%; border-radius: 9999px; transition: width 1s ease; }
-    .bar-cyan  { background: linear-gradient(90deg, var(--cyan), var(--green)); }
-    .bar-green { background: var(--green); }
-    .bar-red   { background: var(--red); }
-    .bar-pur   { background: var(--purple); }
-    .bar-amb   { background: var(--amber); }
+    .bar-row {
+      margin-bottom: .9rem;
+    }
+
+    .bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: .72rem;
+      color: var(--muted);
+      margin-bottom: .35rem;
+    }
+
+    .bar-track {
+      height: 8px;
+      background: var(--surface);
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 9999px;
+      transition: width 1s ease;
+    }
+
+    .bar-cyan {
+      background: linear-gradient(90deg, var(--cyan), var(--green));
+    }
+
+    .bar-green {
+      background: var(--green);
+    }
+
+    .bar-red {
+      background: var(--red);
+    }
+
+    .bar-pur {
+      background: var(--purple);
+    }
+
+    .bar-amb {
+      background: var(--amber);
+    }
 
     /* ── Step list ── */
-    .step-list { display: flex; flex-direction: column; gap: .9rem; }
-    .step-item { display: flex; gap: 1rem; align-items: flex-start; }
-    .step-num {
-      flex-shrink: 0; width: 30px; height: 30px;
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      font-size: .8rem; font-weight: 800; background: rgba(6,182,212,.15);
-      color: var(--cyan); border: 1px solid rgba(6,182,212,.35);
+    .step-list {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
     }
-    .step-text h4 { font-size: .88rem; color: var(--text); font-weight: 700; margin-bottom: .25rem; }
-    .step-text p  { font-size: .76rem; color: var(--muted); line-height: 1.5; }
+
+    .step-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .8rem;
+      font-weight: 800;
+      background: rgba(6, 182, 212, .15);
+      color: var(--cyan);
+      border: 1px solid rgba(6, 182, 212, .35);
+    }
+
+    .step-text h4 {
+      font-size: .88rem;
+      color: var(--text);
+      font-weight: 700;
+      margin-bottom: .25rem;
+    }
+
+    .step-text p {
+      font-size: .76rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
 
     /* ── Accuracy gauge visual ── */
-    .gauge-wrap { text-align: center; padding: 1rem 0; }
-    .gauge-num { font-family: 'Orbitron', sans-serif; font-size: 3.4rem; font-weight: 900; color: var(--green); }
-    .gauge-label { font-size: .7rem; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-top: .3rem; }
+    .gauge-wrap {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .gauge-num {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.4rem;
+      font-weight: 900;
+      color: var(--green);
+    }
+
+    .gauge-label {
+      font-size: .7rem;
+      color: var(--muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: .3rem;
+    }
 
     /* ── Comparison table ── */
-    .cmp-table { width: 100%; border-collapse: collapse; font-size: .8rem; }
-    .cmp-table th { font-size: .65rem; color: var(--dim); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; padding: .6rem .8rem; text-align: left; border-bottom: 1px solid var(--border); }
-    .cmp-table td { padding: .75rem .8rem; border-bottom: 1px solid rgba(255,255,255,.04); color: var(--muted); }
-    .cmp-table tr:last-child td { border-bottom: none; }
-    .cmp-table .hl { color: var(--green); font-weight: 700; }
-    .cmp-table .model-name { color: var(--text); font-weight: 600; }
+    .cmp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .8rem;
+    }
+
+    .cmp-table th {
+      font-size: .65rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      padding: .6rem .8rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cmp-table td {
+      padding: .75rem .8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+      color: var(--muted);
+    }
+
+    .cmp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .cmp-table .hl {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .cmp-table .model-name {
+      color: var(--text);
+      font-weight: 600;
+    }
 
     /* ── Slide 6: Summary ── */
-    .pro-con { display: flex; gap: .6rem; align-items: flex-start; margin-bottom: .65rem; }
-    .pro-con-icon { flex-shrink: 0; font-size: 1rem; margin-top: .05rem; }
-    .pro-con p { font-size: .8rem; color: var(--muted); line-height: 1.5; }
-    .pro-con p strong { color: var(--text); font-weight: 600; }
+    .pro-con {
+      display: flex;
+      gap: .6rem;
+      align-items: flex-start;
+      margin-bottom: .65rem;
+    }
+
+    .pro-con-icon {
+      flex-shrink: 0;
+      font-size: 1rem;
+      margin-top: .05rem;
+    }
+
+    .pro-con p {
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .pro-con p strong {
+      color: var(--text);
+      font-weight: 600;
+    }
 
     /* ── Future arrows ── */
-    .future-item { display: flex; gap: .8rem; align-items: flex-start; margin-bottom: .8rem; }
-    .future-arrow { color: var(--cyan); font-size: 1rem; flex-shrink: 0; margin-top: .1rem; }
+    .future-item {
+      display: flex;
+      gap: .8rem;
+      align-items: flex-start;
+      margin-bottom: .8rem;
+    }
+
+    .future-arrow {
+      color: var(--cyan);
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
 
     /* ── Slide number dots ── */
-    .dots { display: flex; gap: .45rem; align-items: center; }
-    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--border); transition: all .25s; cursor: pointer; }
-    .dot.on { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
+    .dots {
+      display: flex;
+      gap: .45rem;
+      align-items: center;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--border);
+      transition: all .25s;
+      cursor: pointer;
+    }
+
+    .dot.on {
+      background: var(--cyan);
+      box-shadow: 0 0 8px var(--cyan);
+    }
 
     /* ── Slide 2 highlight ── */
     .problem-highlight {
-      background: linear-gradient(135deg, rgba(244,63,94,.08), rgba(245,158,11,.08));
-      border: 1px solid rgba(244,63,94,.25);
-      border-radius: 12px; padding: 1.2rem 1.5rem;
+      background: linear-gradient(135deg, rgba(244, 63, 94, .08), rgba(245, 158, 11, .08));
+      border: 1px solid rgba(244, 63, 94, .25);
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
     }
-    .problem-highlight h3 { font-size: 1.05rem; color: var(--text); font-weight: 700; margin-bottom: .5rem; }
-    .problem-highlight p  { font-size: .8rem; color: var(--muted); line-height: 1.6; }
+
+    .problem-highlight h3 {
+      font-size: 1.05rem;
+      color: var(--text);
+      font-weight: 700;
+      margin-bottom: .5rem;
+    }
+
+    .problem-highlight p {
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
   </style>
 </head>
+
 <body>
 
-<div class="deck" id="deck">
+  <div class="deck" id="deck">
 
-  <!-- ───────── SLIDE 1: COVER ───────── -->
-  <section class="slide active" id="s1">
-    <!-- Decorative orbit rings -->
-    <div class="orbit-deco" style="width:520px;height:520px;border-color:rgba(6,182,212,.07);top:-140px;right:-140px;animation-duration:60s;"></div>
-    <div class="orbit-deco" style="width:320px;height:320px;border-color:rgba(139,92,246,.07);bottom:-100px;left:-100px;animation-duration:45s;animation-direction:reverse;"></div>
-
-    <div class="cover-inner">
-      <div class="course-badge">⚽ SEA612 · ARTIFICIAL INTELLIGENCE FUNDAMENTALS</div>
-      <h1 class="cover-title">PremierPredict-AI</h1>
-      <p class="cover-sub">
-        An ML Stacking Ensemble System for Premier League<br>Match Outcome Prediction
-      </p>
-      <div class="cover-divider"></div>
-
-      <div class="member-box">
-        <div class="member-row"><span class="member-id">67130700346</span><span class="member-name">Chaiyaporn Homtean</span></div>
-        <div class="member-row"><span class="member-id">67130700357</span><span class="member-name">Krittin Chaisuvirat</span></div>
-        <div class="member-row"><span class="member-id">67130700361</span><span class="member-name">Pawornwit Maneenet</span></div>
-        <div class="meta-row">
-          <div class="meta-item">
-            <div class="meta-label">Instructor</div>
-            <div class="meta-val">Punnarust Silparattanawong</div>
-          </div>
-          <div class="meta-item" style="text-align:right;">
-            <div class="meta-label">Date</div>
-            <div class="meta-val">29 March 2026</div>
-          </div>
-        </div>
+    <!-- ───────── SLIDE 1: COVER ───────── -->
+    <section class="slide active" id="s1">
+      <!-- Decorative orbit rings -->
+      <div class="orbit-deco"
+        style="width:520px;height:520px;border-color:rgba(6,182,212,.07);top:-140px;right:-140px;animation-duration:60s;">
       </div>
-    </div>
-  </section>
+      <div class="orbit-deco"
+        style="width:320px;height:320px;border-color:rgba(139,92,246,.07);bottom:-100px;left:-100px;animation-duration:45s;animation-direction:reverse;">
+      </div>
 
-  <!-- ───────── SLIDE 2: INTRODUCTION ───────── -->
-  <section class="slide" id="s2">
-    <div class="slide-header">
-      <h2>Introduction</h2>
-      <span class="slide-tag">01 / Background &amp; Motivation</span>
-    </div>
-    <div class="slide-body">
-
-      <div class="problem-highlight mb">
-        <h3>🔍 Problem Statement</h3>
-        <p>
-          Predicting football match outcomes is inherently complex — influenced by dozens of dynamic
-          factors including team form, player market value, ELO ratings, and historical head-to-head
-          records. Traditional statistical approaches offer limited accuracy, and casual fan predictions
-          rely heavily on subjective bias.
+      <div class="cover-inner">
+        <div class="course-badge">⚽ SEA612 · พื้นฐานปัญญาประดิษฐ์ (ARTIFICIAL INTELLIGENCE FUNDAMENTALS)</div>
+        <h1 class="cover-title">PremierPredict-AI</h1>
+        <p class="cover-sub">
+          ระบบ ML Stacking Ensemble สำหรับการพยากรณ์ผลการแข่งขันพรีเมียร์ลีก
         </p>
-      </div>
+        <div class="cover-divider"></div>
 
-      <div class="grid-2 mb">
-        <div class="card">
-          <div class="card-title">Why It Matters</div>
-          <div class="step-list">
-            <div class="step-item">
-              <div class="step-num">💰</div>
-              <div class="step-text">
-                <h4>Multi-billion Pound Industry</h4>
-                <p>The Premier League generates billions in revenue from broadcasting, betting, and fantasy sports — all demand accurate outcome forecasting.</p>
-              </div>
+        <div class="member-box">
+          <div class="member-row"><span class="member-id">67130700346</span><span class="member-name">ชัยพร
+              หอมเทียน</span></div>
+          <div class="member-row"><span class="member-id">67130700357</span><span class="member-name">กฤติน
+              ชัยสุวิรัตน์</span></div>
+          <div class="member-row"><span class="member-id">67130700361</span><span class="member-name">ปวรวิชญ์
+              มณีเนตร</span></div>
+          <div class="meta-row">
+            <div class="meta-item">
+              <div class="meta-label">อาจารย์ผู้สอน</div>
+              <div class="meta-val">ปัณณรัศม์ ศิลปรัตนวงศ์</div>
             </div>
-            <div class="step-item">
-              <div class="step-num">📊</div>
-              <div class="step-text">
-                <h4>Data Richness</h4>
-                <p>Modern football generates enormous structured data (ELO, market value, form, H2H), yet no single ML pipeline fully unifies them.</p>
-              </div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">🤖</div>
-              <div class="step-text">
-                <h4>AI Advantage</h4>
-                <p>Ensemble ML systems can outperform single-model baselines and human experts by capturing complex, non-linear feature interactions.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Research Questions</div>
-          <div style="margin-bottom:1rem;">
-            <div style="font-size:.8rem;color:var(--muted);line-height:1.7;">
-              <p style="margin-bottom:.65rem;">❶ Can a stacking ensemble model outperform individual ML classifiers in predicting Home Win / Draw / Away Win?</p>
-              <p style="margin-bottom:.65rem;">❷ Which features (ELO, Form, Market Value, H2H) contribute most to prediction accuracy?</p>
-              <p style="margin-bottom:.65rem;">❸ How does the AI model compare to human fan confidence (FPL data) and BBC Expert predictions?</p>
-            </div>
-          </div>
-          <div style="border-top:1px solid var(--border);padding-top:1rem;">
-            <div class="card-title" style="margin-bottom:.6rem;">Goal</div>
-            <p style="font-size:.8rem;color:var(--muted);line-height:1.5;">
-              Build an interactive, explainable AI dashboard that predicts Premier League match outcomes with &gt;60% accuracy across all three outcomes.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-3">
-        <div class="card" style="text-align:center;padding:1.2rem;">
-          <div class="stat-val">380</div>
-          <div class="stat-unit">EPL Matches / Season</div>
-        </div>
-        <div class="card" style="text-align:center;padding:1.2rem;">
-          <div class="stat-val">6+</div>
-          <div class="stat-unit">Key Feature Dimensions</div>
-        </div>
-        <div class="card" style="text-align:center;padding:1.2rem;">
-          <div class="stat-val">3</div>
-          <div class="stat-unit">Outcome Classes</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ───────── SLIDE 3: METHODOLOGY ───────── -->
-  <section class="slide" id="s3">
-    <div class="slide-header">
-      <h2>Methodology</h2>
-      <span class="slide-tag">02 / Data · Model · Evaluation</span>
-    </div>
-    <div class="slide-body">
-
-      <div class="grid-2 mb">
-        <!-- Data Collection -->
-        <div class="card">
-          <div class="card-title">Data Collection Pipeline</div>
-          <div class="step-list">
-            <div class="step-item">
-              <div class="step-num">1</div>
-              <div class="step-text">
-                <h4>ELO Ratings</h4>
-                <p>Scraped & maintained rolling ELO scores per team. Updated after each match result using the classic ELO update formula.</p>
-              </div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">2</div>
-              <div class="step-text">
-                <h4>Market Value (Transfermarkt)</h4>
-                <p>Squad market valuations in €M per team — proxy for overall squad quality and depth.</p>
-              </div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">3</div>
-              <div class="step-text">
-                <h4>Form &amp; Goal Stats</h4>
-                <p>Goals For / Against and points per game averaged over the last 5 matches (L5 window).</p>
-              </div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">4</div>
-              <div class="step-text">
-                <h4>Fan Confidence (FPL)</h4>
-                <p>FPL captain pick percentages as a proxy for human crowd prediction for benchmark comparison.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Model Selection -->
-        <div class="card">
-          <div class="card-title">Stacking Ensemble Architecture</div>
-          <div style="margin-bottom:1rem;">
-            <span class="pill pill-cyan" style="margin-right:.3rem;">XGBoost</span>
-            <span class="pill pill-green" style="margin-right:.3rem;">Random Forest</span>
-            <span class="pill pill-pur" style="margin-right:.3rem;">Gradient Boost</span>
-            <span class="pill pill-amb">Logistic Regression (Meta)</span>
-          </div>
-          <div style="font-size:.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">
-            <strong style="color:var(--text);">Layer 1 — Base Learners:</strong> Three diverse gradient-based and tree ensemble models are trained individually. Each produces out-of-fold probability estimates as meta-features.
-            <br><br>
-            <strong style="color:var(--text);">Layer 2 — Meta-Learner:</strong> A Logistic Regression meta-model combines the base learner outputs, learning the optimal weighting per model per outcome class.
-          </div>
-          <div style="border-top:1px solid var(--border);padding-top:.8rem;">
-            <div class="card-title" style="margin-bottom:.6rem;">Why Stacking?</div>
-            <p style="font-size:.76rem;color:var(--muted);">Stacking reduces variance by combining complementary learners and leverages each model's strength across different data subspaces.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Features & Evaluation -->
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-title">Feature Engineering</div>
-          <div class="bar-row"><div class="bar-label"><span>ELO Rating Difference</span><span style="color:var(--cyan);">High Impact</span></div><div class="bar-track"><div class="bar-fill bar-cyan" style="width:90%"></div></div></div>
-          <div class="bar-row"><div class="bar-label"><span>Recent Form (L5 Avg Points)</span><span style="color:var(--green);">High Impact</span></div><div class="bar-track"><div class="bar-fill bar-green" style="width:82%"></div></div></div>
-          <div class="bar-row"><div class="bar-label"><span>Market Value Differential</span><span style="color:var(--purple);">Medium</span></div><div class="bar-track"><div class="bar-fill bar-pur" style="width:68%"></div></div></div>
-          <div class="bar-row"><div class="bar-label"><span>Avg Goals For/Against (L5)</span><span style="color:var(--amber);">Medium</span></div><div class="bar-track"><div class="bar-fill bar-amb" style="width:60%"></div></div></div>
-          <div class="bar-row"><div class="bar-label"><span>Head-to-Head History</span><span>Lower</span></div><div class="bar-track"><div class="bar-fill" style="width:38%;background:var(--dim)"></div></div></div>
-        </div>
-
-        <div class="card">
-          <div class="card-title">Evaluation Metrics</div>
-          <div class="step-list">
-            <div class="step-item">
-              <div class="step-num">✓</div>
-              <div class="step-text"><h4>Accuracy</h4><p>Overall percentage of correct 3-class (H/D/A) predictions on held-out test set.</p></div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">✓</div>
-              <div class="step-text"><h4>Macro F1-Score</h4><p>Balances precision and recall across all three outcome classes, handling class imbalance.</p></div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">✓</div>
-              <div class="step-text"><h4>Log-Loss (Calibration)</h4><p>Measures quality of probability outputs — critical for confidence calibration.</p></div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">✓</div>
-              <div class="step-text"><h4>Human Benchmark</h4><p>AI predictions vs. FPL fan confidence & BBC Expert predictions as real-world baselines.</p></div>
+            <div class="meta-item" style="text-align:right;">
+              <div class="meta-label">วันที่</div>
+              <div class="meta-val">29 มีนาคม 2026</div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- ───────── SLIDE 4: RESULTS ───────── -->
-  <section class="slide" id="s4">
-    <div class="slide-header">
-      <h2>Experimental Results</h2>
-      <span class="slide-tag">03 / Findings &amp; Improvements</span>
-    </div>
-    <div class="slide-body">
-
-      <!-- Top stats -->
-      <div class="grid-3 mb">
-        <div class="card" style="text-align:center;">
-          <div class="gauge-wrap">
-            <div class="gauge-num">63.2%</div>
-            <div class="gauge-label">Overall Accuracy</div>
-          </div>
-        </div>
-        <div class="card" style="text-align:center;">
-          <div class="gauge-wrap">
-            <div class="gauge-num" style="color:var(--cyan);">0.61</div>
-            <div class="gauge-label">Macro F1-Score</div>
-          </div>
-        </div>
-        <div class="card" style="text-align:center;">
-          <div class="gauge-wrap">
-            <div class="gauge-num" style="color:var(--purple);">+9.4%</div>
-            <div class="gauge-label">Over Fan Baseline</div>
-          </div>
-        </div>
+    <!-- ───────── SLIDE 2: INTRODUCTION ───────── -->
+    <section class="slide" id="s2">
+      <div class="slide-header">
+        <h2>บทนำ (Introduction)</h2>
+        <span class="slide-tag">01 / ที่มาและความสำคัญ</span>
       </div>
+      <div class="slide-body">
 
-      <div class="grid-2 mb">
-        <!-- Model comparison table -->
-        <div class="card">
-          <div class="card-title">Model Comparison</div>
-          <table class="cmp-table">
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th>Accuracy</th>
-                <th>F1 (Macro)</th>
-                <th>Log-Loss</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td class="model-name">XGBoost (solo)</td><td>57.4%</td><td>0.54</td><td>0.92</td></tr>
-              <tr><td class="model-name">Random Forest (solo)</td><td>55.8%</td><td>0.52</td><td>0.98</td></tr>
-              <tr><td class="model-name">Gradient Boost (solo)</td><td>58.1%</td><td>0.55</td><td>0.91</td></tr>
-              <tr><td class="model-name">Fan Confidence (FPL)</td><td>53.8%</td><td>0.49</td><td>—</td></tr>
-              <tr><td class="model-name">BBC Expert Picks</td><td>55.1%</td><td>0.51</td><td>—</td></tr>
-              <tr>
-                <td class="model-name" style="color:var(--green);">🏆 Stacking Ensemble V5</td>
-                <td class="hl">63.2%</td>
-                <td class="hl">0.61</td>
-                <td class="hl">0.78</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Per-class performance -->
-        <div class="card">
-          <div class="card-title">Per-Class Accuracy</div>
-          <div style="margin-bottom:1.4rem;">
-            <div class="bar-row">
-              <div class="bar-label"><span>Home Win</span><span style="color:var(--cyan);">71.3%</span></div>
-              <div class="bar-track"><div class="bar-fill bar-cyan" style="width:71.3%"></div></div>
-            </div>
-            <div class="bar-row">
-              <div class="bar-label"><span>Away Win</span><span style="color:var(--purple);">64.8%</span></div>
-              <div class="bar-track"><div class="bar-fill bar-pur" style="width:64.8%"></div></div>
-            </div>
-            <div class="bar-row">
-              <div class="bar-label"><span>Draw</span><span style="color:var(--amber);">51.2%</span></div>
-              <div class="bar-track"><div class="bar-fill bar-amb" style="width:51.2%"></div></div>
-            </div>
-          </div>
-          <div style="font-size:.76rem;color:var(--dim);line-height:1.5;border-top:1px solid var(--border);padding-top:.8rem;">
-            ⚠️ <strong style="color:var(--muted);">Draw class</strong> remains the hardest to predict — consistent with the known challenge in football analytics. Home Win benefits from strong ELO + Form signals.
-          </div>
-        </div>
-      </div>
-
-      <!-- Key Findings -->
-      <div class="card">
-        <div class="card-title">Key Findings</div>
-        <div class="grid-3">
-          <div>
-            <div class="pill pill-green" style="margin-bottom:.5rem;">✅ Confirmed</div>
-            <p style="font-size:.78rem;color:var(--muted);line-height:1.5;">Stacking ensemble outperforms all individual base learners by <strong style="color:var(--text);">5—8 percentage points</strong> in overall accuracy.</p>
-          </div>
-          <div>
-            <div class="pill pill-cyan" style="margin-bottom:.5rem;">📈 Top Feature</div>
-            <p style="font-size:.78rem;color:var(--muted);line-height:1.5;"><strong style="color:var(--text);">ELO Rating Difference</strong> is the single most predictive feature, followed by Last-5 Form and Market Value.</p>
-          </div>
-          <div>
-            <div class="pill pill-pur" style="margin-bottom:.5rem;">🤖 vs Human</div>
-            <p style="font-size:.78rem;color:var(--muted);line-height:1.5;">AI outperforms FPL Fan Confidence by <strong style="color:var(--text);">+9.4%</strong> and BBC Expert Predictions by <strong style="color:var(--text);">+8.1%</strong> overall.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ───────── SLIDE 5: DASHBOARD DEMO ───────── -->
-  <section class="slide" id="s5">
-    <div class="slide-header">
-      <h2>Dashboard Showcase</h2>
-      <span class="slide-tag">04 / System Overview</span>
-    </div>
-    <div class="slide-body">
-
-      <!-- Dashboard preview card -->
-      <div class="card mb" style="background: #0b0f1a; border: 1px solid var(--cyan); position:relative; overflow:hidden; padding: 0;">
-        <div style="background: linear-gradient(135deg, #0d1929, #111827); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border);">
-          <div style="display:flex; align-items:center; gap:.8rem; margin-bottom:.3rem;">
-            <span style="font-family:'Orbitron',sans-serif; font-size:1rem; color:var(--cyan); font-weight:700;">🤖 PremierPredict</span>
-            <span style="font-size:.6rem; color:var(--dim); letter-spacing:1px;">AI ENSEMBLE SYSTEM V5.0</span>
-          </div>
-        </div>
-        <div style="display:grid; grid-template-columns:200px 1fr; min-height:220px;">
-          <!-- Sidebar mockup -->
-          <div style="border-right:1px solid var(--border); padding:1rem; background:#0d1117;">
-            <div style="font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.8rem;">MATCH SIMULATION</div>
-            <div style="background:#1a2035;border-radius:6px;padding:.5rem .8rem;margin-bottom:.5rem;border:1px solid rgba(6,182,212,.3);font-size:.72rem;color:var(--cyan);">🔵 Man City</div>
-            <div style="text-align:center;color:var(--dim);font-size:.8rem;margin:.3rem 0;">⚔️</div>
-            <div style="background:#1a2035;border-radius:6px;padding:.5rem .8rem;border:1px solid rgba(244,63,94,.3);font-size:.72rem;color:var(--red);">🔴 Arsenal</div>
-            <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.25rem;">
-              <span style="background:#1e3a8a;color:#93c5fd;font-size:.55rem;padding:.2rem .4rem;border-radius:3px;">XGBoost</span>
-              <span style="background:#064e3b;color:#34d399;font-size:.55rem;padding:.2rem .4rem;border-radius:3px;">RandForest</span>
-              <span style="background:#4c1d95;color:#c084fc;font-size:.55rem;padding:.2rem .4rem;border-radius:3px;">GradBoost</span>
-              <span style="background:#78350f;color:#fbbf24;font-size:.55rem;padding:.2rem .4rem;border-radius:3px;">LogReg Meta</span>
-            </div>
-          </div>
-          <!-- Main content mockup -->
-          <div style="padding:1rem 1.5rem;">
-            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1rem;">
-              <div style="text-align:center;background:#1a2035;border-radius:8px;padding:.8rem;">
-                <div style="font-size:.55rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem;">HOME WIN</div>
-                <div style="font-family:'Orbitron',sans-serif;font-size:1.4rem;color:var(--cyan);font-weight:700;">48.3%</div>
-                <div style="height:5px;background:#1e293b;border-radius:3px;margin-top:.5rem;overflow:hidden;"><div style="width:48%;height:100%;background:var(--cyan);border-radius:3px;"></div></div>
-              </div>
-              <div style="text-align:center;background:#1a2035;border-radius:8px;padding:.8rem;">
-                <div style="font-size:.55rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem;">DRAW</div>
-                <div style="font-family:'Orbitron',sans-serif;font-size:1.4rem;color:var(--muted);font-weight:700;">23.5%</div>
-                <div style="height:5px;background:#1e293b;border-radius:3px;margin-top:.5rem;overflow:hidden;"><div style="width:23%;height:100%;background:var(--muted);border-radius:3px;"></div></div>
-              </div>
-              <div style="text-align:center;background:#1a2035;border-radius:8px;padding:.8rem;">
-                <div style="font-size:.55rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem;">AWAY WIN</div>
-                <div style="font-family:'Orbitron',sans-serif;font-size:1.4rem;color:var(--red);font-weight:700;">28.2%</div>
-                <div style="height:5px;background:#1e293b;border-radius:3px;margin-top:.5rem;overflow:hidden;"><div style="width:28%;height:100%;background:var(--red);border-radius:3px;"></div></div>
-              </div>
-            </div>
-            <div style="font-size:.72rem;color:var(--muted);">
-              <strong style="color:var(--green);">⚡ AI LEADING BY +5.2% OVER CROWD</strong> · ELO Diff: +120 · Market Advantage: Man City (€1.05BN vs €0.94BN)
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <div class="card-title">Tech Stack</div>
-          <div style="font-size:.8rem;color:var(--muted);line-height:1.8;">
-            🐍 Python · Streamlit<br>
-            🤖 scikit-learn · XGBoost<br>
-            📊 pandas · Altair<br>
-            ☁️ Hugging Face Spaces
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title">Key Dashboard Features</div>
-          <div style="font-size:.78rem;color:var(--muted);line-height:1.8;">
-            ✦ Head-to-Head Comparison<br>
-            ✦ AI Probability Engine<br>
-            ✦ Comparative Feature Analysis<br>
-            ✦ AI vs Fan Calibration Chart
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title">Deployment</div>
-          <div style="font-size:.78rem;color:var(--muted);line-height:1.8;">
-            🚀 Live on Hugging Face Spaces<br>
-            🔄 Real-time match simulation<br>
-            📱 Responsive dark UI<br>
-            🧠 Cached model inference
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ───────── SLIDE 6: CONCLUSION ───────── -->
-  <section class="slide" id="s6">
-    <div class="slide-header">
-      <h2>Conclusion</h2>
-      <span class="slide-tag">05 / Summary · Pros &amp; Cons · Future Work</span>
-    </div>
-    <div class="slide-body">
-
-      <div class="grid-2 mb">
-
-        <div class="card">
-          <div class="card-title" style="--cyan:#10b981;">Summary of Results</div>
-          <div style="margin-bottom:1rem;">
-            <div class="bar-row"><div class="bar-label"><span>Final Accuracy</span><span style="color:var(--green);">63.2%</span></div><div class="bar-track"><div class="bar-fill bar-green" style="width:63%"></div></div></div>
-            <div class="bar-row"><div class="bar-label"><span>vs. Best Single Model (+5.1%)</span><span style="color:var(--cyan);">+5.1pp</span></div><div class="bar-track"><div class="bar-fill bar-cyan" style="width:45%"></div></div></div>
-            <div class="bar-row"><div class="bar-label"><span>vs. Fan Confidence Baseline</span><span style="color:var(--purple);">+9.4pp</span></div><div class="bar-track"><div class="bar-fill bar-pur" style="width:55%"></div></div></div>
-          </div>
-          <p style="font-size:.78rem;color:var(--muted);line-height:1.6;">
-            PremierPredict-AI demonstrates that a well-constructed stacking ensemble, fed with diverse yet complementary football features, can reliably outperform both single ML models and human expert baselines in 3-class match prediction.
+        <div class="problem-highlight mb">
+          <h3>🔍 ปัญหาและโจทย์วิจัย (Problem Statement)</h3>
+          <p>
+            การทำนายผลการแข่งขันฟุตบอลมีความซับซ้อนสูง เนื่องจากได้รับอิทธิพลจากปัจจัยหลายอย่าง เช่น ฟอร์มทีม,
+            มูลค่านักเตะในตลาด, คะแนน ELO และสถิติการพบกันย้อนหลัง วิธีการทางสถิติแบบดั้งเดิมมักให้ความแม่นยำจำกัด
+            และการคาดเดาจากแฟนบอลทั่วไปมักมีอคติส่วนตัวสูง
           </p>
         </div>
 
-        <div class="card">
-          <div class="card-title">Strengths &amp; Limitations</div>
-          <div style="margin-bottom:.8rem;">
-            <div class="pro-con"><span class="pro-con-icon">✅</span><p><strong>Strength:</strong> Multi-model ensemble reduces overfitting and captures diverse data patterns (ELO, form, value).</p></div>
-            <div class="pro-con"><span class="pro-con-icon">✅</span><p><strong>Strength:</strong> Interactive dashboard makes AI predictions interpretable with visual feature breakdowns.</p></div>
-            <div class="pro-con"><span class="pro-con-icon">✅</span><p><strong>Strength:</strong> Probability calibration (log-loss 0.78) enables confident betting & analytics use cases.</p></div>
+        <div class="grid-2 mb">
+          <div class="card">
+            <div class="card-title">ทำไมสิ่งนี้ถึงสำคัญ</div>
+            <div class="step-list">
+              <div class="step-item">
+                <div class="step-num">💰</div>
+                <div class="step-text">
+                  <h4>อุตสาหกรรมมูลค่ามหาศาล</h4>
+                  <p>พรีเมียร์ลีกสร้างรายได้มหาศาลจากการแพร่ภาพทางโทรทัศน์ และการเล่นแฟนตาซีฟุตบอล
+                    ซึ่งหัวใจสำคัญคือความต้องการพยากรณ์ผลลัพธ์ที่แม่นยำ</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num">📊</div>
+                <div class="step-text">
+                  <h4>ความหลากหลายของข้อมูล</h4>
+                  <p>ฟุตบอลสมัยใหม่สร้างข้อมูลที่มีโครงสร้างมหาศาล (ELO, มูลค่าตลาด, ฟอร์ม) แต่ยังไม่มี AI
+                    ที่รวมข้อมูลเหล่านี้เป็นหนึ่งเดียวอย่างสมบูรณ์</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num">🤖</div>
+                <div class="step-text">
+                  <h4>ความได้เปรียบของ AI</h4>
+                  <p>ระบบการเรียนรู้แบบ Ensemble สามารถให้ผลลัพธ์ที่เหนือกว่าโมเดลเดี่ยวและผู้เชี่ยวชาญที่เป็นมนุษย์
+                    โดยการจับความสัมพันธ์สถิติที่ซับซ้อน</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div style="border-top:1px solid var(--border);padding-top:.8rem;">
-            <div class="pro-con"><span class="pro-con-icon">⚠️</span><p><strong>Limitation:</strong> Draw outcome accuracy (51.2%) remains below target — draws are notoriously stochastic.</p></div>
-            <div class="pro-con"><span class="pro-con-icon">⚠️</span><p><strong>Limitation:</strong> Player-level data (injuries, suspensions) not yet incorporated — significant signal source.</p></div>
-            <div class="pro-con"><span class="pro-con-icon">⚠️</span><p><strong>Limitation:</strong> Training data limited to 2024 season; longer historical window needed for robust generalization.</p></div>
+
+          <div class="card">
+            <div class="card-title">คำถามวิจัย (Research Questions)</div>
+            <div style="margin-bottom:1rem;">
+              <div style="font-size:.8rem;color:var(--muted);line-height:1.7;">
+                <p style="margin-bottom:.65rem;">❶ โมเดลแบบ Stacking Ensemble
+                  ให้ความแม่นยำสูงกว่าการใช้โมเดลเดี่ยวในการทำนายผล (เจ้าบ้านชนะ/เสมอ/ทีมเยือนชนะ) หรือไม่?</p>
+                <p style="margin-bottom:.65rem;">❷ ปัจจัยเชิงลึก (ELO, ฟอร์มทีม, มูลค่าตลาด)
+                  ส่วนใดมีผลกระทบต่อความแม่นยำมากที่สุด?</p>
+                <p style="margin-bottom:.65rem;">❸ ผลพยากรณ์จาก AI เมื่อเทียบกับ **ภูมิปัญญาของฝูงชน (Wisdom of
+                  Crowds)** และการวิเคราะห์ของผู้เชี่ยวชาญมีความแตกต่างกันอย่างไร?</p>
+              </div>
+            </div>
+            <div style="border-top:1px solid var(--border);padding-top:1rem;">
+              <div class="card-title" style="margin-bottom:.6rem;">เป้าหมาย (Goal)</div>
+              <p style="font-size:.8rem;color:var(--muted);line-height:1.5;">
+                สร้างแดชบอร์ด AI ที่สามารถอธิบายได้และมีการโต้ตอบ
+                เพื่อทำนายผลการแข่งขันพรีเมียร์ลีกด้วยความแม่นยำมากกว่า 60% จากทั้งสามหน้าผลลัพธ์
+              </p>
+            </div>
           </div>
         </div>
 
-      </div>
-
-      <!-- Future Work -->
-      <div class="card mb">
-        <div class="card-title">🚀 Future Directions</div>
         <div class="grid-3">
-          <div>
-            <div class="future-item"><span class="future-arrow">→</span><div><h4 style="font-size:.84rem;color:var(--text);margin-bottom:.25rem;">Deep Learning Integration</h4><p style="font-size:.75rem;color:var(--muted);">Explore LSTM / Transformer models for sequential form analysis across seasons.</p></div></div>
+          <div class="card" style="text-align:center;padding:1.2rem;">
+            <div class="stat-val">380</div>
+            <div class="stat-unit">แมตช์พรีเมียร์ลีก / ฤดูกาล</div>
           </div>
-          <div>
-            <div class="future-item"><span class="future-arrow">→</span><div><h4 style="font-size:.84rem;color:var(--text);margin-bottom:.25rem;">Real-time Data Feeds</h4><p style="font-size:.75rem;color:var(--muted);">Integrate live injury reports and live lineup data for pre-match model updates.</p></div></div>
+          <div class="card" style="text-align:center;padding:1.2rem;">
+            <div class="stat-val">6+</div>
+            <div class="stat-unit">กลุ่มคุณลักษณะสำคัญ</div>
           </div>
-          <div>
-            <div class="future-item"><span class="future-arrow">→</span><div><h4 style="font-size:.84rem;color:var(--text);margin-bottom:.25rem;">Multi-League Expansion</h4><p style="font-size:.75rem;color:var(--muted);">Extend the pipeline to La Liga, Bundesliga, and Champions League datasets.</p></div></div>
+          <div class="card" style="text-align:center;padding:1.2rem;">
+            <div class="stat-val">3</div>
+            <div class="stat-unit">หน้าผลลัพธ์การทำนาย</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ───────── SLIDE 3: METHODOLOGY ───────── -->
+    <section class="slide" id="s3">
+      <div class="slide-header">
+        <h2>ระเบียบวิธีวิจัย (Methodology)</h2>
+        <span class="slide-tag">02 / ข้อมูล · โมเดล · การประเมินผล</span>
+      </div>
+      <div class="slide-body">
+
+        <div class="grid-2 mb">
+          <!-- Data Collection -->
+          <div class="card">
+            <div class="card-title">ขั้นตอนการรวบรวมข้อมูล (Data Collection)</div>
+            <div class="step-list">
+              <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                  <h4>คะแนน ELO (ELO Ratings)</h4>
+                  <p>จัดเก็บและคำนวณคะแนน ELO แบบเรียลไทม์สำหรับทุกทีม
+                    โดยอัปเดตหลังจากทราบผลการแข่งขันทุกนัดโดยใช้สูตรการคำนวณ ELO มาตรฐาน</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                  <h4>มูลค่าทีม (Transfermarkt)</h4>
+                  <p>มูลค่าการตลาดของนักเตะแต่ละทีม (หน่วยล้านยูโร)
+                    เพื่อเป็นตัวบ่งชี้คุณภาพเชิงลึกและศักยภาพโดยรวมของทีม</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                  <h4>ฟอร์มทีมและประตู (Form &amp; Goals)</h4>
+                  <p>จำนวนประตูที่ทำได้/เสีย และคะแนนเฉลี่ยต่อเกม โดยคำนวณย้อนหลัง 5 นัดล่าสุด (L5 window)</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num">4</div>
+                <div class="step-text">
+                  <h4>ภูมิปัญญาของฝูงชน (Wisdom of Crowds)</h4>
+                  <p>เปอร์เซ็นต์การเลือกกัปตันทีมในเกม FPL
+                    เพื่อใช้เป็นตัวแทนของความเชื่อมั่นจากฝูงชนในการเปรียบเทียบเทียบกับ AI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model Selection -->
+          <div class="card">
+            <div class="card-title">สถาปัตยกรรม Stacking Ensemble</div>
+            <div style="margin-bottom:1rem;">
+              <span class="pill pill-cyan" style="margin-right:.3rem;">XGBoost</span>
+              <span class="pill pill-green" style="margin-right:.3rem;">Random Forest</span>
+              <span class="pill pill-pur" style="margin-right:.3rem;">Gradient Boost</span>
+              <span class="pill pill-amb">Logistic Regression (Meta)</span>
+            </div>
+            <div style="font-size:.78rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;">
+              <strong style="color:var(--text);">ชั้นที่ 1 (Base Learners):</strong> ใช้โมเดลที่มีความหลากหลาย 3
+              ตัวเพื่อฝึกฝนและทำนายความน่าจะเป็นของผลลัพธ์ แต่ละโมเดลจะส่งต่อผลลัพธ์เป็นคุณลักษณะใหม่ (Meta-features)
+              <br><br>
+              <strong style="color:var(--text);">ชั้นที่ 2 (Meta-Learner):</strong> ใช้โมเดล Logistic Regression
+              เพื่อรวมผลลัพธ์จากชั้นที่ 1 โดยเรียนรู้การให้น้ำหนักที่เหมาะสมที่สุดสำหรับแต่ละโมเดล
+            </div>
+            <div style="border-top:1px solid var(--border);padding-top:.8rem;">
+              <div class="card-title" style="margin-bottom:.6rem;">ทำไมต้องใช้ Stacking?</div>
+              <p style="font-size:.76rem;color:var(--muted);">วิธีการนี้ช่วยลดความแปรปรวน (Variance)
+                โดยการนำจุดเด่นของแต่ละโมเดลมาเสริมกัน เพื่อให้ได้ผลลัพธ์ที่มีความเสถียรและแม่นยำสูงที่สุด</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features & Evaluation -->
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">การวิเคราะห์คุณลักษณะ (Feature Engineering)</div>
+            <div class="bar-row">
+              <div class="bar-label"><span>ส่วนต่างคะแนน ELO</span><span style="color:var(--cyan);">มีผลกระทบสูง</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill bar-cyan" style="width:90%"></div>
+              </div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label"><span>ฟอร์มล่าสุด (คะแนนเฉลี่ย 5 นัด)</span><span
+                  style="color:var(--green);">มีผลกระทบสูง</span></div>
+              <div class="bar-track">
+                <div class="bar-fill bar-green" style="width:82%"></div>
+              </div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label"><span>ส่วนต่างมูลค่าทีม</span><span style="color:var(--purple);">ปานกลาง</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill bar-pur" style="width:68%"></div>
+              </div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label"><span>ค่าเฉลี่ยประตูเข้า/เสีย</span><span
+                  style="color:var(--amber);">ปานกลาง</span></div>
+              <div class="bar-track">
+                <div class="bar-fill bar-amb" style="width:60%"></div>
+              </div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label"><span>สถิติการพบกัน (H2H)</span><span>ต่ำ</span></div>
+              <div class="bar-track">
+                <div class="bar-fill" style="width:38%;background:var(--dim)"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">เกณฑ์การประเมินผล (Evaluation Metrics)</div>
+            <div class="step-list">
+              <div class="step-item">
+                <div class="step-num">✓</div>
+                <div class="step-text">
+                  <h4>ความแม่นยำ (Accuracy)</h4>
+                  <p>เปอร์เซ็นต์รวมของการทำนายที่ถูกต้องจากหน้าผลลัพธ์ทั้ง 3 รูปแบบ (เจ้าบ้านชนะ/เสมอ/ทีมเยือนชนะ)</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num">✓</div>
+                <div class="step-text">
+                  <h4>Macro F1-Score</h4>
+                  <p>ค่าเฉลี่ยความแม่นยำรวมที่ให้น้ำหนักเท่ากันในทุกกลุ่มผลลัพธ์ เพื่อประเมินประสิทธิภาพโดยรวม</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num">✓</div>
+                <div class="step-text">
+                  <h4>Log-Loss (Calibration)</h4>
+                  <p>วัดคุณภาพของความน่าจะเป็นที่ทายออกมา เพื่อใช้ในการปรับเทียบความมั่นใจของโมเดล</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-num">✓</div>
+                <div class="step-text">
+                  <h4>Benchmark</h4>
+                  <p>เปรียบเทียบผลการทำนายของ AI กับความเชื่อมั่นของแฟนบอล FPL และบทวิเคราะห์จากผู้เชี่ยวชาญ BBC</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ───────── SLIDE 4: TUNING STEPS ───────── -->
+    <section class="slide" id="s4">
+      <div class="slide-header">
+        <h2>การปรับจูนโมเดลและการพัฒนา (Model Tuning)</h2>
+        <span class="slide-tag">03 / การเพิ่มประสิทธิภาพและความแม่นยำ</span>
+      </div>
+      <div class="slide-body">
+        <div class="step-list">
+          <div class="card mb">
+            <div style="display:flex; gap:1.5rem; align-items:center;">
+              <div style="flex-shrink:0; text-align:center; min-width:100px;">
+                <div style="font-size:1.4rem; font-weight:900; color:var(--muted);">V1.0</div>
+                <div style="font-family:'Orbitron',sans-serif; font-size:1.8rem; color:var(--dim);">44.8%</div>
+              </div>
+              <div style="flex-grow:1; border-left:2px solid var(--border); padding-left:1.5rem;">
+                <h4 style="color:var(--text); margin-bottom:.4rem;">Step 1: Baseline Model (Logistic/DT)</h4>
+                <p style="font-size:.8rem; color:var(--muted); line-height:1.5;">
+                  <span class="pill pill-red"
+                    style="padding:.1rem .4rem; margin-bottom:.3rem;">ต่ำกว่าเกณฑ์ทั้งหมด</span><br>
+                  <strong style="color:var(--red);">ปัญหา:</strong> โมเดลมีค่าความแปรปรวน (Variance) สูง
+                  และความแม่นยำต่ำเมื่อย้ายไปทดสอบกับฤดูกาลอื่น<br>
+                  <strong style="color:var(--green);">ยุทธศาสตร์การพัฒนา:</strong> เริ่มใช้ระบบคะแนน ELO
+                  เพื่อจับระดับความแข็งแกร่งของทีมในระยะยาว และทำ Feature Scaling
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb">
+            <div style="display:flex; gap:1.5rem; align-items:center;">
+              <div style="flex-shrink:0; text-align:center; min-width:100px;">
+                <div style="font-size:1.4rem; font-weight:900; color:var(--muted);">V2.5</div>
+                <div style="font-family:'Orbitron',sans-serif; font-size:1.8rem; color:var(--amber);">51.2%</div>
+              </div>
+              <div style="flex-grow:1; border-left:2px solid var(--border); padding-left:1.5rem;">
+                <h4 style="color:var(--text); margin-bottom:.4rem;">Step 2: Feature Engineering & Imbalance</h4>
+                <p style="font-size:.8rem; color:var(--muted); line-height:1.5;">
+                  <span class="pill pill-green" style="padding:.1rem .4rem; margin-bottom:.3rem;">🚀 ชนะผู้เชี่ยวชาญ
+                    (47.1%)</span><br>
+                  <strong style="color:var(--red);">ปัญหา:</strong> ไม่สามารถพยากรณ์ผลเสมอ (Draw) ได้แม่นยำ และยังแพ้
+                  "ความมั่นใจแฟนบอล" ที่ค่าเฉลี่ยสูงกว่า<br>
+                  <strong style="color:var(--green);">ยุทธศาสตร์การพัฒนา:</strong> เพิ่มคุณลักษณะ "มูลค่าการตลาด"
+                  (Transfermarkt) และปรับเครื่องมือน้ำหนัก Class Weights สำหรับการเสมอ
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb">
+            <div style="display:flex; gap:1.5rem; align-items:center;">
+              <div style="flex-shrink:0; text-align:center; min-width:100px;">
+                <div style="font-size:1.4rem; font-weight:900; color:var(--muted);">V3.8</div>
+                <div style="font-family:'Orbitron',sans-serif; font-size:1.8rem; color:var(--cyan);">53.9%</div>
+              </div>
+              <div style="flex-grow:1; border-left:2px solid var(--border); padding-left:1.5rem;">
+                <h4 style="color:var(--text); margin-bottom:.4rem;">Step 3: Advanced Single Model (XGBoost)</h4>
+                <p style="font-size:.8rem; color:var(--muted); line-height:1.5;">
+                  <span class="pill pill-cyan" style="padding:.1rem .4rem; margin-bottom:.3rem;">❗ ยังไม่ชนะแฟนบอล
+                    (54.7%)</span><br>
+                  <strong style="color:var(--red);">ปัญหา:</strong> โมเดลเดี่ยวถึงขีดจำกัด
+                  ไม่สามารถรวบรวมข้อมูลที่หลากหลายเพื่อเอาชนะความเชื่อมั่นของฝูงชนได้<br>
+                  <strong style="color:var(--green);">ยุทธศาสตร์การพัฒนา:</strong> เริ่มทดลองใช้การทำนายแบบ Stacking
+                  Ensemble โดยรวมจุดเด่นของแต่ละโมเดล
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex; gap:1.5rem; align-items:center;">
+              <div style="flex-shrink:0; text-align:center; min-width:100px;">
+                <div style="font-size:1.4rem; font-weight:900; color:var(--green);">V5.0</div>
+                <div
+                  style="font-family:'Orbitron',sans-serif; font-size:1.8rem; color:var(--green); text-shadow:0 0 10px rgba(16,185,129,.3);">
+                  55.3%</div>
+              </div>
+              <div style="flex-grow:1; border-left:2px solid var(--green); padding-left:1.5rem;">
+                <h4 style="color:var(--green); margin-bottom:.4rem;">Step 4: Stacking Ensemble (Meta-Mode)</h4>
+                <p style="font-size:.8rem; color:var(--muted); line-height:1.5;">
+                  <span class="pill pill-green" style="padding:.1rem .4rem; margin-bottom:.3rem;">🏆
+                    ชนะทั้งผู้เชี่ยวชาญและแฟนบอล (+0.5%)</span><br>
+                  <strong style="color:var(--red);">ปัญหา:</strong> ความน่าจะเป็นที่ทำนายออกมาไม่สอดคล้องกับความจริง
+                  (Poorly Calibrated probabilities)<br>
+                  <strong style="color:var(--green);">ยุทธศาสตร์การพัฒนา:</strong> ใช้ Stacking Classifier + Logistic
+                  Meta-Model และทำ Probability Calibration จนเอาชนะเกณฑ์ทั้งหมดได้
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Thank you -->
-      <div style="text-align:center;padding:1rem 0;">
-        <div style="font-family:'Orbitron',sans-serif;font-size:1.3rem;color:var(--cyan);margin-bottom:.5rem;">Thank You</div>
-        <p style="font-size:.85rem;color:var(--muted);">Questions &amp; Discussion</p>
-        <div style="margin-top:.8rem;display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap;">
-          <span class="pill pill-cyan">67130700346 Chaiyaporn Homtean</span>
-          <span class="pill pill-green">67130700357 Krittin Chaisuvirat</span>
-          <span class="pill pill-pur">67130700361 Pawornwit Maneenet</span>
-        </div>
+    <!-- ───────── SLIDE 5: RESULTS ───────── -->
+    <section class="slide" id="s5">
+      <div class="slide-header">
+        <h2>ผลการทดลอง (Experimental Results)</h2>
+        <span class="slide-tag">04 / ข้อค้นพบและการปรับปรุงระบบ</span>
       </div>
+      <div class="slide-body">
 
-    </div>
-  </section>
+        <!-- Top stats -->
+        <div class="grid-3 mb">
+          <div class="card" style="text-align:center;">
+            <div class="gauge-wrap">
+              <div class="gauge-num">55.3%</div>
+              <div class="gauge-label">ความแม่นยำรวม</div>
+            </div>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div class="gauge-wrap">
+              <div class="gauge-num" style="color:var(--cyan);">0.56</div>
+              <div class="gauge-label">Macro F1-Score</div>
+            </div>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div class="gauge-wrap">
+              <div class="gauge-num" style="color:var(--purple);">+0.5%</div>
+              <div class="gauge-label">เหนือกว่าเกณฑ์แฟนบอล</div>
+            </div>
+          </div>
+        </div>
 
-</div><!-- .deck -->
+        <div class="grid-2 mb">
+          <!-- Model comparison table -->
+          <div class="card">
+            <div class="card-title">การเปรียบเทียบโมเดล</div>
+            <table class="cmp-table">
+              <thead>
+                <tr>
+                  <th>โมเดล</th>
+                  <th>ความแม่นยำ</th>
+                  <th>F1 (Macro)</th>
+                  <th>Log-Loss</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="model-name">XGBoost (เดี่ยว)</td>
+                  <td>53.9%</td>
+                  <td>0.54</td>
+                  <td>0.92</td>
+                </tr>
+                <tr>
+                  <td class="model-name">Random Forest (เดี่ยว)</td>
+                  <td>52.8%</td>
+                  <td>0.52</td>
+                  <td>0.98</td>
+                </tr>
+                <tr>
+                  <td class="model-name">Gradient Boost (เดี่ยว)</td>
+                  <td>53.5%</td>
+                  <td>0.55</td>
+                  <td>0.91</td>
+                </tr>
+                <tr>
+                  <td class="model-name">ความเชื่อมั่นแฟนบอล (FPL)</td>
+                  <td>54.7%</td>
+                  <td>0.52</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td class="model-name">บทวิเคราะห์ผู้เชี่ยวชาญ BBC</td>
+                  <td>47.1%</td>
+                  <td>0.48</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td class="model-name" style="color:var(--green);">🏆 Stacking Ensemble V5</td>
+                  <td class="hl">55.3%</td>
+                  <td class="hl">0.56</td>
+                  <td class="hl">0.82</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-<!-- Navigation -->
-<div class="nav">
-  <button id="prev" onclick="go(-1)" title="Previous">←</button>
-  <div class="dots" id="dots"></div>
-  <button id="next" onclick="go(1)" title="Next">→</button>
-  <span class="counter" id="counter">1 / 6</span>
-</div>
+          <!-- Per-class performance -->
+          <div class="card">
+            <div class="card-title">ความแม่นยำแยกตามประเภท</div>
+            <div style="margin-bottom:1.4rem;">
+              <div class="bar-row">
+                <div class="bar-label"><span>เจ้าบ้านชนะ (Home Win)</span><span style="color:var(--cyan);">71.3%</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-cyan" style="width:71.3%"></div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label"><span>ทีมเยือนชนะ (Away Win)</span><span
+                    style="color:var(--purple);">64.8%</span></div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-pur" style="width:64.8%"></div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label"><span>เสมอ (Draw)</span><span style="color:var(--amber);">51.2%</span></div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-amb" style="width:51.2%"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="font-size:.76rem;color:var(--dim);line-height:1.5;border-top:1px solid var(--border);padding-top:.8rem;">
+              ⚠️ **ประมวลผลความคลาดเคลื่อน:** ผลของความไม่สมดุลของข้อมูล (**Data Imbalance**) ทำให้การทำนายผลเสมอ (Draw)
+              มีความแม่นยำต่ำกว่าปกติ ซึ่งเป็นความท้าทายหลักในแบบจำลองการทำนายฟุตบอล
+            </div>
+          </div>
+        </div>
 
-<script>
-  const slides = document.querySelectorAll('.slide');
-  const dotsEl = document.getElementById('dots');
-  const counterEl = document.getElementById('counter');
-  let cur = 0;
+        <!-- Key Findings -->
+        <div class="card">
+          <div class="card-title">ข้อค้นพบสำคัญ (Key Findings)</div>
+          <div class="grid-3">
+            <div>
+              <div class="pill pill-green" style="margin-bottom:.5rem;">✅ ค้นพบแล้ว</div>
+              <p style="font-size:.78rem;color:var(--muted);line-height:1.5;">สถาปัตยกรรมแบบ Stacking Ensemble
+                ให้ผลลัพธ์ที่ดีกว่าโมเดลเดี่ยวถึง <strong style="color:var(--text);">2—3 เปอร์เซ็นต์</strong>
+                ในความแม่นยำโดยรวม</p>
+            </div>
+            <div>
+              <div class="pill pill-cyan" style="margin-bottom:.5rem;">📈 ปัจจัยหลัก</div>
+              <p style="font-size:.78rem;color:var(--muted);line-height:1.5;"><strong
+                  style="color:var(--text);">ส่วนต่างความห่างคะแนน ELO</strong> เป็นปัจจัยที่ทรงประสิทธิภาพที่สุด
+                รองลงมาคือฟอร์ม 5 นัดล่าสุดและมูลค่าทีม</p>
+            </div>
+            <div>
+              <div class="pill pill-pur" style="margin-bottom:.5rem;">🤖 vs มนุษย์</div>
+              <p style="font-size:.78rem;color:var(--muted);line-height:1.5;">AI ของเราทำผลงานได้แม่นยำกว่าแฟนบอล FPL
+                ถึง <strong style="color:var(--text);">+0.5%</strong> และเหนือกว่าผู้เชี่ยวชาญ BBC ถึง <strong
+                  style="color:var(--text);">+8.2%</strong></p>
+            </div>
+          </div>
+        </div>
 
-  // Build dots
-  slides.forEach((_, i) => {
-    const d = document.createElement('div');
-    d.className = 'dot' + (i === 0 ? ' on' : '');
-    d.onclick = () => goto(i);
-    dotsEl.appendChild(d);
-  });
+      </div>
+    </section>
 
-  function goto(n) {
-    slides[cur].classList.remove('active');
-    dotsEl.children[cur].classList.remove('on');
-    cur = (n + slides.length) % slides.length;
-    slides[cur].classList.add('active');
-    dotsEl.children[cur].classList.add('on');
-    counterEl.textContent = `${cur + 1} / ${slides.length}`;
-  }
+    <!-- ───────── SLIDE 6: DASHBOARD DEMO ───────── -->
+    <section class="slide" id="s6">
+      <div class="slide-header">
+        <h2>การสาธิตแดชบอร์ด (Dashboard Showcase)</h2>
+        <span class="slide-tag">05 / ภาพรวมระบบและการทำงาน</span>
+      </div>
+      <div class="slide-body">
 
-  function go(dir) { goto(cur + dir); }
+        <!-- Dashboard preview card -->
+        <div class="card mb"
+          style="background: #0b0f1a; border: 1px solid var(--cyan); position:relative; overflow:hidden; padding: 0;">
+          <div
+            style="background: linear-gradient(135deg, #0d1929, #111827); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border);">
+            <div style="display:flex; align-items:center; gap:.8rem; margin-bottom:.3rem;">
+              <span style="font-family:'Orbitron',sans-serif; font-size:1rem; color:var(--cyan); font-weight:700;">🤖
+                PremierPredict</span>
+              <span style="font-size:.6rem; color:var(--dim); letter-spacing:1px;">ระบบ AI ENSEMBLE V5.0</span>
+            </div>
+            <div style="margin-top:10px;">
+              <a href="https://premierpredict-ai.streamlit.app/" target="_blank"
+                style="text-decoration:none; background:var(--cyan); color:var(--bg); padding:.4rem 1rem; border-radius:4px; font-size:.7rem; font-weight:800; display:inline-flex; align-items:center; gap:5px;">
+                <span>🌐 เปิดแอปพลิเคชันจริง (Live Demo)</span>
+              </a>
+            </div>
+          </div>
+          <div style="display:grid; grid-template-columns:200px 1fr; min-height:220px;">
+            <!-- Sidebar mockup -->
+            <div style="border-right:1px solid var(--border); padding:1rem; background:#0d1117;">
+              <div
+                style="font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.8rem;">
+                จำลองการแข่งขัน</div>
+              <div
+                style="background:#1a2035;border-radius:6px;padding:.5rem .8rem;margin-bottom:.5rem;border:1px solid rgba(6,182,212,.3);font-size:.72rem;color:var(--cyan);">
+                🔵 แมนฯ ซิตี้</div>
+              <div style="text-align:center;color:var(--dim);font-size:.8rem;margin:.3rem 0;">⚔️</div>
+              <div
+                style="background:#1a2035;border-radius:6px;padding:.5rem .8rem;border:1px solid rgba(244,63,94,.3);font-size:.72rem;color:var(--red);">
+                🔴 อาร์เซนอล</div>
+              <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.25rem;">
+                <span
+                  style="background:#1e3a8a;color:#93c5fd;font-size:.55rem;padding:.2rem .4rem;border-radius:3px;">XGBoost</span>
+                <span
+                  style="background:#064e3b;color:#34d399;font-size:.55rem;padding:.2rem .4rem;border-radius:3px;">RandForest</span>
+                <span
+                  style="background:#4c1d95;color:#c084fc;font-size:.55rem;padding:.2rem .4rem;border-radius:3px;">GradBoost</span>
+                <span
+                  style="background:#78350f;color:#fbbf24;font-size:.55rem;padding:.2rem .4rem;border-radius:3px;">LogReg
+                  Meta</span>
+              </div>
+            </div>
+            <!-- Main content mockup -->
+            <div style="padding:1rem 1.5rem;">
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1rem;">
+                <div style="text-align:center;background:#1a2035;border-radius:8px;padding:.8rem;">
+                  <div
+                    style="font-size:.55rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem;">
+                    เจ้าบ้านชนะ</div>
+                  <div style="font-family:'Orbitron',sans-serif;font-size:1.4rem;color:var(--cyan);font-weight:700;">
+                    48.3%</div>
+                  <div style="height:5px;background:#1e293b;border-radius:3px;margin-top:.5rem;overflow:hidden;">
+                    <div style="width:48%;height:100%;background:var(--cyan);border-radius:3px;"></div>
+                  </div>
+                </div>
+                <div style="text-align:center;background:#1a2035;border-radius:8px;padding:.8rem;">
+                  <div
+                    style="font-size:.55rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem;">
+                    เสมอ</div>
+                  <div style="font-family:'Orbitron',sans-serif;font-size:1.4rem;color:var(--muted);font-weight:700;">
+                    23.5%</div>
+                  <div style="height:5px;background:#1e293b;border-radius:3px;margin-top:.5rem;overflow:hidden;">
+                    <div style="width:23%;height:100%;background:var(--muted);border-radius:3px;"></div>
+                  </div>
+                </div>
+                <div style="text-align:center;background:#1a2035;border-radius:8px;padding:.8rem;">
+                  <div
+                    style="font-size:.55rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem;">
+                    ทีมเยือนชนะ</div>
+                  <div style="font-family:'Orbitron',sans-serif;font-size:1.4rem;color:var(--red);font-weight:700;">
+                    28.2%</div>
+                  <div style="height:5px;background:#1e293b;border-radius:3px;margin-top:.5rem;overflow:hidden;">
+                    <div style="width:28%;height:100%;background:var(--red);border-radius:3px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="font-size:.72rem;color:var(--muted);">
+                <strong style="color:var(--green);">⚡ AI นำหน้าฝูงชนถึง +5.2%</strong> · ELO Diff: +120 ·
+                ข้อได้เปรียบมูลค่าทีม: แมนฯ ซิตี้ (€1.05BN vs €0.94BN)
+              </div>
+            </div>
+          </div>
+        </div>
 
-  document.addEventListener('keydown', e => {
-    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
-    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   go(-1);
-  });
-</script>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-title">เทคโนโลยีที่ใช้ (Tech Stack)</div>
+            <div style="font-size:.8rem;color:var(--muted);line-height:1.8;">
+              🐍 Python · Streamlit<br>
+              🤖 scikit-learn · XGBoost<br>
+              📊 pandas · Altair<br>
+              ☁️ Hugging Face Spaces
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">ฟีเจอร์เด่นของแดชบอร์ด</div>
+            <div style="font-size:.78rem;color:var(--muted);line-height:1.8;">
+              ✦ เปรียบเทียบสถิติ Head-to-Head<br>
+              ✦ เครื่องมือคำนวณความน่าจะเป็นด้วย AI<br>
+              ✦ การวิเคราะห์คุณลักษณะเชิงเปรียบเทียบ<br>
+              ✦ กราฟปรับเทียบ AI vs ความมั่นใจแฟนบอล
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">การปรับใช้ (Deployment)</div>
+            <div style="font-size:.78rem;color:var(--muted);line-height:1.8;">
+              🚀 ใช้งานจริงบน Hugging Face Spaces<br>
+              🔄 จำลองแมตช์การแข่งขันแบบเรียลไทม์<br>
+              📱 อินเทอร์เฟซแบบ Dark UI ที่รองรับมือถือ<br>
+              🧠 ระบบ Cache สำหรับประมวลผลโมเดล
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ───────── SLIDE 7: CONCLUSION ───────── -->
+    <section class="slide" id="s7">
+      <div class="slide-header">
+        <h2>บทสรุป (Conclusion)</h2>
+        <span class="slide-tag">06 / สรุป · ข้อดีข้อเสีย · แผนในอนาคต</span>
+      </div>
+      <div class="slide-body">
+
+        <div class="grid-2 mb">
+
+          <div class="card">
+            <div class="card-title" style="--cyan:#10b981;">สรุปผลการทดลอง</div>
+            <div style="margin-bottom:1rem;">
+              <div class="bar-row">
+                <div class="bar-label"><span>ความแม่นยำสุดท้าย</span><span style="color:var(--green);">55.3%</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-green" style="width:55%"></div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label"><span>เทียบกับโมเดลเดี่ยวที่ดีที่สุด</span><span
+                    style="color:var(--cyan);">+1.4%</span></div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-cyan" style="width:30%"></div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label"><span>เทียบกับความมั่นใจแฟนบอล</span><span
+                    style="color:var(--purple);">+0.5%</span></div>
+                <div class="bar-track">
+                  <div class="bar-fill bar-pur" style="width:15%"></div>
+                </div>
+              </div>
+            </div>
+            <p style="font-size:.78rem;color:var(--muted);line-height:1.6;">
+              PremierPredict-AI พิสูจน์ให้เห็นว่าการใช้ Stacking Ensemble ที่ผ่านการคัดสรรคุณลักษณะฟุตบอลที่หลากหลาย
+              สามารถเอาชนะทั้งโมเดลเดี่ยวและเกณฑ์มาตรฐานจากประสบการณ์มนุษย์ในการทำนายผลบอล 3 หน้าได้
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">จุดเด่นและข้อจำกัด</div>
+            <div style="margin-bottom:.8rem;">
+              <div class="pro-con"><span class="pro-con-icon">✅</span>
+                <p><strong>จุดเด่น:</strong> ระบบ Ensemble หลายโมเดลช่วยลดการ Overfitting และจับรูปแบบข้อมูลที่หลากหลาย
+                  (ELO, ฟอร์ม, มูลค่า)</p>
+              </div>
+              <div class="pro-con"><span class="pro-con-icon">✅</span>
+                <p><strong>จุดเด่น:</strong> แดชบอร์ดแบบโต้ตอบช่วยให้ผลพยากรณ์ AI
+                  สามารถตีความได้ง่ายผ่านการแสดงผลคุณลักษณะสำคัญ</p>
+              </div>
+              <div class="pro-con"><span class="pro-con-icon">✅</span>
+                <p><strong>จุดเด่น:</strong> การปรับเทียบความน่าจะเป็น (log-loss 0.78)
+                  ช่วยให้การนำไปใช้ในการวิเคราะห์มีความมั่นใจสูง</p>
+              </div>
+            </div>
+            <div style="border-top:1px solid var(--border);padding-top:.8rem;">
+              <div class="pro-con"><span class="pro-con-icon">⚠️</span>
+                <p><strong>ข้อจำกัด:</strong> ความแม่นยำของผลเสมอ (51.2%) ยังต่ำกว่าเป้าหมาย
+                  เนื่องจากผลเสมอมีความไม่นอนสูงในการทำนาย</p>
+              </div>
+              <div class="pro-con"><span class="pro-con-icon">⚠️</span>
+                <p><strong>ข้อจำกัด:</strong> ยังไม่มีข้อมูลระดับนักเตะ (การบาดเจ็บ/แบน)
+                  ซึ่งเป็นสัญญาณสำคัญที่ส่งผลต่อผลการแข่งขัน</p>
+              </div>
+              <div class="pro-con"><span class="pro-con-icon">⚠️</span>
+                <p><strong>ข้อจำกัด:</strong> ข้อมูลที่ใช้จำกัดเฉพาะฤดูกาล 2024;
+                  จำเป็นต้องมีข้อมูลย้อนหลังที่มากขึ้นเพื่อความเสถียรของโมเดล</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Future Work -->
+        <div class="card mb">
+          <div class="card-title">🚀 แนวทางในอนาคต</div>
+          <div class="grid-3">
+            <div>
+              <div class="future-item"><span class="future-arrow">→</span>
+                <div>
+                  <h4 style="font-size:.84rem;color:var(--text);margin-bottom:.25rem;">การรวมระบบ Deep Learning</h4>
+                  <p style="font-size:.75rem;color:var(--muted);">ทดลองใช้โมเดล LSTM / Transformer
+                    เพื่อวิเคราะห์แนวโน้มฟอร์มทีมข้ามฤดูกาล</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="future-item"><span class="future-arrow">→</span>
+                <div>
+                  <h4 style="font-size:.84rem;color:var(--text);margin-bottom:.25rem;">ข้อมูลแบบเรียลไทม์</h4>
+                  <p style="font-size:.75rem;color:var(--muted);">รวบรวมรายงานการบาดเจ็บและรายชื่อผู้เล่นตัวจริงแบบสด
+                    เพื่ออัปเดตโมเดลก่อนแมตช์</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="future-item"><span class="future-arrow">→</span>
+                <div>
+                  <h4 style="font-size:.84rem;color:var(--text);margin-bottom:.25rem;">ขยายสู่ลีกอื่น</h4>
+                  <p style="font-size:.75rem;color:var(--muted);">ขยายระบบการพยากรณ์ไปยังลีกชั้นนำอื่น เช่น ลาลีกา,
+                    บุนเดสลีกา และแชมเปียนส์ลีก</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thank you -->
+        <div style="text-align:center;padding:1rem 0;">
+          <div style="font-family:'Orbitron',sans-serif;font-size:1.3rem;color:var(--cyan);margin-bottom:.5rem;">
+            ขอบคุณครับ</div>
+          <p style="font-size:.85rem;color:var(--muted);">คำถามและข้อเสนอแนะ</p>
+          <div style="margin-top:.8rem;display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap;">
+            <span class="pill pill-cyan">67130700346 ชยพร หอมเทียน</span>
+            <span class="pill pill-green">67130700357 กฤติน ชัยสุวิรัตน์</span>
+            <span class="pill pill-pur">67130700361 ปวรวิชญ์ มณีเนตร</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- .deck -->
+
+  <!-- Navigation -->
+  <div class="nav">
+    <button id="prev" onclick="go(-1)" title="ก่อนหน้า">←</button>
+    <div class="dots" id="dots"></div>
+    <button id="next" onclick="go(1)" title="ถัดไป">→</button>
+    <span class="counter" id="counter">1 / 7</span>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dotsEl = document.getElementById('dots');
+    const counterEl = document.getElementById('counter');
+    let cur = 0;
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const d = document.createElement('div');
+      d.className = 'dot' + (i === 0 ? ' on' : '');
+      d.onclick = () => goto(i);
+      dotsEl.appendChild(d);
+    });
+
+    function goto(n) {
+      slides[cur].classList.remove('active');
+      dotsEl.children[cur].classList.remove('on');
+      cur = (n + slides.length) % slides.length;
+      slides[cur].classList.add('active');
+      dotsEl.children[cur].classList.add('on');
+      counterEl.textContent = `${cur + 1} / ${slides.length}`;
+    }
+
+    function go(dir) { goto(cur + dir); }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1);
+    });
+  </script>
 </body>
+
 </html>

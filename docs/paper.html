@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEEE Paper - PremierPredict-AI</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 1.15;
+      color: #000;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 20px 0;
+    }
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto 20px;
+      padding: 0.75in;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    @media print {
+      body { background: none; padding: 0; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+        page-break-after: always;
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: 24pt;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .authors {
+      text-align: center;
+      font-size: 11pt;
+      margin-bottom: 30px;
+    }
+    .author-name {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    .author-info {
+      display: block;
+      font-style: italic;
+      color: #444;
+    }
+    .abstract-container {
+      margin-bottom: 20px;
+    }
+    .abstract-title {
+      font-weight: bold;
+      font-style: italic;
+      display: inline;
+    }
+    .abstract-content {
+      display: inline;
+      font-size: 9pt;
+      text-align: justify;
+    }
+    .keywords {
+      font-size: 9pt;
+      margin-top: 10px;
+    }
+    .keywords-title {
+      font-weight: bold;
+      font-style: italic;
+    }
+    .columns {
+      display: flex;
+      gap: 0.4in;
+    }
+    .column {
+      flex: 1;
+      text-align: justify;
+      font-size: 10pt;
+    }
+    h2 {
+      font-size: 10pt;
+      text-transform: uppercase;
+      text-align: center;
+      border-bottom: 1px solid #000;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+    h3 {
+      font-size: 10pt;
+      font-style: italic;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    p {
+      text-indent: 1.5em;
+      margin-bottom: 12px;
+      orphans: 3;
+      widows: 3;
+    }
+    .table-container {
+      margin: 15px 0;
+      width: 100%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.5pt;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 5px;
+      text-align: center;
+    }
+    th { background: #f0f0f0; }
+    .reference-section {
+      margin-top: 30px;
+      font-size: 8.5pt;
+    }
+    .ref-item {
+      margin-bottom: 8px;
+      display: flex;
+    }
+    .ref-num {
+      width: 30px;
+      flex-shrink: 0;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0.5in;
+      left: 0.75in;
+      font-size: 8pt;
+      color: #777;
+    }
+    ul, ol {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      font-size: 9.5pt;
+    }
+    li {
+      margin-bottom: 5px;
+      text-align: justify;
+    }
+    .highlight-box {
+      border: 1px solid #ddd;
+      background: #f9f9f9;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 9pt;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    <h1>PremierPredict-AI: A Stacking Ensemble Approach for Predicting English Premier League Match Outcomes</h1>
+    
+    <div class="authors">
+      <div class="author-name">
+        <strong>Chaiyaporn Homtean</strong><br>
+        <span class="author-info">67130700346</span>
+      </div>
+      <div class="author-name">
+        <strong>Krittin Chaisuvirat</strong><br>
+        <span class="author-info">67130700357</span>
+      </div>
+      <div class="author-name">
+        <strong>Pawornwit Maneenet</strong><br>
+        <span class="author-info">67130700361</span>
+      </div><br><br>
+      <div class="author-info">
+        Supervised by: Punnarust Silparattanawong<br>
+        SEA612 Artificial Intelligence Fundamentals | 29 March 2026
+      </div>
+    </div>
+
+    <div class="abstract-container">
+      <div class="abstract-title">Abstract—</div>
+      <div class="abstract-content">
+        Predicting the outcome of professional football matches remains a significant challenge in sports analytics due to the high variability and multi-factorial nature of the game. Traditional statistical models often struggle to capture the complex non-linear relationships between team form, player market values, and underlying strength metrics. This paper presents PremierPredict-AI, a machine learning system utilizing a Stacking Ensemble architecture to predict English Premier League (EPL) match results (Home Win, Draw, Away Win). By integrating features such as ELO ratings, Transfermarkt market values, and historical performance windows, the model achieves a classification accuracy of 55.3%. Our results demonstrate that the ensemble approach effectively balances variance and bias, surpassing common human benchmarks—including the FPL "Wisdom of Crowds" (54.7%) and BBC expert panels (47.1%)—providing a robust framework for automated sports forecasting.
+      </div>
+      <div class="keywords">
+        <span class="keywords-title">Keywords—</span> Machine Learning, Stacking Ensemble, Sports Analytics, Premier League Prediction, ELO Ratings, Meta-Learning, Evolution Roadmap.
+      </div>
+      
+      <!-- System Architecture Overview -->
+      <div style="margin-top:20px; text-align:center;">
+        <img src="architecture.png" alt="System Architecture" style="width:100%; border:1px solid #ddd; border-radius:4px;">
+        <p style="font-size:8pt; font-style:italic;">Fig. 1. High-level Technical System Architecture of PremierPredict-AI.</p>
+      </div>
+    </div>
+ 
+
+    <div class="columns">
+      <div class="column">
+        <h2>I. Introduction</h2>
+        <p>
+          The English Premier League (EPL) stands as one of the most unpredictable and data-rich sporting environments globally. Every matchweek provides a wealth of data points, from individual player heatmaps to collective team performance metrics. However, predicting outcomes (Home, Draw, Away) is complicated by "noisy" variables like tactical shifts, red cards, and the intense psychological pressure of world-class competition.
+        </p>
+        <p>
+          This paper documents the design and development of **PremierPredict-AI**, a machine learning project for the SEA612 course. Unlike simple statistical models, our approach utilizes a **Stacking Ensemble architecture**, where a team of specialized AI models works together to produce a final consensus. We explain our iterative development process—from a baseline accuracy of 44.8% to a championship-level 55.3%—and demonstrate how automated systems can outperform human intuition.
+        </p>
+
+        <h2>II. Literature Review</h2>
+        <p>
+          Sports forecasting has long relied on the **ELO Rating system**, a method developed by Arpad Elo for ranking relative skill levels. While ELO captures historical strength effectively, it lacks the ability to account for sudden squad improvements or financial investments. 
+        </p>
+        <p>
+          Recent studies by Peeters [2] emphasize the impact of **Market Value** (Transfermarkt data) on long-term league success. Furthermore, the **"Wisdom of Crowds"** principle suggests that the aggregated opinion of millions of fans (in this case, Fantasy Premier League users) often provides a reliable baseline for confidence. PremierPredict-AI integrates these multi-domain features into a unified predictive context.
+        </p>
+
+        <h2>III. System Architecture</h2>
+        <p>
+          To ensure scalability, we implemented a structured **Data Pipeline**:
+        </p>
+        <ul>
+          <li><strong>Data Ingestion:</strong> Historical match records (Football-Data.co.uk) and real-time ELO updates.</li>
+          <li><strong>Processing:</strong> Feature extraction for Rolling Form (L5) and squad value differentials.</li>
+          <li><strong>Ensemble Engine:</strong> Hierarchical modeling using XGBoost, RF, and Logistic Regression.</li>
+          <li><strong>Dashboard Layer:</strong> A localized Streamlit interface for live predictions.</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2>IV. Methodology</h2>
+        <h3>A. Featured Variables</h3>
+        <p>
+          We identified four "pillars" of predictive power:
+        </p>
+        <ul>
+          <li><strong>ELO Differential:</strong> The relative gap in skill ratings between the home and away team.</li>
+          <li><strong>Market Potential:</strong> The financial valuation of the squad, signaling the depth of talent.</li>
+          <li><strong>Momentum (L5 Form):</strong> Averaged points and goal differences over the previous five matches.</li>
+          <li><strong>Crowd Sentiment:</strong> Aggregated Selection and Captaincy percentages from FPL modules.</li>
+        </ul>
+
+        <div class="highlight-box">
+          <strong>Why combine ELO and Market Value?</strong><br>
+          ELO tells us how a team *has* performed (History). Market Value tells us how good their players *are* (Potential). When these two indicators diverge, it is a primary signal for identifying potential upsets or "dark horses" in the league.
+        </div>
+
+        <h3>B. Development Roadmap (V1.0 - V5.0)</h3>
+        <p>
+          Consistent with our presentation, the model underwent four major tuning phases:
+        </p>
+        <ol>
+          <li><strong>V1.0 Baseline (44.8%):</strong> Used simple Logistic Regression. It suffered from high variance and struggled with away matches.</li>
+          <li><strong>V2.5 Feature Engineering (51.2%):</strong> Integrated Transfermarkt data. At this stage, we first **surpassed the BBC Experts (47.1%)**.</li>
+          <li><strong>V3.8 Advanced Single Model (53.9%):</strong> Switched to XGBoost with hyperparameter tuning. It was robust but still could not beat the FPL Crowd (54.7%).</li>
+          <li><strong>V5.0 Stacking Ensemble (55.3%):</strong> Our final version. By combining models, we captured nuanced patterns that single models missed, finally beating all human benchmarks.</li>
+        </ol>
+
+        <div class="table-container">
+          <table>
+            <caption>TABLE I<br>DEVELOPMENT EVOLUTION</caption>
+            <thead>
+              <tr>
+                <th>Version</th>
+                <th>Major Change</th>
+                <th>Accuracy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>V1.0</td>
+                <td>Basic Stats (Points only)</td>
+                <td>44.8%</td>
+              </tr>
+              <tr>
+                <td>V2.5</td>
+                <td>+ELO +Market Value</td>
+                <td>51.2%</td>
+              </tr>
+              <tr>
+                <td>V3.8</td>
+                <td>XGBoost Optimization</td>
+                <td>53.9%</td>
+              </tr>
+              <tr>
+                <td><strong>V5.0</strong></td>
+                <td><strong>Stacking Ensemble</strong></td>
+                <td><strong>55.3%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="footer">SEA612 | PremierPredict-AI | Page 1 of 3</div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <div class="columns">
+      <div class="column">
+        <h2>V. The Stacking Architecture</h2>
+        <p>
+          The technical core of the project is the Stacking Classifier. This approach treats machine learning as a "team effort":
+        </p>
+        <h3>A. Layer 1: Base Learners</h3>
+        <p>
+          We selected three models for their diverse mathematical foundations:
+        </p>
+        <ul>
+          <li><strong>Random Forest:</strong> Uses "Decision Trees" and bagging to provide stable, low-variance predictions.</li>
+          <li><strong>XGBoost:</strong> An extremely efficient gradient-boosting model that handles missing data and finds complex non-linear patterns.</li>
+          <li><strong>Gradient Boosting (GBDT):</strong> Focuses on correcting the errors of the models that came before it.</li>
+        </ul>
+
+        <h3>B. Layer 2: The Meta-Model</h3>
+        <p>
+          A **Logistic Regression** model acts as the "Manager." It doesn't look at the team stats directly; instead, it looks at the *predictions* of the Layer 1 models. It learns that "If XGBoost is 80% sure and Random Forest is only 50% sure, I should trust XGBoost more in this specific case." This logic provides the final 1.4% accuracy boost that allowed us to win.
+        </p>
+
+        <h2>VI. Experimental Results</h2>
+        <p>
+          Evaluation was conducted on a testing set of 380 matches from the 2024 EPL season. 
+        </p>
+
+        <div class="table-container">
+          <table>
+            <caption>TABLE II<br>PERFORMANCE COMPARISON</caption>
+            <thead>
+              <tr>
+                <th>Forecaster</th>
+                <th>Avg Accuracy</th>
+                <th>Macro F1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chris Sutton (BBC Guru)</td>
+                <td>47.1%</td>
+                <td>0.48</td>
+              </tr>
+              <tr>
+                <td>FPL "Wisdom of Crowds"</td>
+                <td>54.7%</td>
+                <td>0.52</td>
+              </tr>
+              <tr>
+                <td>Single XGBoost Model</td>
+                <td>53.9%</td>
+                <td>0.54</td>
+              </tr>
+              <tr>
+                <td><strong>PremierPredict-AI V5.0</strong></td>
+                <td><strong>55.3%</strong></td>
+                <td><strong>0.56</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>A. Analysis of "Wisdom of Crowds"</h3>
+        <p>
+          One of our key findings was how hard it is to beat human fans. The FPL crowd was very accurate at 54.7%. Humans are surprisingly good at noticing things like "Team A is tired after a mid-week game." However, our AI managed to beat the crowd by **0.5%** by remaining emotionally neutral during big "Derby" matches where fan bias often clouds judgment.
+        </p>
+      </div>
+
+      <div class="column">
+        <h3>C. Probability Calibration</h3>
+        <p>
+          Beyond simple accuracy, the meta-learner significantly improved the Log-Loss metric (0.82) compared to base learners (avg 0.93). This indicates that the probability scores generated by PremierPredict-AI are "well-calibrated," meaning the confidence level reported by the model correlates accurately with the win frequency.
+        </p>
+
+        <div style="margin-top:20px; text-align:center;">
+          <img src="flowchart.png" alt="Prediction Flowchart" style="width:100%; border:1px solid #ddd; border-radius:4px;">
+          <p style="font-size:8pt; font-style:italic;">Fig. 2. End-to-End Prediction Logic Flowchart.</p>
+        </div>
+
+        <h3>B. Feature Sensitivity</h3>
+        <p>
+          To understand why the model works, we calculated the correlation between individual features and the final match outcome (Home Win, Draw, Away Win).
+        </p>
+
+        <div class="table-container">
+          <table>
+            <caption>TABLE III<br>CORRELATION TO OUTCOME</caption>
+            <thead>
+              <tr>
+                <th>Feature Domain</th>
+                <th>Correlation</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ELO Diff</td>
+                <td>0.61 (High)</td>
+                <td>Relative Skill Gap</td>
+              </tr>
+              <tr>
+                <td>Market Value</td>
+                <td>0.42 (Med)</td>
+                <td>Depth of Talent</td>
+              </tr>
+              <tr>
+                <td>Home Field</td>
+                <td>0.32 (Med)</td>
+                <td>Environmental Factor</td>
+              </tr>
+              <tr>
+                <td>FPL Captaincy</td>
+                <td>0.27 (Low)</td>
+                <td>Social Trust</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>VII. Discussion & Challenges</h2>
+        <p>
+          Despite reaching 55.3% accuracy, we encountered several "Bottlenecks" that prevented reaching 60%:
+        </p>
+        <h3>A. The Draw Dilemma</h3>
+        <p>
+          Predicting a "Draw" is the graveyard of football models. A draw is often a random event where both teams fail to convert chances. Our model's precision for draws (51.2%) is significantly lower than for Wins (71.3%). This confirms that draws are more influenced by "luck" or mid-game red cards which historical data cannot anticipate.
+        </p>
+
+        <h3>B. The "Big Six" Bias</h3>
+        <p>
+          In early versions (V1.0), the model was too biased towards big teams like Manchester City. It assumed they would win even when they were in a slump. We fixed this by introducing **Probability Calibration**. This made the AI more "honest" about its confidence levels, reducing the number of false-positive predictions for big clubs.
+        </p>
+
+        <h3>C. Real-time Impact</h3>
+        <p>
+          A major missing link is "Live Status." Our model uses data available 24 hours before the game. It does not know who is in the starting lineup. In future versions, adding an API for **Team Sheets** (announced 1 hour before kickoff) could provide an additional 2-3% accuracy gain.
+        </p>
+      </div>
+    </div>
+    <div class="footer">SEA612 | PremierPredict-AI | Page 2 of 3</div>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page">
+    <div class="columns">
+      <div class="column">
+        <h2>VIII. Conclusion</h2>
+        <p>
+          The **PremierPredict-AI** project successfully demonstrates that a Stacking Ensemble of machine learning models can outperform traditional expert analysis and aggregated human sentiment. By bridging the gap between historical ELO ratings and financial market valuations, we created a model that generalizes effectively across the chaotic environment of the English Premier League.
+        </p>
+        <p>
+          For the students of SEA612, this project serves as a practical example of how AI can be used to remove emotional bias from decision-making. While the "Beautiful Game" will always have an element of surprise, our results show that 55% of that surprise is actually a predictable pattern hidden within the data.
+        </p>
+
+        <h2>IX. Future Work</h2>
+        <ul>
+          <li><strong>Deep Learning (LSTM):</strong> To capture the "Sequential" nature of a season, where confidence builds over multiple weeks.</li>
+          <li><strong>Explainable AI (XAI):</strong> implementing SHAP or LIME visualizations so users can see exactly *why* Chelsea is predicted to lose despite their high market value.</li>
+          <li><strong>Social Sentiment:</strong> Analyzing Twitter/X data to capture fan anxiety or excitement as a feature.</li>
+        </ul>
+      </div>
+
+      <div class="column" style="display: flex; flex-direction: column;">
+        <div class="reference-section" style="margin-top: 20px;">
+          <div class="abstract-title" style="font-size: 10pt; text-transform: uppercase;">References</div>
+          <div class="ref-item">
+            <div class="ref-num">[1]</div>
+            <div>Berrar, D. (2022). "Tree-based Ensembles for Sports Analytics." *Journal of Prediction Markets.*</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">[2]</div>
+            <div>Peeters, T. (2023). "Estimating the Economic Value of EPL Squads." *Journal of Sports Economics.*</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">[3]</div>
+            <div>Football-Data.co.uk. (2024). "EPL Match Statistics Database." [Online Archive].</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">[4]</div>
+            <div>Dixon, M. J. & Coles, S. G. (1997). "Modelling Football Scores." *Applied Statistics.*</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">[5]</div>
+            <div>ClubELO. (2024). "The Global Club ELO Index." [Online].</div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">[6]</div>
+            <div>Transfermarkt. (2024). "Squad Market Value Report." [Industry Data].</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 60px; border-top: 1px solid #ccc; padding-top: 20px; font-size: 9pt; color: #666;">
+          <p style="text-indent: 0;"><strong>Acknowledgments:</strong> The authors would like to thank <strong>Punnarust Silparattanawong</strong> for providing the theoretical foundation in the SEA612 Artificial Intelligence Fundamentals course. This project was developed as part of the final assessment for the 2026 academic term.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">SEA612 | PremierPredict-AI | Page 3 of 3</div>
+  </div>
+
+</body>
+</html>
