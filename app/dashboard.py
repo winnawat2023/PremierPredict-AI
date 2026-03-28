@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import os
 import sys
 import pandas as pd
@@ -401,6 +402,7 @@ STATS_PATH = "data/processed/latest_team_stats.json"
 RESULTS_PATH = "data/processed/ensemble_results.json"
 METRICS_PATH = "models/metrics_v5.json"
 COMP_PATH = "data/processed/ai_vs_crowd_comparison.csv"
+HUMAN_COMP_PATH = "data/processed/human_baseline_comparison.csv"
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(BASE_DIR)
@@ -436,17 +438,23 @@ def load_resources():
             metrics = json.load(f)
     except FileNotFoundError:
         metrics = {}
+    return model, stats, results, metrics
+
+def main():
+    model, stats, results, metrics = load_resources()
+    if not model or not stats:
+        st.error("Backend models/stats error: Unable to access system resources.")
+        return
+        
     try:
         history_df = pd.read_csv(COMP_PATH)
     except FileNotFoundError:
         history_df = pd.DataFrame()
-    return model, stats, results, metrics, history_df
-
-def main():
-    model, stats, results, metrics, history_df = load_resources()
-    if not model or not stats:
-        st.error("Backend models/stats error: Unable to access system resources.")
-        return
+        
+    try:
+        human_baseline_df = pd.read_csv(HUMAN_COMP_PATH)
+    except FileNotFoundError:
+        human_baseline_df = pd.DataFrame()
 
     # Accuracy definitions: Prefer METRICS_PATH (Official Paper) > RESULTS_PATH > Defaults
     ai_acc = metrics.get('accuracy', results.get('ensemble_accuracy', 55.26))
@@ -505,7 +513,6 @@ def main():
             </div>
         """, unsafe_allow_html=True)
 
-    # --- MAIN CONTENT ---
     # --- MAIN CONTENT ---
     # Header
     st.markdown("""
@@ -1059,62 +1066,177 @@ Expert Global Benchmark
 <span style="color:#10b981; font-weight:600; font-size:0.95rem; font-family:'Inter', sans-serif;">RESULT: Our AI model outperforms all benchmarks! Accuracy exceeds the Crowd by (+{(ai_acc-crowd_acc):.2f}%) and BBC Experts by (+{(ai_acc-human_acc):.2f}%).</span>
 </div>
 </div>
+</div>
 """, unsafe_allow_html=True)
 
     # --- AI Prediction History Table ---
     if not history_df.empty:
-        st.markdown("""
-<div class="card" style="margin-top:20px;">
-<div class="card-title" style="margin-bottom:20px;">
-    <div style="display:flex; align-items:center; gap:10px;">
-        <span style="font-size:1.4rem;">📜</span>
-        <span style="font-size:1.4rem; color:#f8fafc; font-weight:800; font-family:'Inter', sans-serif;">AI Prediction History</span>
-    </div>
-</div>
-<div style="height:400px; overflow-y:auto; border:1px solid #2d3748; border-radius:8px; background:rgba(15,23,42,0.5);">
-    <table style="width:100%; border-collapse:collapse; color:#e2e8f0; font-family:'Inter', sans-serif; font-size:0.85rem;">
-        <thead style="position:sticky; top:0; background:#1e293b; z-index:10;">
-            <tr>
-                <th style="padding:12px; text-align:left; border-bottom:1px solid #334155;">Match</th>
-                <th style="padding:12px; text-align:center; border-bottom:1px solid #334155;">Actual</th>
-                <th style="padding:12px; text-align:center; border-bottom:1px solid #334155;">AI Prediction</th>
-                <th style="padding:12px; text-align:center; border-bottom:1px solid #334155;">Accuracy</th>
-            </tr>
-        </thead>
-        <tbody>
-""", unsafe_allow_html=True)
+        # Build Table HTML
+        table_rows = ""
+        # Show all 380 matches for the season
+        recent_history = history_df.iloc[::-1]
+        
+        # Create a lookup for human baseline
+        human_lookup = {}
+        if not human_baseline_df.empty:
+            for _, h_row in human_baseline_df.iterrows():
+                human_lookup[h_row['Match']] = {
+                    'pred': h_row['Sutton Prediction'],
+                    'correct': h_row['Correct Result']
+                }
+                
+        # Create a lookup for dates and scores
+        try:
+            pl_matches = pd.read_csv("data/raw/pl_matches_2021_2025.csv")
+            # Filter to season 2024 (the one we tested on), dropping future matches
+            pl_matches = pl_matches[pl_matches['season'] == 2024]
+            pl_matches['match_name'] = pl_matches['home_team'] + ' vs ' + pl_matches['away_team']
+            match_details = pl_matches.drop_duplicates(subset=['match_name'], keep='last').set_index('match_name')[['date', 'home_score', 'away_score']].to_dict('index')
+        except:
+            match_details = {}
 
-        # Iterate through history (reversing to show latest first)
-        rows = []
-        for _, row in history_df.iloc[::-1].iterrows():
-            match = row['Match']
+        for _, row in recent_history.iterrows():
+            match_name = row['Match']
             actual = row['Actual'].replace("_TEAM", "").capitalize() if isinstance(row['Actual'], str) else "N/A"
-            pred = row['AI_Pred'].replace("_TEAM", "").capitalize() if isinstance(row['AI_Pred'], str) else "N/A"
-            correct = row['AI_Correct']
             
-            # Map labels
-            actual = actual.replace("Home", "Home Win").replace("Away", "Away Win")
-            pred = pred.replace("Home", "Home Win").replace("Away", "Away Win")
+            # Extract date and score
+            details = match_details.get(match_name, {})
+            raw_date = details.get('date', '')
+            if isinstance(raw_date, str) and len(raw_date) >= 16:
+                try:
+                    dt = pd.to_datetime(raw_date)
+                    dt_th = dt + pd.Timedelta(hours=7)
+                    date_str = dt_th.strftime('%d %b %Y %H:%M')
+                except:
+                    date_str = raw_date[:10] + " " + raw_date[11:16]
+            else:
+                date_str = ""
+                
+            h_score = details.get('home_score')
+            a_score = details.get('away_score')
+            if pd.notna(h_score) and pd.notna(a_score):
+                score_str = f"{int(h_score)} - {int(a_score)}"
+            else:
+                score_str = ""
             
-            icon = "✅" if correct else "❌"
-            color = "#10b981" if correct else "#f43f5e"
+            # AI Prediction
+            ai_pred = row['AI_Pred'].replace("_TEAM", "").capitalize() if isinstance(row['AI_Pred'], str) else "N/A"
+            ai_correct = row['AI_Correct']
             
-            st.markdown(f"""
-            <tr style="border-bottom:1px solid #1e293b; transition: background 0.2s;">
-                <td style="padding:12px; text-align:left;">{match}</td>
-                <td style="padding:12px; text-align:center; color:#94a3b8;">{actual}</td>
-                <td style="padding:12px; text-align:center; font-weight:600; color:{color};">{pred}</td>
-                <td style="padding:12px; text-align:center;">{icon}</td>
-            </tr>
-            """, unsafe_allow_html=True)
+            # FPL Fans Prediction
+            fpl_pred = row['Crowd_Pred'].replace("_TEAM", "").capitalize() if isinstance(row['Crowd_Pred'], str) else "N/A"
+            fpl_correct = row['Crowd_Correct']
+            
+            # BBC Prediction (Sutton)
+            bbc_data = human_lookup.get(match_name, None)
+            if bbc_data:
+                bbc_pred_raw = bbc_data['pred']
+                if '-' in str(bbc_pred_raw):
+                    try:
+                        h, a = map(int, str(bbc_pred_raw).split('-'))
+                        if h > a: bbc_pred = "Home Win"
+                        elif a > h: bbc_pred = "Away Win"
+                        else: bbc_pred = "Draw"
+                    except:
+                        bbc_pred = str(bbc_pred_raw)
+                else:
+                    bbc_pred = str(bbc_pred_raw)
+                bbc_correct = bbc_data['correct']
+                bbc_color = "#10b981" if bbc_correct else "#f43f5e"
+            else:
+                bbc_pred = "—"
+                bbc_color = "#94a3b8"
 
-        st.markdown("""
-        </tbody>
-    </table>
-</div>
-<div style="margin-top:10px; font-size:0.7rem; color:#64748b; text-align:right;">* Showing latest results from competitive verification datasets.</div>
-</div>
-""", unsafe_allow_html=True)
+            # Map labels for UI
+            actual = actual.replace("Home", "Home Win").replace("Away", "Away Win")
+            ai_pred = ai_pred.replace("Home", "Home Win").replace("Away", "Away Win")
+            fpl_pred = fpl_pred.replace("Home", "Home Win").replace("Away", "Away Win")
+            
+            ai_color = "#10b981" if ai_correct else "#f43f5e"
+            fpl_color = "#10b981" if fpl_correct else "#f43f5e"
+            
+            # Decorate the names with Date and Score if available
+            match_display = f"<div>{match_name}</div><div style='font-size:0.75rem; color:#64748b; margin-top:2px;'>{date_str}</div>" if date_str else match_name
+            actual_display = f"<div>{actual}</div><div style='font-size:0.75rem; color:#64748b; font-weight:600; margin-top:2px;'>{score_str}</div>" if (score_str and score_str != "N/A") else actual
+            
+            table_rows += f"""
+            <tr style="border-bottom:1px solid #2d3748;">
+                <td style="padding:12px; text-align:left;">{match_display}</td>
+                <td style="padding:12px; text-align:center; color:#94a3b8;">{actual_display}</td>
+                <td style="padding:12px; text-align:center; font-weight:600; color:{ai_color};">{ai_pred}</td>
+                <td style="padding:12px; text-align:center; font-weight:500; color:{fpl_color};">{fpl_pred}</td>
+                <td style="padding:12px; text-align:center; font-weight:500; color:{bbc_color};">{bbc_pred}</td>
+            </tr>
+            """
+
+        html_content = f"""
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+            body {{
+                background: #11141E;
+                color: #f8fafc;
+                font-family: 'Inter', sans-serif;
+                margin: 0; padding: 0;
+            }}
+            .card {{
+                background-color: #1A202C;
+                border: 1px solid #2d3748;
+                border-radius: 12px;
+                padding: 24px;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+            }}
+            .card-title {{
+                font-size: 1.1rem;
+                color: #f8fafc;
+                font-weight: 800;
+                margin-bottom: 20px;
+                display: flex; gap: 10px; align-items: center;
+            }}
+            .scroll-area {{
+                height: 380px; 
+                overflow-y: auto; 
+                border: 1px solid #2d3748; 
+                border-radius: 8px; 
+                background: rgba(15,23,42,0.5);
+            }}
+            table {{
+                width: 100%; border-collapse: collapse; font-size: 0.85rem;
+            }}
+            th {{
+                position: sticky; top: 0; background: #1e293b; 
+                padding: 12px; text-align: center; border-bottom: 1px solid #334155;
+            }}
+            th:first-child {{ text-align: left; }}
+            td {{ padding: 12px; text-align: center; font-family: 'Inter', sans-serif; }}
+            td:first-child {{ text-align: left; }}
+            /* Custom Scrollbar */
+            ::-webkit-scrollbar {{ width: 8px; }}
+            ::-webkit-scrollbar-track {{ background: #1e293b; }}
+            ::-webkit-scrollbar-thumb {{ background: #4a5568; border-radius: 4px; }}
+            ::-webkit-scrollbar-thumb:hover {{ background: #718096; }}
+        </style>
+        <div class="card">
+            <div class="card-title">📜 AI Prediction History</div>
+            <div class="scroll-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:30%;">Match</th>
+                            <th style="width:17%;">Actual</th>
+                            <th style="width:17%;">AI Predict</th>
+                            <th style="width:18%;">FPL Fans Predict</th>
+                            <th style="width:18%;">BBC Predict</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {table_rows}
+                    </tbody>
+                </table>
+            </div>
+            <div style="margin-top:10px; font-size:0.7rem; color:#64748b; text-align:right;">* Showing all results from competitive verification datasets (2024/2025 Season).</div>
+        </div>
+        """
+        components.html(html_content, height=520, scrolling=False)
 
 
 if __name__ == "__main__":

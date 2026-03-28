@@ -1,7 +1,381 @@
 Match,Actual Score,Sutton Prediction,Correct Result,Exact Score
-Arsenal FC vs Everton FC,0.0-0.0,2-0,False,False
-Liverpool FC vs Tottenham Hotspur FC,5.0-1.0,3-2,True,False
-Manchester City FC vs Southampton FC,1.0-0.0,3-0,True,False
-Arsenal FC vs Tottenham Hotspur FC,2.0-1.0,2-1,True,True
-Chelsea FC vs Manchester City FC,0.0-2.0,1-2,True,False
-Fulham FC vs Arsenal FC,1.0-1.0,0-2,False,False
+Manchester United FC vs Fulham FC,N/A,0-2,False,False
+Ipswich Town FC vs Liverpool FC,N/A,0-2,True,False
+Arsenal FC vs Wolverhampton Wanderers FC,N/A,1-1,False,False
+Everton FC vs Brighton & Hove Albion FC,N/A,2-0,False,False
+Newcastle United FC vs Southampton FC,N/A,1-1,False,False
+Nottingham Forest FC vs AFC Bournemouth,N/A,0-2,False,False
+West Ham United FC vs Aston Villa FC,N/A,1-1,False,False
+Brentford FC vs Crystal Palace FC,N/A,2-0,True,False
+Chelsea FC vs Manchester City FC,N/A,0-2,True,False
+Leicester City FC vs Tottenham Hotspur FC,N/A,1-1,True,False
+Brighton & Hove Albion FC vs Manchester United FC,N/A,0-2,False,False
+Fulham FC vs Leicester City FC,N/A,2-0,True,False
+Southampton FC vs Nottingham Forest FC,N/A,0-2,True,False
+Crystal Palace FC vs West Ham United FC,N/A,2-0,False,False
+Tottenham Hotspur FC vs Everton FC,N/A,1-1,False,False
+Manchester City FC vs Ipswich Town FC,N/A,1-1,False,False
+Aston Villa FC vs Arsenal FC,N/A,0-2,True,False
+AFC Bournemouth vs Newcastle United FC,N/A,2-0,False,False
+Wolverhampton Wanderers FC vs Chelsea FC,N/A,2-0,False,False
+Liverpool FC vs Brentford FC,N/A,1-1,False,False
+Arsenal FC vs Brighton & Hove Albion FC,N/A,2-0,False,False
+Brentford FC vs Southampton FC,N/A,1-1,False,False
+Everton FC vs AFC Bournemouth,N/A,2-0,False,False
+Ipswich Town FC vs Fulham FC,N/A,0-2,False,False
+Leicester City FC vs Aston Villa FC,N/A,1-1,False,False
+Nottingham Forest FC vs Wolverhampton Wanderers FC,N/A,1-1,True,False
+West Ham United FC vs Manchester City FC,N/A,0-2,True,False
+Chelsea FC vs Crystal Palace FC,N/A,2-0,False,False
+Newcastle United FC vs Tottenham Hotspur FC,N/A,2-0,True,False
+Manchester United FC vs Liverpool FC,N/A,0-2,True,False
+Southampton FC vs Manchester United FC,N/A,0-2,True,False
+Brighton & Hove Albion FC vs Ipswich Town FC,N/A,2-0,False,False
+Crystal Palace FC vs Leicester City FC,N/A,1-1,True,False
+Fulham FC vs West Ham United FC,N/A,1-1,True,False
+Liverpool FC vs Nottingham Forest FC,N/A,2-0,False,False
+Manchester City FC vs Brentford FC,N/A,2-0,True,False
+Aston Villa FC vs Everton FC,N/A,2-0,True,False
+AFC Bournemouth vs Chelsea FC,N/A,0-2,True,False
+Tottenham Hotspur FC vs Arsenal FC,N/A,0-2,True,False
+Wolverhampton Wanderers FC vs Newcastle United FC,N/A,0-2,True,False
+West Ham United FC vs Chelsea FC,N/A,2-0,False,False
+Aston Villa FC vs Wolverhampton Wanderers FC,N/A,2-0,True,False
+Fulham FC vs Newcastle United FC,N/A,0-2,False,False
+Leicester City FC vs Everton FC,N/A,0-2,False,False
+Liverpool FC vs AFC Bournemouth,N/A,0-2,False,False
+Southampton FC vs Ipswich Town FC,N/A,1-1,True,False
+Tottenham Hotspur FC vs Brentford FC,N/A,1-1,False,False
+Crystal Palace FC vs Manchester United FC,N/A,1-1,True,False
+Brighton & Hove Albion FC vs Nottingham Forest FC,N/A,1-1,True,False
+Manchester City FC vs Arsenal FC,N/A,2-0,False,False
+Newcastle United FC vs Manchester City FC,N/A,2-0,False,False
+Arsenal FC vs Leicester City FC,N/A,2-0,True,False
+Brentford FC vs West Ham United FC,N/A,0-2,False,False
+Chelsea FC vs Brighton & Hove Albion FC,N/A,1-1,False,False
+Everton FC vs Crystal Palace FC,N/A,2-0,True,False
+Nottingham Forest FC vs Fulham FC,N/A,0-2,True,False
+Wolverhampton Wanderers FC vs Liverpool FC,N/A,2-0,False,False
+Ipswich Town FC vs Aston Villa FC,N/A,1-1,True,False
+Manchester United FC vs Tottenham Hotspur FC,N/A,0-2,True,False
+AFC Bournemouth vs Southampton FC,N/A,1-1,False,False
+Crystal Palace FC vs Liverpool FC,N/A,2-0,False,False
+Arsenal FC vs Southampton FC,N/A,0-2,False,False
+Brentford FC vs Wolverhampton Wanderers FC,N/A,2-0,True,False
+Leicester City FC vs AFC Bournemouth,N/A,0-2,False,False
+Manchester City FC vs Fulham FC,N/A,1-1,False,False
+West Ham United FC vs Ipswich Town FC,N/A,2-0,True,False
+Everton FC vs Newcastle United FC,N/A,1-1,True,False
+Aston Villa FC vs Manchester United FC,N/A,1-1,True,False
+Chelsea FC vs Nottingham Forest FC,N/A,1-1,True,False
+Brighton & Hove Albion FC vs Tottenham Hotspur FC,N/A,1-1,False,False
+Tottenham Hotspur FC vs West Ham United FC,N/A,0-2,False,False
+Fulham FC vs Aston Villa FC,N/A,2-0,False,False
+Ipswich Town FC vs Everton FC,N/A,0-2,True,False
+Manchester United FC vs Brentford FC,N/A,2-0,True,False
+Newcastle United FC vs Brighton & Hove Albion FC,N/A,2-0,False,False
+Southampton FC vs Leicester City FC,N/A,0-2,True,False
+AFC Bournemouth vs Arsenal FC,N/A,0-2,False,False
+Wolverhampton Wanderers FC vs Manchester City FC,N/A,0-2,True,False
+Liverpool FC vs Chelsea FC,N/A,1-1,False,False
+Nottingham Forest FC vs Crystal Palace FC,N/A,2-0,True,False
+Leicester City FC vs Nottingham Forest FC,N/A,0-2,True,False
+Aston Villa FC vs AFC Bournemouth,N/A,2-0,False,False
+Brentford FC vs Ipswich Town FC,N/A,2-0,True,False
+Brighton & Hove Albion FC vs Wolverhampton Wanderers FC,N/A,2-0,False,False
+Manchester City FC vs Southampton FC,N/A,2-0,True,False
+Everton FC vs Fulham FC,N/A,1-1,True,False
+Chelsea FC vs Newcastle United FC,N/A,2-0,True,False
+Crystal Palace FC vs Tottenham Hotspur FC,N/A,2-0,True,False
+West Ham United FC vs Manchester United FC,N/A,2-0,True,False
+Arsenal FC vs Liverpool FC,N/A,0-2,False,False
+Newcastle United FC vs Arsenal FC,N/A,2-0,True,False
+AFC Bournemouth vs Manchester City FC,N/A,1-1,False,False
+Ipswich Town FC vs Leicester City FC,N/A,1-1,True,False
+Liverpool FC vs Brighton & Hove Albion FC,N/A,0-2,False,False
+Nottingham Forest FC vs West Ham United FC,N/A,1-1,False,False
+Southampton FC vs Everton FC,N/A,0-2,False,False
+Wolverhampton Wanderers FC vs Crystal Palace FC,N/A,1-1,True,False
+Tottenham Hotspur FC vs Aston Villa FC,N/A,0-2,False,False
+Manchester United FC vs Chelsea FC,N/A,0-2,False,False
+Fulham FC vs Brentford FC,N/A,0-2,False,False
+Crystal Palace FC vs Fulham FC,N/A,1-1,False,False
+Brentford FC vs AFC Bournemouth,N/A,0-2,False,False
+Wolverhampton Wanderers FC vs Southampton FC,N/A,0-2,False,False
+West Ham United FC vs Everton FC,N/A,1-1,True,False
+Brighton & Hove Albion FC vs Manchester City FC,N/A,2-0,True,False
+Liverpool FC vs Aston Villa FC,N/A,2-0,True,False
+Manchester United FC vs Leicester City FC,N/A,2-0,True,False
+Nottingham Forest FC vs Newcastle United FC,N/A,0-2,True,False
+Tottenham Hotspur FC vs Ipswich Town FC,N/A,1-1,False,False
+Chelsea FC vs Arsenal FC,N/A,1-1,True,False
+Leicester City FC vs Chelsea FC,N/A,1-1,False,False
+AFC Bournemouth vs Brighton & Hove Albion FC,N/A,1-1,False,False
+Arsenal FC vs Nottingham Forest FC,N/A,2-0,True,False
+Aston Villa FC vs Crystal Palace FC,N/A,1-1,True,False
+Everton FC vs Brentford FC,N/A,1-1,True,False
+Fulham FC vs Wolverhampton Wanderers FC,N/A,2-0,False,False
+Manchester City FC vs Tottenham Hotspur FC,N/A,0-2,True,False
+Southampton FC vs Liverpool FC,N/A,2-0,False,False
+Ipswich Town FC vs Manchester United FC,N/A,1-1,True,False
+Newcastle United FC vs West Ham United FC,N/A,0-2,True,False
+Brighton & Hove Albion FC vs Southampton FC,N/A,2-0,False,False
+Brentford FC vs Leicester City FC,N/A,0-2,False,False
+Crystal Palace FC vs Newcastle United FC,N/A,0-2,False,False
+Nottingham Forest FC vs Ipswich Town FC,N/A,2-0,True,False
+Wolverhampton Wanderers FC vs AFC Bournemouth,N/A,1-1,False,False
+West Ham United FC vs Arsenal FC,N/A,1-1,False,False
+Chelsea FC vs Aston Villa FC,N/A,0-2,False,False
+Manchester United FC vs Everton FC,N/A,1-1,False,False
+Tottenham Hotspur FC vs Fulham FC,N/A,0-2,False,False
+Liverpool FC vs Manchester City FC,N/A,1-1,False,False
+Ipswich Town FC vs Crystal Palace FC,N/A,0-2,True,False
+Leicester City FC vs West Ham United FC,N/A,2-0,True,False
+Everton FC vs Wolverhampton Wanderers FC,N/A,1-1,False,False
+Manchester City FC vs Nottingham Forest FC,N/A,2-0,True,False
+Newcastle United FC vs Liverpool FC,N/A,2-0,False,False
+Southampton FC vs Chelsea FC,N/A,2-0,False,False
+Arsenal FC vs Manchester United FC,N/A,2-0,True,False
+Aston Villa FC vs Brentford FC,N/A,1-1,False,False
+Fulham FC vs Brighton & Hove Albion FC,N/A,2-0,True,False
+AFC Bournemouth vs Tottenham Hotspur FC,N/A,0-2,False,False
+Aston Villa FC vs Southampton FC,N/A,2-0,True,False
+Brentford FC vs Newcastle United FC,N/A,1-1,False,False
+Crystal Palace FC vs Manchester City FC,N/A,1-1,True,False
+Manchester United FC vs Nottingham Forest FC,N/A,0-2,True,False
+Fulham FC vs Arsenal FC,N/A,1-1,True,False
+Ipswich Town FC vs AFC Bournemouth,N/A,0-2,True,False
+Leicester City FC vs Brighton & Hove Albion FC,N/A,2-0,False,False
+Tottenham Hotspur FC vs Chelsea FC,N/A,0-2,True,False
+West Ham United FC vs Wolverhampton Wanderers FC,N/A,0-2,False,False
+Arsenal FC vs Everton FC,N/A,0-2,False,False
+Liverpool FC vs Fulham FC,N/A,0-2,False,False
+Newcastle United FC vs Leicester City FC,N/A,1-1,False,False
+Wolverhampton Wanderers FC vs Ipswich Town FC,N/A,1-1,False,False
+Nottingham Forest FC vs Aston Villa FC,N/A,2-0,True,False
+Brighton & Hove Albion FC vs Crystal Palace FC,N/A,0-2,True,False
+Manchester City FC vs Manchester United FC,N/A,2-0,False,False
+Chelsea FC vs Brentford FC,N/A,2-0,True,False
+Southampton FC vs Tottenham Hotspur FC,N/A,0-2,True,False
+AFC Bournemouth vs West Ham United FC,N/A,0-2,False,False
+Aston Villa FC vs Manchester City FC,N/A,2-0,True,False
+Brentford FC vs Nottingham Forest FC,N/A,2-0,False,False
+Ipswich Town FC vs Newcastle United FC,N/A,0-2,True,False
+West Ham United FC vs Brighton & Hove Albion FC,N/A,1-1,True,False
+Crystal Palace FC vs Arsenal FC,N/A,1-1,False,False
+Everton FC vs Chelsea FC,N/A,1-1,True,False
+Fulham FC vs Southampton FC,N/A,2-0,False,False
+Leicester City FC vs Wolverhampton Wanderers FC,N/A,0-2,True,False
+Manchester United FC vs AFC Bournemouth,N/A,1-1,False,False
+Tottenham Hotspur FC vs Liverpool FC,N/A,2-0,False,False
+Manchester City FC vs Everton FC,N/A,1-1,True,False
+AFC Bournemouth vs Crystal Palace FC,N/A,2-0,False,False
+Southampton FC vs West Ham United FC,N/A,1-1,False,False
+Chelsea FC vs Fulham FC,N/A,1-1,False,False
+Nottingham Forest FC vs Tottenham Hotspur FC,N/A,2-0,True,False
+Newcastle United FC vs Aston Villa FC,N/A,2-0,True,False
+Wolverhampton Wanderers FC vs Manchester United FC,N/A,2-0,True,False
+Liverpool FC vs Leicester City FC,N/A,0-2,False,False
+Brighton & Hove Albion FC vs Brentford FC,N/A,0-2,False,False
+Arsenal FC vs Ipswich Town FC,N/A,1-1,False,False
+Leicester City FC vs Manchester City FC,N/A,0-2,True,False
+Everton FC vs Nottingham Forest FC,N/A,0-2,True,False
+Crystal Palace FC vs Southampton FC,N/A,0-2,False,False
+Tottenham Hotspur FC vs Wolverhampton Wanderers FC,N/A,0-2,False,False
+Fulham FC vs AFC Bournemouth,N/A,0-2,False,False
+West Ham United FC vs Liverpool FC,N/A,1-1,False,False
+Aston Villa FC vs Brighton & Hove Albion FC,N/A,1-1,True,False
+Ipswich Town FC vs Chelsea FC,N/A,1-1,False,False
+Manchester United FC vs Newcastle United FC,N/A,1-1,False,False
+Brentford FC vs Arsenal FC,N/A,1-1,False,False
+Tottenham Hotspur FC vs Newcastle United FC,N/A,2-0,False,False
+Southampton FC vs Brentford FC,N/A,0-2,True,False
+AFC Bournemouth vs Everton FC,N/A,0-2,False,False
+Manchester City FC vs West Ham United FC,N/A,2-0,True,False
+Aston Villa FC vs Leicester City FC,N/A,2-0,True,False
+Crystal Palace FC vs Chelsea FC,N/A,0-2,False,False
+Brighton & Hove Albion FC vs Arsenal FC,N/A,0-2,False,False
+Fulham FC vs Ipswich Town FC,N/A,2-0,False,False
+Liverpool FC vs Manchester United FC,N/A,0-2,False,False
+Wolverhampton Wanderers FC vs Nottingham Forest FC,N/A,1-1,False,False
+West Ham United FC vs Fulham FC,N/A,2-0,True,False
+Brentford FC vs Manchester City FC,N/A,1-1,True,False
+Chelsea FC vs AFC Bournemouth,N/A,2-0,False,False
+Nottingham Forest FC vs Liverpool FC,N/A,1-1,True,False
+Everton FC vs Aston Villa FC,N/A,0-2,True,False
+Leicester City FC vs Crystal Palace FC,N/A,0-2,True,False
+Newcastle United FC vs Wolverhampton Wanderers FC,N/A,1-1,False,False
+Arsenal FC vs Tottenham Hotspur FC,N/A,2-0,True,False
+Ipswich Town FC vs Brighton & Hove Albion FC,N/A,0-2,True,False
+Manchester United FC vs Southampton FC,N/A,1-1,False,False
+Newcastle United FC vs AFC Bournemouth,N/A,2-0,False,False
+West Ham United FC vs Crystal Palace FC,N/A,0-2,True,False
+Leicester City FC vs Fulham FC,N/A,1-1,False,False
+Brentford FC vs Liverpool FC,N/A,0-2,True,False
+Arsenal FC vs Aston Villa FC,N/A,0-2,False,False
+Manchester United FC vs Brighton & Hove Albion FC,N/A,0-2,True,False
+Nottingham Forest FC vs Southampton FC,N/A,2-0,True,False
+Everton FC vs Tottenham Hotspur FC,N/A,1-1,False,False
+Ipswich Town FC vs Manchester City FC,N/A,1-1,False,False
+Chelsea FC vs Wolverhampton Wanderers FC,N/A,1-1,False,False
+Liverpool FC vs Ipswich Town FC,N/A,0-2,False,False
+Wolverhampton Wanderers FC vs Arsenal FC,N/A,0-2,True,False
+Brighton & Hove Albion FC vs Everton FC,N/A,1-1,False,False
+Southampton FC vs Newcastle United FC,N/A,0-2,True,False
+AFC Bournemouth vs Nottingham Forest FC,N/A,2-0,True,False
+Manchester City FC vs Chelsea FC,N/A,2-0,True,False
+Crystal Palace FC vs Brentford FC,N/A,0-2,True,False
+Tottenham Hotspur FC vs Leicester City FC,N/A,2-0,False,False
+Aston Villa FC vs West Ham United FC,N/A,1-1,True,False
+Fulham FC vs Manchester United FC,N/A,2-0,False,False
+Nottingham Forest FC vs Brighton & Hove Albion FC,N/A,2-0,True,False
+Newcastle United FC vs Fulham FC,N/A,0-2,True,False
+Everton FC vs Leicester City FC,N/A,1-1,False,False
+AFC Bournemouth vs Liverpool FC,N/A,0-2,True,False
+Ipswich Town FC vs Southampton FC,N/A,0-2,True,False
+Wolverhampton Wanderers FC vs Aston Villa FC,N/A,2-0,True,False
+Manchester United FC vs Crystal Palace FC,N/A,1-1,False,False
+Brentford FC vs Tottenham Hotspur FC,N/A,2-0,False,False
+Arsenal FC vs Manchester City FC,N/A,2-0,True,False
+Chelsea FC vs West Ham United FC,N/A,0-2,False,False
+Everton FC vs Liverpool FC,N/A,0-2,False,False
+Brighton & Hove Albion FC vs Chelsea FC,N/A,0-2,False,False
+Leicester City FC vs Arsenal FC,N/A,0-2,True,False
+Southampton FC vs AFC Bournemouth,N/A,2-0,False,False
+West Ham United FC vs Brentford FC,N/A,2-0,False,False
+Aston Villa FC vs Ipswich Town FC,N/A,2-0,False,False
+Manchester City FC vs Newcastle United FC,N/A,2-0,True,False
+Fulham FC vs Nottingham Forest FC,N/A,0-2,False,False
+Crystal Palace FC vs Everton FC,N/A,2-0,False,False
+Liverpool FC vs Wolverhampton Wanderers FC,N/A,2-0,True,False
+Tottenham Hotspur FC vs Manchester United FC,N/A,1-1,False,False
+Aston Villa FC vs Liverpool FC,N/A,1-1,True,False
+Leicester City FC vs Brentford FC,N/A,2-0,False,False
+Everton FC vs Manchester United FC,N/A,0-2,False,False
+Arsenal FC vs West Ham United FC,N/A,1-1,False,False
+Fulham FC vs Crystal Palace FC,N/A,2-0,False,False
+Southampton FC vs Brighton & Hove Albion FC,N/A,0-2,True,False
+AFC Bournemouth vs Wolverhampton Wanderers FC,N/A,0-2,True,False
+Ipswich Town FC vs Tottenham Hotspur FC,N/A,0-2,True,False
+Aston Villa FC vs Chelsea FC,N/A,1-1,False,False
+Newcastle United FC vs Nottingham Forest FC,N/A,1-1,False,False
+Manchester City FC vs Liverpool FC,N/A,1-1,False,False
+Wolverhampton Wanderers FC vs Fulham FC,N/A,0-2,True,False
+Brighton & Hove Albion FC vs AFC Bournemouth,N/A,0-2,False,False
+Crystal Palace FC vs Aston Villa FC,N/A,0-2,False,False
+Chelsea FC vs Southampton FC,N/A,2-0,True,False
+Nottingham Forest FC vs Arsenal FC,N/A,1-1,True,False
+Brentford FC vs Everton FC,N/A,1-1,True,False
+Tottenham Hotspur FC vs Manchester City FC,N/A,0-2,True,False
+Manchester United FC vs Ipswich Town FC,N/A,0-2,False,False
+Liverpool FC vs Newcastle United FC,N/A,0-2,False,False
+West Ham United FC vs Leicester City FC,N/A,2-0,True,False
+Nottingham Forest FC vs Manchester City FC,N/A,1-1,False,False
+Brighton & Hove Albion FC vs Fulham FC,N/A,0-2,False,False
+Crystal Palace FC vs Ipswich Town FC,N/A,0-2,False,False
+Liverpool FC vs Southampton FC,N/A,1-1,False,False
+Brentford FC vs Aston Villa FC,N/A,0-2,True,False
+Wolverhampton Wanderers FC vs Everton FC,N/A,2-0,False,False
+Tottenham Hotspur FC vs AFC Bournemouth,N/A,1-1,True,False
+Chelsea FC vs Leicester City FC,N/A,0-2,False,False
+Manchester United FC vs Arsenal FC,N/A,2-0,False,False
+West Ham United FC vs Newcastle United FC,N/A,0-2,True,False
+Everton FC vs West Ham United FC,N/A,0-2,False,False
+Ipswich Town FC vs Nottingham Forest FC,N/A,2-0,False,False
+Manchester City FC vs Brighton & Hove Albion FC,N/A,0-2,False,False
+Southampton FC vs Wolverhampton Wanderers FC,N/A,1-1,False,False
+AFC Bournemouth vs Brentford FC,N/A,1-1,False,False
+Arsenal FC vs Chelsea FC,N/A,2-0,True,False
+Fulham FC vs Tottenham Hotspur FC,N/A,2-0,True,False
+Leicester City FC vs Manchester United FC,N/A,0-2,True,False
+Arsenal FC vs Fulham FC,N/A,1-1,False,False
+Wolverhampton Wanderers FC vs West Ham United FC,N/A,2-0,True,False
+Nottingham Forest FC vs Manchester United FC,N/A,1-1,False,False
+AFC Bournemouth vs Ipswich Town FC,N/A,0-2,True,False
+Brighton & Hove Albion FC vs Aston Villa FC,N/A,0-2,True,False
+Manchester City FC vs Leicester City FC,N/A,2-0,True,False
+Newcastle United FC vs Brentford FC,N/A,0-2,False,False
+Southampton FC vs Crystal Palace FC,N/A,0-2,False,False
+Liverpool FC vs Everton FC,N/A,2-0,True,False
+Chelsea FC vs Tottenham Hotspur FC,N/A,1-1,False,False
+Everton FC vs Arsenal FC,N/A,0-2,False,False
+Crystal Palace FC vs Brighton & Hove Albion FC,N/A,0-2,False,False
+Ipswich Town FC vs Wolverhampton Wanderers FC,N/A,1-1,False,False
+West Ham United FC vs AFC Bournemouth,N/A,0-2,False,False
+Aston Villa FC vs Nottingham Forest FC,N/A,2-0,True,False
+Brentford FC vs Chelsea FC,N/A,1-1,True,False
+Fulham FC vs Liverpool FC,N/A,2-0,True,False
+Tottenham Hotspur FC vs Southampton FC,N/A,2-0,True,False
+Manchester United FC vs Manchester City FC,N/A,2-0,False,False
+Leicester City FC vs Newcastle United FC,N/A,1-1,False,False
+Manchester City FC vs Crystal Palace FC,N/A,2-0,True,False
+Brighton & Hove Albion FC vs Leicester City FC,N/A,0-2,False,False
+Nottingham Forest FC vs Everton FC,N/A,2-0,False,False
+Southampton FC vs Aston Villa FC,N/A,1-1,False,False
+Arsenal FC vs Brentford FC,N/A,2-0,False,False
+Chelsea FC vs Ipswich Town FC,N/A,1-1,True,False
+Liverpool FC vs West Ham United FC,N/A,1-1,False,False
+Wolverhampton Wanderers FC vs Tottenham Hotspur FC,N/A,1-1,False,False
+Newcastle United FC vs Manchester United FC,N/A,2-0,True,False
+AFC Bournemouth vs Fulham FC,N/A,2-0,True,False
+Newcastle United FC vs Crystal Palace FC,N/A,2-0,True,False
+Brentford FC vs Brighton & Hove Albion FC,N/A,2-0,True,False
+Crystal Palace FC vs AFC Bournemouth,N/A,1-1,True,False
+Everton FC vs Manchester City FC,N/A,1-1,False,False
+West Ham United FC vs Southampton FC,N/A,2-0,False,False
+Aston Villa FC vs Newcastle United FC,N/A,0-2,False,False
+Fulham FC vs Chelsea FC,N/A,2-0,False,False
+Ipswich Town FC vs Arsenal FC,N/A,0-2,True,False
+Manchester United FC vs Wolverhampton Wanderers FC,N/A,2-0,False,False
+Leicester City FC vs Liverpool FC,N/A,0-2,True,False
+Tottenham Hotspur FC vs Nottingham Forest FC,N/A,1-1,False,False
+Manchester City FC vs Aston Villa FC,N/A,2-0,True,False
+Arsenal FC vs Crystal Palace FC,N/A,2-0,False,False
+Chelsea FC vs Everton FC,N/A,0-2,False,False
+Brighton & Hove Albion FC vs West Ham United FC,N/A,2-0,True,False
+Newcastle United FC vs Ipswich Town FC,N/A,2-0,True,False
+Southampton FC vs Fulham FC,N/A,2-0,False,False
+Wolverhampton Wanderers FC vs Leicester City FC,N/A,2-0,True,False
+AFC Bournemouth vs Manchester United FC,N/A,0-2,False,False
+Liverpool FC vs Tottenham Hotspur FC,N/A,2-0,True,False
+Nottingham Forest FC vs Brentford FC,N/A,1-1,False,False
+Manchester City FC vs Wolverhampton Wanderers FC,N/A,1-1,False,False
+Aston Villa FC vs Fulham FC,N/A,1-1,False,False
+Everton FC vs Ipswich Town FC,N/A,1-1,True,False
+Leicester City FC vs Southampton FC,N/A,2-0,True,False
+Arsenal FC vs AFC Bournemouth,N/A,0-2,True,False
+Brighton & Hove Albion FC vs Newcastle United FC,N/A,0-2,False,False
+West Ham United FC vs Tottenham Hotspur FC,N/A,1-1,True,False
+Brentford FC vs Manchester United FC,N/A,0-2,False,False
+Chelsea FC vs Liverpool FC,N/A,2-0,True,False
+Crystal Palace FC vs Nottingham Forest FC,N/A,1-1,True,False
+Southampton FC vs Manchester City FC,N/A,1-1,True,False
+Wolverhampton Wanderers FC vs Brighton & Hove Albion FC,N/A,2-0,False,False
+Fulham FC vs Everton FC,N/A,1-1,False,False
+Ipswich Town FC vs Brentford FC,N/A,0-2,True,False
+AFC Bournemouth vs Aston Villa FC,N/A,1-1,False,False
+Newcastle United FC vs Chelsea FC,N/A,0-2,False,False
+Manchester United FC vs West Ham United FC,N/A,1-1,False,False
+Nottingham Forest FC vs Leicester City FC,N/A,1-1,True,False
+Tottenham Hotspur FC vs Crystal Palace FC,N/A,1-1,False,False
+Liverpool FC vs Arsenal FC,N/A,1-1,True,False
+Aston Villa FC vs Tottenham Hotspur FC,N/A,0-2,False,False
+Chelsea FC vs Manchester United FC,N/A,1-1,False,False
+Everton FC vs Southampton FC,N/A,2-0,True,False
+West Ham United FC vs Nottingham Forest FC,N/A,0-2,True,False
+Brentford FC vs Fulham FC,N/A,0-2,True,False
+Leicester City FC vs Ipswich Town FC,N/A,2-0,True,False
+Arsenal FC vs Newcastle United FC,N/A,2-0,True,False
+Brighton & Hove Albion FC vs Liverpool FC,N/A,1-1,False,False
+Crystal Palace FC vs Wolverhampton Wanderers FC,N/A,1-1,False,False
+Manchester City FC vs AFC Bournemouth,N/A,2-0,True,False
+Liverpool FC vs Crystal Palace FC,N/A,0-2,False,False
+Manchester United FC vs Aston Villa FC,N/A,0-2,False,False
+Fulham FC vs Manchester City FC,N/A,0-2,True,False
+Ipswich Town FC vs West Ham United FC,N/A,0-2,True,False
+AFC Bournemouth vs Leicester City FC,N/A,2-0,True,False
+Nottingham Forest FC vs Chelsea FC,N/A,0-2,True,False
+Southampton FC vs Arsenal FC,N/A,0-2,True,False
+Tottenham Hotspur FC vs Brighton & Hove Albion FC,N/A,0-2,True,False
+Wolverhampton Wanderers FC vs Brentford FC,N/A,1-1,True,False
+Newcastle United FC vs Everton FC,N/A,1-1,False,False
