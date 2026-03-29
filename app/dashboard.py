@@ -420,6 +420,7 @@ else:
 
 @cache_decorator
 def load_resources():
+    # Cache busted: load updated JSON with fallback market values
     try:
         model = joblib.load(MODEL_PATH)
     except FileNotFoundError:
